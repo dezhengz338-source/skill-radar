@@ -6,6 +6,7 @@
 
 - 扫描 OpenAI、Anthropic、NVIDIA、Vercel、Hermes 等公开 Skill 仓库。
 - 按任务价值、需求、效率杠杆、质量、增长、维护和差异化评分。
+- 独立计算 GitHub Star 规模/增速与 X 最近 7 天提及/互动热度。
 - 同时评估权限、命令执行、联网、凭据、混淆和来源风险。
 - 提供中文用途、适合人群、工作方式和使用时机说明。
 - 保存每日快照，比较新发现、升温和降温项目。
@@ -42,6 +43,8 @@ http://127.0.0.1:8765
 `.github/workflows/daily-refresh.yml` 每天 00:00 UTC（北京时间 08:00）运行扫描器，并更新当前快照。也可以在 Actions 页面手动运行。
 
 如遇 GitHub API 限流，可在仓库 Secrets 中添加具有最小权限的 `RADAR_GITHUB_TOKEN`。
+
+如需启用 X 热度，在仓库 Secrets 中添加 `X_BEARER_TOKEN`。未配置时，X 数据显示为“未知”，不会被当作 0 分。
 
 ## 安全边界
 

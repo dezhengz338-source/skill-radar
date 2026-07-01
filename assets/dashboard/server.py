@@ -50,8 +50,9 @@ OFFICIAL_REPOS = [
 ]
 
 OPPORTUNITY = {
-    "fit": .25, "demand": .20, "leverage": .15, "quality": .15,
-    "momentum": .10, "maintenance": .10, "uniqueness": .05,
+    "fit": .20, "demand": .10, "leverage": .15, "quality": .10,
+    "github_heat": .15, "x_heat": .10, "momentum": .05,
+    "maintenance": .10, "uniqueness": .05,
 }
 RISK = {
     "permissions": .25, "execution": .20, "network": .15, "secrets": .15,
@@ -126,6 +127,8 @@ def load_config() -> dict:
         "daily_enabled": True,
         "daily_time": "08:00",
         "github_token_env": "GITHUB_TOKEN",
+        "x_bearer_token_env": "X_BEARER_TOKEN",
+        "x_enrich_limit": 20,
         "max_per_repo": 8,
         "extra_repos": [],
     }
@@ -133,11 +136,19 @@ def load_config() -> dict:
     return default
 
 
-def request_bytes(url: str, *, accept: str = "application/json", max_bytes: int = MAX_DOWNLOAD) -> bytes:
+def request_bytes(
+    url: str,
+    *,
+    accept: str = "application/json",
+    max_bytes: int = MAX_DOWNLOAD,
+    extra_headers: dict | None = None,
+) -> bytes:
     headers = {"User-Agent": "SkillRadar/1.2", "Accept": accept}
     token_name = load_config().get("github_token_env", "GITHUB_TOKEN")
-    if os.environ.get(token_name):
+    if urllib.parse.urlparse(url).hostname == "api.github.com" and os.environ.get(token_name):
         headers["Authorization"] = f"Bearer {os.environ[token_name]}"
+    if extra_headers:
+        headers.update(extra_headers)
     request = urllib.request.Request(url, headers=headers)
     last_error = None
     for attempt in range(3):
@@ -306,7 +317,90 @@ def repo_momentum(repo: dict) -> int:
 
 
 def repo_demand(stars: int) -> int:
-    return round(clamp(35 + math.log10(max(1, stars) + 1) * 14))
+    return round(clamp(25 + math.log10(max(1, stars) + 1) * 13))
+
+
+def task_demand(category: str, description: str) -> int:
+    base = {
+        "文档与办公": 84, "研究与知识": 80, "软件开发": 82,
+        "销售与增长": 78, "数据与分析": 80, "安全与合规": 76,
+        "媒体与创作": 72, "通用效率": 70,
+    }.get(category, 68)
+    if len(description) >= 80:
+        base += 4
+    return round(clamp(base))
+
+
+def x_recent_signal(candidate: dict, bearer_token: str) -> tuple[int | None, dict]:
+    name = re.sub(r"[^A-Za-z0-9._-]+", " ", candidate["name"]).strip()
+    repo = candidate["repo"]
+    terms = [f'"{name}"'] if name else []
+    terms.append(f'"{repo}"')
+    query = f"({' OR '.join(terms)}) -is:retweet"
+    params = urllib.parse.urlencode({
+        "query": query,
+        "max_results": 100,
+        "tweet.fields": "created_at,public_metrics,author_id",
+    })
+    url = f"https://api.x.com/2/tweets/search/recent?{params}"
+    try:
+        payload = json.loads(request_bytes(
+            url,
+            extra_headers={"Authorization": f"Bearer {bearer_token}"},
+        ).decode("utf-8"))
+    except Exception as exc:
+        return None, {"status": "error", "error": str(exc)[:180], "query": query}
+    posts = payload.get("data") or []
+    authors = {post.get("author_id") for post in posts if post.get("author_id")}
+    engagement = 0
+    likes = reposts = replies = quotes = 0
+    for post in posts:
+        metrics = post.get("public_metrics") or {}
+        likes += int(metrics.get("like_count") or 0)
+        reposts += int(metrics.get("retweet_count") or 0)
+        replies += int(metrics.get("reply_count") or 0)
+        quotes += int(metrics.get("quote_count") or 0)
+    engagement = likes + reposts * 2 + replies + quotes * 2
+    volume_score = clamp(math.log1p(len(posts)) * 20)
+    engagement_score = clamp(math.log1p(engagement) * 12)
+    diversity_score = clamp(len(authors) / max(1, len(posts)) * 100)
+    heat = round(volume_score * .45 + engagement_score * .40 + diversity_score * .15)
+    return heat, {
+        "status": "ok", "window_days": 7, "posts": len(posts),
+        "authors": len(authors), "likes": likes, "reposts": reposts,
+        "replies": replies, "quotes": quotes, "engagement": engagement,
+        "query": query,
+    }
+
+
+def enrich_x_signals(candidates: list[dict], config: dict) -> str:
+    token = os.environ.get(config.get("x_bearer_token_env", "X_BEARER_TOKEN"), "")
+    if not token:
+        for candidate in candidates:
+            candidate["scores"]["x_heat"] = None
+            candidate["x_signal"] = {"status": "unavailable", "reason": "missing_bearer_token"}
+            candidate["radar"] = calculate_radar(candidate["scores"], candidate.get("hard_gate", False))
+        return "unavailable"
+    limit = max(0, min(50, int(config.get("x_enrich_limit", 20))))
+    targets = sorted(candidates, key=lambda x: x["radar"]["value_score"], reverse=True)[:limit]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        future_map = {pool.submit(x_recent_signal, item, token): item for item in targets}
+        for future in concurrent.futures.as_completed(future_map):
+            item = future_map[future]
+            heat, signal = future.result()
+            item["scores"]["x_heat"] = heat
+            item["x_signal"] = signal
+            if heat is not None:
+                item["scores"]["evidence_confidence"] = clamp(item["scores"]["evidence_confidence"] + 5)
+            item["radar"] = calculate_radar(item["scores"], item.get("hard_gate", False))
+            item["action"] = item["radar"]["action"]
+    target_ids = {item["id"] for item in targets}
+    for item in candidates:
+        if item["id"] not in target_ids:
+            item["scores"]["x_heat"] = None
+            item["x_signal"] = {"status": "not_sampled", "reason": "outside_enrichment_limit"}
+            item["radar"] = calculate_radar(item["scores"], item.get("hard_gate", False))
+    return "ok"
 
 
 def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> list[dict]:
@@ -340,14 +434,16 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
         risk_values, hard_gate, findings = risk_scan(text)
         headings = len(re.findall(r"^##\s+", text, re.M))
         quality = clamp(42 + min(28, headings * 4) + (12 if description else 0) + (8 if len(text) > 1200 else 0))
-        demand = repo_demand(stars)
+        demand = task_demand(category, description)
+        github_heat = repo_demand(stars)
         momentum = repo_momentum(repo)
         maintenance = round(clamp((momentum + (85 if repo.get("archived") is False else 25)) / 2))
         leverage = 82 if any(word in text.lower() for word in ("automate", "workflow", "repeat", "generate", "analy")) else 68
         uniqueness = 62 + (8 if category in ("安全与合规", "研究与知识") else 0)
         scores = {
             "fit": 72, "demand": demand, "leverage": leverage, "quality": round(quality),
-            "momentum": momentum, "maintenance": maintenance, "uniqueness": uniqueness,
+            "github_heat": github_heat, "x_heat": None, "momentum": momentum,
+            "maintenance": maintenance, "uniqueness": uniqueness,
             **risk_values, "provenance": 4 if source == "official" else 26, "mismatch": 5,
             "evidence_confidence": 90 if source == "official" else 75,
         }
@@ -407,10 +503,26 @@ def compare_previous(candidates: list[dict], previous: dict) -> None:
         prior = old.get(item["id"])
         item["is_new"] = prior is None
         if prior:
+            star_delta = max(0, int(item.get("repo_stars") or 0) - int(prior.get("repo_stars") or 0))
+            velocity = clamp(30 + math.log1p(star_delta) * 18) if star_delta else 25
+            base_heat = float(item["scores"].get("github_heat") or 0)
+            item["scores"]["github_heat"] = round(base_heat * .75 + velocity * .25)
+            item["github_signal"] = {
+                "stars": int(item.get("repo_stars") or 0),
+                "star_delta": star_delta,
+                "heat": item["scores"]["github_heat"],
+            }
+            item["radar"] = calculate_radar(item["scores"], item.get("hard_gate", False))
+            item["action"] = item["radar"]["action"]
             delta = item["radar"]["value_score"] - float(prior.get("radar", {}).get("value_score", 0))
             item["delta"] = round(delta, 1)
             item["status"] = "rising" if delta >= 3 else "cooling" if delta <= -3 else "stable"
         else:
+            item["github_signal"] = {
+                "stars": int(item.get("repo_stars") or 0),
+                "star_delta": None,
+                "heat": item["scores"].get("github_heat"),
+            }
             item["delta"] = 0
             item["status"] = "new"
 
@@ -467,6 +579,7 @@ def refresh_snapshot() -> dict:
                     errors.append({"source": f"{owner}/{repo}", "error": str(exc)[:240]})
         deduped = {item["id"].lower(): item for item in candidates}
         candidates = list(deduped.values())
+        x_status = enrich_x_signals(candidates, config)
         compare_previous(candidates, previous)
         candidates.sort(key=lambda x: x["radar"]["value_score"], reverse=True)
         snapshot = {
@@ -477,6 +590,8 @@ def refresh_snapshot() -> dict:
                 "demo": False,
                 "online": True,
                 "sources_scanned": len(seen_repos),
+                "x_status": x_status,
+                "x_enriched": sum(1 for item in candidates if item.get("scores", {}).get("x_heat") is not None),
                 "errors": errors,
             },
             "candidates": candidates,
@@ -799,7 +914,8 @@ Use references and validate every claim.
     assert not hard_gate and risks["execution"] < 90
     scores = {
         "fit": 80, "demand": 75, "leverage": 80, "quality": 80, "momentum": 70,
-        "maintenance": 80, "uniqueness": 60, **risks, "provenance": 5, "mismatch": 0,
+        "github_heat": 72, "x_heat": None, "maintenance": 80, "uniqueness": 60,
+        **risks, "provenance": 5, "mismatch": 0,
         "evidence_confidence": 85,
     }
     assert calculate_radar(scores)["value_score"] > 50

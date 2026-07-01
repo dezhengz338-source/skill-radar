@@ -53,6 +53,12 @@ Keep three values distinct:
 - `confidence`: evidence completeness and independence.
 - `risk`: potential downside; this is not canceled by popularity.
 
+Keep GitHub and X signals visible and separate:
+
+- GitHub: lifetime Stars plus Star growth between snapshots.
+- X: recent seven-day mentions, public engagement, and independent authors.
+- Use `null`, not zero, when a social signal is unavailable.
+
 Use the calculated `value_score` for ordering, then apply hard safety gates. Never invent missing metrics; mark them `unknown` and lower confidence.
 
 ## Compare with history

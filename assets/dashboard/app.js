@@ -1,6 +1,7 @@
 const OPPORTUNITY_WEIGHTS = {
-  fit: .25, demand: .20, leverage: .15, quality: .15,
-  momentum: .10, maintenance: .10, uniqueness: .05
+  fit: .20, demand: .10, leverage: .15, quality: .10,
+  github_heat: .15, x_heat: .10, momentum: .05,
+  maintenance: .10, uniqueness: .05
 };
 const RISK_WEIGHTS = {
   permissions: .25, execution: .20, network: .15, secrets: .15,
@@ -8,7 +9,8 @@ const RISK_WEIGHTS = {
 };
 const LABELS = {
   fit: "任务匹配", demand: "真实需求", leverage: "效率杠杆", quality: "交付质量",
-  momentum: "增长动能", maintenance: "维护健康", uniqueness: "差异优势"
+  github_heat: "GitHub 热度", x_heat: "X 热度", momentum: "增长动能",
+  maintenance: "维护健康", uniqueness: "差异优势"
 };
 
 const demoData = {
@@ -239,7 +241,7 @@ function polygonPoints(values, radius, cx, cy) {
 function renderRadar() {
   const skill = state.candidates.find(x => x.id === selectedId);
   if (!skill) { el("radarChart").innerHTML = ""; return; }
-  const keys = Object.keys(OPPORTUNITY_WEIGHTS);
+  const keys = Object.keys(OPPORTUNITY_WEIGHTS).filter(key => skill.scores?.[key] != null);
   const cx = 210, cy = 167, radius = 122;
   let svg = "";
   [20,40,60,80,100].forEach(level => {
@@ -265,8 +267,8 @@ function renderSignals() {
   const signals = [
     ["高价值候选", list.filter(x => x.radar.value_score >= 65).length],
     ["低风险候选", list.filter(x => x.radar.risk < 30).length],
-    ["证据充分", list.filter(x => x.radar.confidence >= 70).length],
-    ["新发现", list.filter(x => x.is_new).length]
+    ["GitHub 升温", list.filter(x => (x.github_signal?.star_delta || 0) > 0).length],
+    ["X 热度可用", list.filter(x => x.scores?.x_heat != null).length]
   ];
   const max = Math.max(1, list.length);
   el("signalStack").innerHTML = signals.map(([label, count]) =>
@@ -290,14 +292,14 @@ function renderTable() {
   const list = filteredCandidates();
   el("rankingBody").innerHTML = list.map((x, index) => {
     const [riskLabel, riskClass] = riskMeta(x.radar.risk);
-    const trendClass = x.delta > 0 ? "up" : x.delta < 0 ? "down" : "flat";
-    const trend = x.delta > 0 ? `↑ ${x.delta.toFixed(1)}` : x.delta < 0 ? `↓ ${Math.abs(x.delta).toFixed(1)}` : "—";
+    const ghHeat = x.scores?.github_heat == null ? "—" : Math.round(x.scores.github_heat);
+    const xHeat = x.scores?.x_heat == null ? "—" : Math.round(x.scores.x_heat);
     return `<tr>
       <td class="rank">${String(index + 1).padStart(2, "0")}</td>
       <td><div class="skill-cell"><span class="skill-avatar">${escapeHtml(x.name.slice(0,2).toUpperCase())}</span><div><strong>${escapeHtml(x.name)}</strong><small>${escapeHtml(x.author)} · ${sourceLabel(x.source)}</small></div></div></td>
       <td>${escapeHtml(x.purpose)}</td>
       <td><div class="score-ring" style="--score:${x.radar.value_score}">${Math.round(x.radar.value_score)}</div></td>
-      <td><span class="trend ${trendClass}">${trend}</span></td>
+      <td><div class="heat-pair"><span>GH <b>${ghHeat}</b></span><span>X <b>${xHeat}</b></span></div></td>
       <td><span class="risk-pill ${riskClass}">● ${riskLabel}</span></td>
       <td><span class="action-pill action-${x.action}">${actionLabel(x.action)}</span></td>
       <td><button class="more-btn" data-detail="${escapeHtml(x.id)}" aria-label="查看 ${escapeHtml(x.name)} 详情">→</button></td>
@@ -333,7 +335,7 @@ function renderService() {
       : "服务运行期间每 24 小时更新")
     : "联网、安装和每日任务不可用";
   el("sourceHealth").innerHTML = service.online
-    ? `<span>联网源</span><strong>${state.meta?.sources_scanned || 0} 个仓库 · ${state.meta?.errors?.length || 0} 个异常</strong>`
+    ? `<span>联网源</span><strong>${state.meta?.sources_scanned || 0} 个仓库 · X ${state.meta?.x_status === "ok" ? `${state.meta?.x_enriched || 0} 项` : "未配置"} · ${state.meta?.errors?.length || 0} 个异常</strong>`
     : "<span>联网源</span><strong>等待本地服务</strong>";
   if (service.status) {
     el("codexPath").textContent = service.status.codex_path || "~/.codex/skills";
@@ -422,7 +424,7 @@ function openDrawer(id) {
   el("radarSelect").value = id;
   renderRadar();
   const [riskLabel, riskClass] = riskMeta(x.radar.risk);
-  const bars = Object.keys(OPPORTUNITY_WEIGHTS).map(k =>
+  const bars = Object.keys(OPPORTUNITY_WEIGHTS).filter(k => x.scores?.[k] != null).map(k =>
     `<div class="score-bar"><span>${LABELS[k]}</span><i style="--value:${clamp(x.scores?.[k])}"></i><b>${Math.round(clamp(x.scores?.[k]))}</b></div>`
   ).join("");
   const cn = x.explanation_cn || {
@@ -456,6 +458,13 @@ function openDrawer(id) {
       </div>
     </section>
     <section class="detail-section"><h3>价值维度</h3><div class="score-bars">${bars}</div></section>
+    <section class="detail-section">
+      <h3>社区热度证据</h3>
+      <div class="cn-detail">
+        <strong>GitHub</strong><p>累计 Stars：${Number(x.github_signal?.stars ?? x.repo_stars ?? 0).toLocaleString()}；本期新增：${x.github_signal?.star_delta == null ? "首次基线" : `+${x.github_signal.star_delta}`}；热度分：${x.scores?.github_heat == null ? "未知" : Math.round(x.scores.github_heat)}。</p>
+        <strong>X / Twitter（最近 7 天）</strong><p>${x.x_signal?.status === "ok" ? `提及 ${x.x_signal.posts} 条、独立作者 ${x.x_signal.authors} 位、综合互动 ${x.x_signal.engagement}，热度分 ${Math.round(x.scores.x_heat)}。` : "暂无可信 API 数据，当前评分未把 X 热度按 0 分处理。"}</p>
+      </div>
+    </section>
     <section class="detail-section"><h3>关键证据</h3>${x.evidence.length ? `<ul>${x.evidence.map(v => `<li>${escapeHtml(typeof v === "string" ? v : v.claim || JSON.stringify(v))}</li>`).join("")}</ul>` : "<p>尚未记录结构化证据。</p>"}</section>
     <section class="detail-section"><h3>注意事项</h3>${x.caveats.length ? `<ul>${x.caveats.map(v => `<li>${escapeHtml(v)}</li>`).join("")}</ul>` : `<p><span class="risk-pill ${riskClass}">${riskLabel}</span> 暂无额外说明。</p>`}</section>
     <div class="drawer-install">

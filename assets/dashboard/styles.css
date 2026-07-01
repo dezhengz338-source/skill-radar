@@ -322,6 +322,10 @@ tbody tr:hover { background: rgba(55, 167, 255, .025); }
 .trend.up { color: var(--mint); }
 .trend.down { color: var(--red); }
 .trend.flat { color: var(--muted); }
+.heat-pair { display: flex; flex-wrap: wrap; gap: 5px; }
+.heat-pair span { padding: 4px 6px; border-radius: 8px; color: #7e96a8; background: rgba(255,255,255,.035); font-size: 8px; }
+.heat-pair span:first-child b { color: var(--blue); }
+.heat-pair span:last-child b { color: var(--violet); }
 .risk-pill, .action-pill {
   display: inline-flex;
   align-items: center;

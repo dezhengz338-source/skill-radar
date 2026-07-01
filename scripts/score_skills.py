@@ -10,11 +10,13 @@ from pathlib import Path
 
 
 OPPORTUNITY = {
-    "fit": 0.25,
-    "demand": 0.20,
+    "fit": 0.20,
+    "demand": 0.10,
     "leverage": 0.15,
-    "quality": 0.15,
-    "momentum": 0.10,
+    "quality": 0.10,
+    "github_heat": 0.15,
+    "x_heat": 0.10,
+    "momentum": 0.05,
     "maintenance": 0.10,
     "uniqueness": 0.05,
 }

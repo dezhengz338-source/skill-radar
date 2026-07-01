@@ -42,6 +42,10 @@ Use papers, newsletters, Reddit, Hacker News, X, blogs, and trend pages to disco
 
 Require stronger sources before asserting adoption, quality, provenance, or safety.
 
+## Social heat
+
+Use the official X API recent-search endpoint when an `X_BEARER_TOKEN` is configured. Search a seven-day window for the Skill name and canonical repository, request `public_metrics`, exclude reposts, and record post count, unique authors, likes, replies, reposts, and quotes. Treat X as a momentum signal only; do not infer functional quality or safety from engagement.
+
 ## Minimum evidence
 
 For a shortlisted Skill, seek:

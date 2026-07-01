@@ -6,17 +6,25 @@ Score each dimension from 0 to 100.
 
 | Dimension | Weight | What high means |
 |---|---:|---|
-| fit | 25% | Solves recurring, costly tasks for the target user |
-| demand | 20% | Multiple credible signals show a real and growing need |
+| fit | 20% | Solves recurring, costly tasks for the target user |
+| demand | 10% | Multiple credible signals show a real need independent of popularity |
 | leverage | 15% | Saves substantial time, reduces errors, or unlocks a new capability |
-| quality | 15% | Specific triggers, complete workflow, useful resources, and validation |
-| momentum | 10% | Meaningful recent adoption or contribution growth, not vanity spikes |
+| quality | 10% | Specific triggers, complete workflow, useful resources, and validation |
+| github_heat | 15% | Repository Star scale plus observed Star growth, with repo-level caveats |
+| x_heat | 10% | Recent X mentions, engagement, and independent-author diversity |
+| momentum | 5% | Meaningful recent contribution or ecosystem growth, not vanity spikes |
 | maintenance | 10% | Active, responsive, compatible, licensed, and not dependent on one abandoned component |
 | uniqueness | 5% | Offers a defensible advantage over substitutes |
 
 `opportunity = weighted mean of available dimensions`.
 
 If the user's profile is unknown, score `fit` as broad recurring applicability and state that personalization may change the ranking.
+
+Treat GitHub Stars and X activity as popularity evidence, not proof of quality. Keep `x_heat` as `null` when a trusted API signal is unavailable and reweight the remaining dimensions; never silently convert missing social data to zero.
+
+For `github_heat`, combine lifetime Star scale with Star change between snapshots. Note that monorepository Stars apply to every contained Skill and therefore have lower specificity.
+
+For `x_heat`, use a recent seven-day window. Combine matching post count, public engagement, and unique-author diversity. Exclude reposts from the base query where possible and retain the query and raw aggregates as evidence.
 
 ## Risk dimensions
 
@@ -76,6 +84,8 @@ Each candidate should contain:
     "demand": 0,
     "leverage": 0,
     "quality": 0,
+    "github_heat": 0,
+    "x_heat": null,
     "momentum": 0,
     "maintenance": 0,
     "uniqueness": 0,
