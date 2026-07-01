@@ -285,7 +285,7 @@ function renderSignals() {
 function renderFilterOptions() {
   const configs = [
     ["categoryFilter", [...new Set(state.candidates.map(x => x.category).filter(Boolean))].sort()],
-    ["platformFilter", [...new Set(state.candidates.flatMap(x => x.platforms || [])).filter(Boolean)].sort()]
+    ["platformFilter", [...new Set(state.candidates.flatMap(x => x.platforms || []).filter(Boolean))].sort()]
   ];
   configs.forEach(([id, values]) => {
     const select = el(id);
