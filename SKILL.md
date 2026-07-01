@@ -105,10 +105,11 @@ For the connected mode on Windows:
 1. Tell the user to double-click `assets/dashboard/启动联网版.cmd`.
 2. Open `http://127.0.0.1:8765/`; do not use `file://` for connected features.
 3. Use **立即联网更新** for an on-demand scan.
-4. Use **启用每日任务** to create an explicit Windows daily task at 08:00.
-5. Open a candidate to read the Chinese explanation, evidence, risk, and permissions.
-6. Use **安装到 Codex** or **安装到 Hermes** only after reviewing and confirming the install dialog.
-7. Use **导出通用 Skill 包** when the target Agent is not Codex or Hermes; keep the complete folder because bundled resources may be required.
+4. Use **搜索 GitHub** for an explicit task keyword; inspect the returned `SKILL.md` candidates before adding them to the radar.
+5. Use **启用每日任务** to create an explicit Windows daily task at 08:00.
+6. Open a candidate to read the Chinese explanation, evidence, risk, and permissions.
+7. Use **安装到 Codex** or **安装到 Hermes** only after reviewing and confirming the install dialog.
+8. Use **导出通用 Skill 包** when the target Agent is not Codex or Hermes; keep the complete folder because bundled resources may be required.
 
 The local service binds only to `127.0.0.1`. It scans official catalogs and current GitHub repositories, keeps rolling history, and rejects overwrite, path traversal, oversized packages, symbolic links, and quarantined candidates. Codex installs go to `$CODEX_HOME/skills` or `~/.codex/skills`. Hermes installs prefer the official `hermes skills install` command and otherwise use `$HERMES_HOME/skills/radar` or `~/.hermes/skills/radar`. Portable exports retain the original files and add a manifest plus Chinese installation notes; compatibility labels are signals, not proof of full runtime support.
 

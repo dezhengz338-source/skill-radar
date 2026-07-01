@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Skill Radar · 互联网技能情报站</title>
-  <link rel="stylesheet" href="styles.css?v=1.3.1">
+  <link rel="stylesheet" href="styles.css?v=1.4.0">
 </head>
 <body>
   <div class="shell">
@@ -44,7 +44,7 @@
           <p>数据只保存在当前浏览器</p>
         </div>
       </div>
-      <p class="version">Skill Radar · v1.3</p>
+      <p class="version">Skill Radar · v1.4</p>
     </aside>
 
     <main>
@@ -56,6 +56,7 @@
         </div>
         <div class="top-actions">
           <button class="btn ghost" id="exportBtn"><span>⇩</span> 导出快照</button>
+          <button class="btn ghost" id="openGithubSearch"><span>⌕</span> 搜索 GitHub</button>
           <button class="btn ghost" id="openImport"><span>＋</span> 导入 JSON</button>
           <button class="btn primary" id="refreshOnline"><span>↻</span> 立即联网更新</button>
         </div>
@@ -255,7 +256,22 @@
     </section>
   </div>
 
+  <div class="modal-backdrop" id="githubSearchModal" hidden>
+    <section class="modal github-search-modal" role="dialog" aria-modal="true" aria-labelledby="githubSearchTitle">
+      <button class="modal-close" id="closeGithubSearch" aria-label="关闭">×</button>
+      <p class="eyebrow">GITHUB SKILL SEARCH</p>
+      <h2 id="githubSearchTitle">搜索 GitHub 上的 Skill</h2>
+      <p>输入任务或领域关键词，例如 PDF、SEO、research、video。搜索会核验真实的 <code>SKILL.md</code>，并给出中文用途、价值和风险。</p>
+      <div class="github-query-row">
+        <input id="githubQuery" type="search" maxlength="80" placeholder="输入 Skill 关键词">
+        <button class="btn primary" id="runGithubSearch">搜索</button>
+      </div>
+      <p class="github-search-status" id="githubSearchStatus">仅搜索公开 GitHub 仓库；结果不会自动安装。</p>
+      <div class="github-results" id="githubResults"></div>
+    </section>
+  </div>
+
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=1.3.1"></script>
+  <script src="app.js?v=1.4.0"></script>
 </body>
 </html>

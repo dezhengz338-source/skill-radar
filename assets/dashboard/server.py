@@ -145,7 +145,7 @@ def request_bytes(
     max_bytes: int = MAX_DOWNLOAD,
     extra_headers: dict | None = None,
 ) -> bytes:
-    headers = {"User-Agent": "SkillRadar/1.2", "Accept": accept}
+    headers = {"User-Agent": "SkillRadar/1.4", "Accept": accept}
     token_name = load_config().get("github_token_env", "GITHUB_TOKEN")
     if urllib.parse.urlparse(url).hostname == "api.github.com" and os.environ.get(token_name):
         headers["Authorization"] = f"Bearer {os.environ[token_name]}"
@@ -421,7 +421,13 @@ def enrich_x_signals(candidates: list[dict], config: dict) -> str:
     return "ok"
 
 
-def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> list[dict]:
+def discover_repo(
+    owner: str,
+    repo_name: str,
+    source: str,
+    max_skills: int,
+    keyword: str | None = None,
+) -> list[dict]:
     repo = github_api(f"repos/{owner}/{repo_name}")
     branch = repo.get("default_branch", "main")
     tree = github_api(f"repos/{owner}/{repo_name}/git/trees/{urllib.parse.quote(branch)}?recursive=1")
@@ -434,7 +440,9 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
         if item.get("type") == "blob" and path_value.endswith("SKILL.md") and not parts.intersection(excluded_parts):
             paths.append(path_value)
             path_shas[path_value] = item.get("sha")
+    keyword_lower = (keyword or "").casefold()
     preferred = sorted(paths, key=lambda p: (
+        keyword_lower not in p.casefold() if keyword_lower else False,
         not (p.startswith("skills/") or p.startswith("optional-skills/")),
         p.count("/"), p.lower()
     ))[:max_skills]
@@ -450,6 +458,11 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
         skill_path = str(PurePosixPath(skill_file).parent)
         name = front.get("name") or PurePosixPath(skill_path).name
         description = front.get("description", "").strip()
+        if keyword_lower:
+            terms = [term for term in re.split(r"\s+", keyword_lower) if term]
+            searchable = f"{name}\n{description}\n{skill_path}\n{text}".casefold()
+            if not all(term in searchable for term in terms):
+                continue
         category = choose_category(name, description, skill_path)
         risk_values, hard_gate, findings = risk_scan(text)
         headings = len(re.findall(r"^##\s+", text, re.M))
@@ -505,6 +518,91 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
             "observed_at": now_iso(),
         })
     return results
+
+
+def search_github_skills(keyword: str, limit: int = 12) -> dict:
+    keyword = re.sub(r"\s+", " ", keyword).strip()
+    if not 2 <= len(keyword) <= 80:
+        raise ValueError("关键词长度必须为 2–80 个字符")
+    if any(ord(char) < 32 for char in keyword):
+        raise ValueError("关键词包含无效控制字符")
+    limit = max(1, min(20, int(limit)))
+    current = load_json(CURRENT_FILE, {})
+    terms = [term for term in keyword.casefold().split(" ") if term]
+    results = []
+    indexed_repos = set()
+    for item in current.get("candidates", []):
+        if not item.get("repo"):
+            continue
+        indexed_repos.add(str(item["repo"]).casefold())
+        searchable = " ".join([
+            str(item.get("name", "")), str(item.get("description", "")),
+            str(item.get("purpose", "")), str(item.get("category", "")),
+            str(item.get("skill_path", "")), str(item.get("repo", "")),
+        ]).casefold()
+        if all(term in searchable for term in terms):
+            candidate = dict(item)
+            candidate["search_query"] = keyword
+            candidate["search_result"] = True
+            candidate["search_origin"] = "verified-index"
+            results.append(candidate)
+
+    repos = []
+    seen = set(indexed_repos)
+
+    def add_repo(full_name: str, source: str = "github"):
+        if "/" not in full_name:
+            return
+        owner, repo_name = full_name.split("/", 1)
+        key = full_name.casefold()
+        if key not in seen:
+            seen.add(key)
+            repos.append((owner, repo_name, source))
+
+    safe_query = re.sub(r'["/:]+', " ", keyword)
+    query = urllib.parse.quote(f"{safe_query} agent skills in:name,description,readme")
+    errors = []
+    try:
+        found = github_api(f"search/repositories?q={query}&sort=stars&order=desc&per_page=3")
+        for repo in found.get("items", []):
+            add_repo(str(repo.get("full_name", "")), "github")
+    except urllib.error.HTTPError as exc:
+        if exc.code == 403:
+            errors.append({"source": "github-search", "error": "GitHub API 限流，已返回本地核验索引结果"})
+        else:
+            raise
+
+    repos = repos[:3]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        future_map = {
+            pool.submit(discover_repo, owner, repo_name, source, 16, keyword): f"{owner}/{repo_name}"
+            for owner, repo_name, source in repos
+        }
+        for future in concurrent.futures.as_completed(future_map):
+            repo_name = future_map[future]
+            try:
+                results.extend(future.result())
+            except Exception as exc:
+                errors.append({"source": repo_name, "error": str(exc)[:180]})
+    deduped = {item["id"].casefold(): item for item in results}
+    results = list(deduped.values())
+    for item in results:
+        item["search_query"] = keyword
+        item["search_result"] = True
+        item.setdefault("search_origin", "github-live")
+    results.sort(key=lambda item: (
+        keyword.casefold() not in item["name"].casefold(),
+        -item["radar"]["value_score"],
+        -int(item.get("repo_stars") or 0),
+    ))
+    return {
+        "query": keyword,
+        "searched_repos": len(indexed_repos) + len(repos),
+        "live_repos": len(repos),
+        "count": min(len(results), limit),
+        "candidates": results[:limit],
+        "errors": errors,
+    }
 
 
 def trending_repos(limit: int = 3) -> list[tuple[str, str, str]]:
@@ -942,7 +1040,7 @@ def last_refresh() -> datetime | None:
 
 
 class RadarHandler(SimpleHTTPRequestHandler):
-    server_version = "SkillRadar/1.3"
+    server_version = "SkillRadar/1.4"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(APP_DIR), **kwargs)
@@ -988,7 +1086,7 @@ class RadarHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
         if parsed.path == "/api/session":
-            return self.json_response({"token": TOKEN, "service": "skill-radar", "version": "1.3"})
+            return self.json_response({"token": TOKEN, "service": "skill-radar", "version": "1.4"})
         if parsed.path == "/api/status":
             config = load_config()
             last = last_refresh()
@@ -1032,6 +1130,9 @@ class RadarHandler(SimpleHTTPRequestHandler):
             if parsed.path == "/api/export":
                 candidate = find_candidate(str(data.get("id", "")))
                 return self.json_response({"ok": True, **export_portable(candidate)})
+            if parsed.path == "/api/search-github":
+                result = search_github_skills(str(data.get("query", "")), int(data.get("limit", 12)))
+                return self.json_response({"ok": True, **result})
             if parsed.path == "/api/schedule":
                 result = schedule_command(bool(data.get("enabled")), str(data.get("time", "08:00")))
                 return self.json_response({"ok": True, **result})

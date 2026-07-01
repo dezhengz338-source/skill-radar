@@ -101,6 +101,7 @@ let activeTab = "all";
 let selectedId = state.candidates[0]?.id;
 let service = { online: false, token: null, status: null };
 let pendingInstallId = null;
+let githubSearchResults = [];
 
 function clamp(value) { return Math.max(0, Math.min(100, Number(value) || 0)); }
 function weighted(scores, weights) {
@@ -393,6 +394,7 @@ function renderService() {
     ? `数据源联网可用 · ${service.status?.refreshing ? "正在更新" : "等待指令"}`
     : "请双击“启动联网版.cmd”，再从 http://127.0.0.1:8765 打开";
   el("refreshOnline").disabled = !service.online || service.status?.refreshing;
+  el("openGithubSearch").disabled = !service.online;
   el("refreshOnline").innerHTML = service.status?.refreshing ? "<span>↻</span> 正在扫描…" : "<span>↻</span> 立即联网更新";
   el("scheduleBtn").disabled = !service.online;
   el("scheduleBtn").classList.toggle("active", Boolean(service.status?.daily_task_installed));
@@ -484,6 +486,80 @@ async function toggleSchedule() {
     renderService();
     toast(result.enabled ? "每日更新任务已启用" : "每日更新任务已关闭");
   } catch (error) { toast(error.message); }
+}
+function openGithubSearch() {
+  el("githubSearchModal").hidden = false;
+  el("githubSearchStatus").textContent = service.online
+    ? "仅搜索公开 GitHub 仓库；结果不会自动安装。"
+    : "请先启动本地联网版，再使用 GitHub 搜索。";
+  el("runGithubSearch").disabled = !service.online;
+  setTimeout(() => el("githubQuery").focus(), 20);
+}
+function closeGithubSearch() {
+  el("githubSearchModal").hidden = true;
+}
+function renderGithubResults() {
+  if (!githubSearchResults.length) {
+    el("githubResults").innerHTML = '<div class="github-empty">暂无匹配结果。可以换一个更具体的英文任务词，例如 pdf、research、seo。</div>';
+    return;
+  }
+  el("githubResults").innerHTML = githubSearchResults.map(x => {
+    const [riskLabel, riskClass] = riskMeta(x.radar.risk);
+    const alreadyAdded = state.candidates.some(item => item.id === x.id);
+    return `<article class="github-result">
+      <div class="github-result-main">
+        <div class="github-result-head"><strong>${escapeHtml(x.name)}</strong><span>${escapeHtml(x.category)}</span></div>
+        <p>${escapeHtml(x.explanation_cn?.summary_cn || x.purpose)}</p>
+        <div class="github-result-meta">
+          <span>${escapeHtml(x.repo || x.author)}</span>
+          <span>★ ${Number(x.repo_stars || 0).toLocaleString()}</span>
+          <span>价值 ${Math.round(x.radar.value_score)}</span>
+          <span class="${riskClass}">${riskLabel}</span>
+          <span>${escapeHtml((x.platforms || ["通用 SKILL.md"]).slice(0,3).join(" / "))}</span>
+        </div>
+      </div>
+      <div class="github-result-actions">
+        <button class="btn ${alreadyAdded ? "ghost" : "primary"}" data-add-search="${escapeHtml(x.id)}" ${alreadyAdded ? "disabled" : ""}>${alreadyAdded ? "已在雷达" : "加入雷达"}</button>
+        <a href="${escapeHtml(x.url || "#")}" target="_blank" rel="noreferrer">查看 GitHub ↗</a>
+      </div>
+    </article>`;
+  }).join("");
+}
+async function runGithubSearch() {
+  const query = el("githubQuery").value.trim();
+  if (query.length < 2) {
+    el("githubSearchStatus").textContent = "请输入至少 2 个字符的关键词。";
+    return;
+  }
+  const button = el("runGithubSearch");
+  button.disabled = true;
+  button.textContent = "搜索中…";
+  el("githubSearchStatus").textContent = "正在检索 GitHub 仓库并核验 SKILL.md，通常需要 10–30 秒…";
+  el("githubResults").innerHTML = "";
+  try {
+    const result = await apiPost("/api/search-github", { query, limit: 12 });
+    githubSearchResults = (result.candidates || []).map(normalizeCandidate);
+    el("githubSearchStatus").textContent = `已搜索 ${result.searched_repos || 0} 个仓库，找到 ${githubSearchResults.length} 个匹配 Skill${result.errors?.length ? `；${result.errors.length} 个源暂不可用` : ""}。`;
+    renderGithubResults();
+  } catch (error) {
+    githubSearchResults = [];
+    el("githubSearchStatus").textContent = `搜索失败：${error.message}`;
+    el("githubResults").innerHTML = '<div class="github-empty">如果提示 GitHub 限流，请稍后重试或为本地服务配置 GITHUB_TOKEN。</div>';
+  } finally {
+    button.disabled = false;
+    button.textContent = "搜索";
+  }
+}
+function addGithubResult(id) {
+  const candidate = githubSearchResults.find(item => item.id === id);
+  if (!candidate || state.candidates.some(item => item.id === id)) return;
+  state.candidates = [candidate, ...state.candidates];
+  state.meta = { ...(state.meta || {}), manual_github_results: Number(state.meta?.manual_github_results || 0) + 1 };
+  selectedId = candidate.id;
+  saveState();
+  render();
+  renderGithubResults();
+  toast(`已加入雷达：${candidate.name}`);
 }
 function openDrawer(id) {
   const x = state.candidates.find(item => item.id === id);
@@ -653,6 +729,8 @@ document.addEventListener("click", event => {
   if (install) openInstall(install.dataset.install, install.dataset.target);
   const packageExport = event.target.closest("[data-package-export]");
   if (packageExport) exportPortable(packageExport.dataset.packageExport);
+  const addSearch = event.target.closest("[data-add-search]");
+  if (addSearch) addGithubResult(addSearch.dataset.addSearch);
 });
 document.querySelectorAll(".tab").forEach(button => button.addEventListener("click", () => {
   document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
@@ -683,6 +761,11 @@ el("resetFilters").addEventListener("click", () => {
 });
 el("showRisk").addEventListener("click", () => { el("actionFilter").value = "quarantine"; renderTable(); document.querySelector(".ranking-panel").scrollIntoView({ behavior: "smooth" }); });
 el("openImport").addEventListener("click", openImport);
+el("openGithubSearch").addEventListener("click", openGithubSearch);
+el("closeGithubSearch").addEventListener("click", closeGithubSearch);
+el("githubSearchModal").addEventListener("click", e => { if (e.target === el("githubSearchModal")) closeGithubSearch(); });
+el("runGithubSearch").addEventListener("click", runGithubSearch);
+el("githubQuery").addEventListener("keydown", e => { if (e.key === "Enter") runGithubSearch(); });
 el("closeImport").addEventListener("click", closeImport);
 el("importModal").addEventListener("click", e => { if (e.target === el("importModal")) closeImport(); });
 el("applyImport").addEventListener("click", () => {
@@ -721,7 +804,7 @@ el("copyPrompt").addEventListener("click", async () => {
   catch (_) { toast("请手动复制上方指令"); }
 });
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape") { closeDrawer(); closeImport(); closeInstall(); }
+  if (e.key === "Escape") { closeDrawer(); closeImport(); closeInstall(); closeGithubSearch(); }
 });
 
 render();
