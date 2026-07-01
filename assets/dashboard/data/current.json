@@ -1,6 +1,6 @@
 {
   "meta": {
-    "observed_at": "2026-07-01T13:22:36+08:00",
+    "observed_at": "2026-07-01T13:49:31+08:00",
     "window_days": 30,
     "baseline": false,
     "demo": false,
@@ -8,6 +8,8 @@
     "sources_scanned": 8,
     "x_status": "unavailable",
     "x_enriched": 0,
+    "updated_skills": 0,
+    "removed_skills": 10,
     "errors": []
   },
   "candidates": [
@@ -24,6 +26,10 @@
       "purpose": "这是一个“文档与办公”类 Skill，主要用于读取、生成、转换或检查 PDF 文档。它会把「canvas-design」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
       "category": "文档与办公",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“文档与办公”类 Skill，主要用于读取、生成、转换或检查 PDF 文档。它会把「canvas-design」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "经常处理正式文档、表格或演示材料的人",
@@ -36,7 +42,7 @@
         "demand": 88,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -51,38 +57,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 82.2,
+        "opportunity": 81.4,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 75.0,
+        "value_score": 74.2,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:25+08:00",
+      "skill_revision": "9f63fee82de84cd4230e1d0e322247b61eb4c94c",
+      "content_sha256": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b",
+      "version_label": "rev-9f63fee8",
+      "observed_at": "2026-07-01T13:49:18+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -1.4,
-      "status": "stable"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 74.2,
+          "risk": 6.5,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "9f63fee82de84cd4230e1d0e322247b61eb4c94c"
+        }
+      ]
     },
     {
       "id": "NousResearch/hermes-agent/skills/yuanbao",
@@ -97,6 +122,10 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「yuanbao」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Yuanbao (元宝) groups: @mention users, query info/members.",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Hermes"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「yuanbao」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -109,7 +138,7 @@
         "demand": 70,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 96,
+        "github_heat": 89,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -124,38 +153,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 81.8,
+        "opportunity": 80.6,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 74.6,
+        "value_score": 73.5,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
       "license": "MIT",
-      "observed_at": "2026-07-01T13:22:33+08:00",
+      "skill_revision": "6c261c68dd025860d9b4568389a0f658acdd913a",
+      "content_sha256": "239e4875f511124fab06e94ff21511fd8f857554c6ffd82dfb796ed275b4ff32",
+      "version_label": "rev-6c261c68",
+      "observed_at": "2026-07-01T13:49:27+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
       },
-      "delta": -2.9,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 73.5,
+          "risk": 6.5,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "6c261c68dd025860d9b4568389a0f658acdd913a"
+        }
+      ]
     },
     {
       "id": "anthropics/skills/skills/algorithmic-art",
@@ -170,6 +218,10 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「algorithmic-art」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「algorithmic-art」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -182,7 +234,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -197,38 +249,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 82.9,
+        "opportunity": 82.1,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 73.8,
+        "value_score": 73.1,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:24+08:00",
+      "skill_revision": "634f6fa42e4e697fa6afd293acd7fb8246574876",
+      "content_sha256": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef",
+      "version_label": "rev-634f6fa4",
+      "observed_at": "2026-07-01T13:49:17+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -1.9,
-      "status": "stable"
+      "delta": -0.7,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 73.1,
+          "risk": 11.6,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "634f6fa42e4e697fa6afd293acd7fb8246574876"
+        }
+      ]
     },
     {
       "id": "anthropics/skills/skills/doc-coauthoring",
@@ -243,6 +314,10 @@
       "purpose": "这是一个“文档与办公”类 Skill，主要用于规划内容、SEO 或市场增长工作。它会把「doc-coauthoring」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
       "category": "文档与办公",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“文档与办公”类 Skill，主要用于规划内容、SEO 或市场增长工作。它会把「doc-coauthoring」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "经常处理正式文档、表格或演示材料的人",
@@ -255,7 +330,7 @@
         "demand": 88,
         "leverage": 82,
         "quality": 86,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -270,38 +345,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 82.7,
+        "opportunity": 81.8,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 73.6,
+        "value_score": 72.8,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:26+08:00",
+      "skill_revision": "a5a69839ef4a161131d80b6daef10037a9686f4a",
+      "content_sha256": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
+      "version_label": "rev-a5a69839",
+      "observed_at": "2026-07-01T13:49:20+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -1.6,
-      "status": "stable"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 72.8,
+          "risk": 11.6,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "a5a69839ef4a161131d80b6daef10037a9686f4a"
+        }
+      ]
     },
     {
       "id": "NousResearch/hermes-agent/skills/dogfood",
@@ -316,6 +410,10 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「dogfood」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Hermes"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「dogfood」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -328,7 +426,7 @@
         "demand": 70,
         "leverage": 82,
         "quality": 86,
-        "github_heat": 96,
+        "github_heat": 89,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -343,38 +441,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 81.3,
+        "opportunity": 80.2,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 72.4,
+        "value_score": 71.3,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络"
       ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
       "license": "MIT",
-      "observed_at": "2026-07-01T13:22:32+08:00",
+      "skill_revision": "82d7dca2013115e6cb9fa5617f02934eb3f4c36d",
+      "content_sha256": "36b1a710c61727c2be3c43ba20d68605cfed199afc90e27bde9746f4b80b91dd",
+      "version_label": "rev-82d7dca2",
+      "observed_at": "2026-07-01T13:49:27+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
       },
-      "delta": -2.8,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 71.3,
+          "risk": 11.6,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "82d7dca2013115e6cb9fa5617f02934eb3f4c36d"
+        }
+      ]
     },
     {
       "id": "anthropics/skills/skills/frontend-design",
@@ -389,6 +506,10 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「frontend-design」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「frontend-design」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -401,7 +522,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -416,111 +537,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 82.0,
+        "opportunity": 81.2,
         "confidence": 90.0,
         "risk": 15.2,
-        "value_score": 71.7,
+        "value_score": 71.0,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:28+08:00",
+      "skill_revision": "decdff43d05908b4c1fc2cfd2d80fc5743440934",
+      "content_sha256": "1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd",
+      "version_label": "rev-decdff43",
+      "observed_at": "2026-07-01T13:49:21+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -1.6,
-      "status": "stable"
-    },
-    {
-      "id": "NousResearch/hermes-agent/optional-skills/autonomous-ai-agents/antigravity-cli",
-      "name": "antigravity-cli",
-      "author": "NousResearch",
-      "repo": "NousResearch/hermes-agent",
-      "branch": "main",
-      "skill_path": "optional-skills/autonomous-ai-agents/antigravity-cli",
-      "source": "official",
-      "url": "https://github.com/NousResearch/hermes-agent/tree/main/optional-skills/autonomous-ai-agents/antigravity-cli",
-      "skill_md_url": "https://github.com/NousResearch/hermes-agent/blob/main/optional-skills/autonomous-ai-agents/antigravity-cli/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「antigravity-cli」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Operate the Antigravity CLI (agy): plugins, auth, sandbox.",
-      "category": "通用效率",
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「antigravity-cli」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `optional-skills/autonomous-ai-agents/antigravity-cli`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 96,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 8,
-        "network": 8,
-        "secrets": 62,
-        "obfuscation": 0,
-        "provenance": 4,
-        "mismatch": 5,
-        "evidence_confidence": 90
-      },
-      "radar": {
-        "opportunity": 81.8,
-        "confidence": 90.0,
-        "risk": 15.2,
-        "value_score": 71.5,
-        "action": "test"
-      },
-      "action": "test",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
-        "来源级别：官方/厂商"
-      ],
-      "caveats": [
-        "可能读取或使用凭据"
-      ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
-      "license": "MIT",
-      "observed_at": "2026-07-01T13:22:33+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
-      },
-      "delta": -3.0,
-      "status": "cooling"
+      "delta": -0.7,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 71.0,
+          "risk": 15.2,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "decdff43d05908b4c1fc2cfd2d80fc5743440934"
+        }
+      ]
     },
     {
       "id": "anthropics/skills/skills/internal-comms",
@@ -535,6 +602,10 @@
       "purpose": "这是一个“销售与增长”类 Skill，主要用于开展客户开发、销售情报或触达准备。它会把「internal-comms」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
       "category": "销售与增长",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“销售与增长”类 Skill，主要用于开展客户开发、销售情报或触达准备。它会把「internal-comms」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "销售、外贸、市场与内容增长团队",
@@ -547,7 +618,7 @@
         "demand": 82,
         "leverage": 68,
         "quality": 74,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -562,38 +633,155 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.3,
+        "opportunity": 77.5,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 71.3,
+        "value_score": 70.6,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:28+08:00",
+      "skill_revision": "56ea935b74f371bfeb4c7d3c19d5139df866e73b",
+      "content_sha256": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475",
+      "version_label": "rev-56ea935b",
+      "observed_at": "2026-07-01T13:49:22+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -2.0,
-      "status": "stable"
+      "delta": -0.7,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 70.6,
+          "risk": 6.5,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "56ea935b74f371bfeb4c7d3c19d5139df866e73b"
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/hermes-agent/optional-skills/autonomous-ai-agents/antigravity-cli",
+      "name": "antigravity-cli",
+      "author": "NousResearch",
+      "repo": "NousResearch/hermes-agent",
+      "branch": "main",
+      "skill_path": "optional-skills/autonomous-ai-agents/antigravity-cli",
+      "source": "official",
+      "url": "https://github.com/NousResearch/hermes-agent/tree/main/optional-skills/autonomous-ai-agents/antigravity-cli",
+      "skill_md_url": "https://github.com/NousResearch/hermes-agent/blob/main/optional-skills/autonomous-ai-agents/antigravity-cli/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「antigravity-cli」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Operate the Antigravity CLI (agy): plugins, auth, sandbox.",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Hermes"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「antigravity-cli」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `optional-skills/autonomous-ai-agents/antigravity-cli`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 70,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 89,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 4,
+        "mismatch": 5,
+        "evidence_confidence": 90
+      },
+      "radar": {
+        "opportunity": 80.6,
+        "confidence": 90.0,
+        "risk": 15.2,
+        "value_score": 70.4,
+        "action": "test"
+      },
+      "action": "test",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
+        "来源级别：官方/厂商"
+      ],
+      "caveats": [
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
+      "license": "MIT",
+      "skill_revision": "2286c8df0d771671ad513e771947bafbfc9663a8",
+      "content_sha256": "d697957e832c0c17c807464d106a471b8be15f573049b1f008c700ff89506e4a",
+      "version_label": "rev-2286c8df",
+      "observed_at": "2026-07-01T13:49:28+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
+      "github_signal": {
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
+      },
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 70.4,
+          "risk": 15.2,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "2286c8df0d771671ad513e771947bafbfc9663a8"
+        }
+      ]
     },
     {
       "id": "anthropics/skills/skills/brand-guidelines",
@@ -608,6 +796,10 @@
       "purpose": "这是一个“媒体与创作”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「brand-guidelines」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
       "category": "媒体与创作",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“媒体与创作”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「brand-guidelines」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "设计、视频、音频和内容创作者",
@@ -620,7 +812,7 @@
         "demand": 76,
         "leverage": 68,
         "quality": 78,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -635,38 +827,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.1,
+        "opportunity": 77.3,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 71.1,
+        "value_score": 70.3,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:24+08:00",
+      "skill_revision": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
+      "content_sha256": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
+      "version_label": "rev-47c72c60",
+      "observed_at": "2026-07-01T13:49:18+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -2.7,
-      "status": "stable"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 70.3,
+          "risk": 6.5,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59"
+        }
+      ]
     },
     {
       "id": "anthropics/skills/skills/docx",
@@ -681,6 +892,10 @@
       "purpose": "这是一个“文档与办公”类 Skill，主要用于创建、清洗、分析或验证电子表格。它会把「docx」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
       "category": "文档与办公",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“文档与办公”类 Skill，主要用于创建、清洗、分析或验证电子表格。它会把「docx」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "经常处理正式文档、表格或演示材料的人",
@@ -693,7 +908,7 @@
         "demand": 88,
         "leverage": 82,
         "quality": 86,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -708,16 +923,16 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 82.7,
+        "opportunity": 81.8,
         "confidence": 90.0,
         "risk": 19.7,
-        "value_score": 70.8,
+        "value_score": 70.0,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
@@ -725,22 +940,41 @@
         "包含命令或代码执行能力",
         "需要访问外部网络"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:27+08:00",
+      "skill_revision": "2951e559989765293b6fbf83942378a3c2d0cba6",
+      "content_sha256": "cfbabd72b1aec7dfaad988fb6e5e16b27dc744b9a00cae15db9045e95f53903e",
+      "version_label": "rev-2951e559",
+      "observed_at": "2026-07-01T13:49:21+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -1.6,
-      "status": "stable"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 70.0,
+          "risk": 19.7,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "2951e559989765293b6fbf83942378a3c2d0cba6"
+        }
+      ]
     },
     {
       "id": "NVIDIA/skills/skills/cuopt-multi-objective-exploration",
@@ -755,6 +989,9 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「cuopt-multi-objective-exploration」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Trace and interpret the Pareto frontier across competing objectives using repeated single-objective cuOpt solves (weighted-sum and ε-constraint).",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「cuopt-multi-objective-exploration」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -767,7 +1004,7 @@
         "demand": 74,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 67,
+        "github_heat": 62,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -782,38 +1019,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 77.4,
+        "opportunity": 76.6,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 70.5,
+        "value_score": 69.7,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：2,110",
+        "仓库 Stars：2,111",
         "仓库最近更新：2026-06-30T23:31:21Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 2110,
+      "repo_stars": 2111,
       "repo_updated_at": "2026-06-30T23:31:21Z",
       "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:29+08:00",
+      "skill_revision": "e78392390e7d6ab43c2929091bbc287e7b541ffc",
+      "content_sha256": "95aa94b4eb740919a2811f5f89ddfeafece9067162c31874ea0da34dc85bad12",
+      "version_label": "rev-e7839239",
+      "observed_at": "2026-07-01T13:49:23+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
       },
-      "delta": -3.6,
-      "status": "cooling"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 69.7,
+          "risk": 6.5,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "e78392390e7d6ab43c2929091bbc287e7b541ffc"
+        }
+      ]
     },
     {
       "id": "NousResearch/hermes-agent/optional-skills/autonomous-ai-agents/blackbox",
@@ -828,6 +1084,12 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「blackbox」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Delegate coding tasks to Blackbox AI CLI agent. Multi-model agent with built-in judge that runs tasks through multiple LLMs and picks the best result. Requires the blackbox CLI and a Blackbox AI API key.",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Hermes"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「blackbox」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -840,7 +1102,7 @@
         "demand": 74,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 96,
+        "github_heat": 89,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -855,39 +1117,58 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 82.2,
+        "opportunity": 81.1,
         "confidence": 90.0,
         "risk": 20.3,
-        "value_score": 70.2,
+        "value_score": 69.1,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
       "license": "MIT",
-      "observed_at": "2026-07-01T13:22:34+08:00",
+      "skill_revision": "a3af9f722cc740f453074beef511cea747b99b4b",
+      "content_sha256": "fd66cd3748724a4869b8e0046642a6348b72572e51154459450d5e7c0da5e95e",
+      "version_label": "rev-a3af9f72",
+      "observed_at": "2026-07-01T13:49:28+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
       },
-      "delta": -2.5,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 69.1,
+          "risk": 20.3,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "a3af9f722cc740f453074beef511cea747b99b4b"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/aspnet-core",
@@ -902,6 +1183,10 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「aspnet-core」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Build, review, refactor, or architect ASP.NET Core web applications using current official guidance for .NET web development. Use when working on Blazor Web Apps, Razor Pages, MVC, Minimal APIs, controller-based Web APIs, SignalR, gRPC, middleware, dependency injection, configuration, authentication, authorization, testing, performance, deployment, or ASP.NET Core upgrades.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「aspnet-core」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -914,7 +1199,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -929,10 +1214,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 76.2,
+        "opportunity": 75.1,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 69.4,
+        "value_score": 68.3,
         "action": "test"
       },
       "action": "test",
@@ -948,19 +1233,38 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:24+08:00",
+      "skill_revision": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf",
+      "content_sha256": "1f487ef3565e5ac1ee6c93cbeb9ac666292b30285877c82ddb0a77c9777fe92f",
+      "version_label": "rev-c71ed6e7",
+      "observed_at": "2026-07-01T13:49:17+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.5,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 68.3,
+          "risk": 6.5,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf"
+        }
+      ]
     },
     {
       "id": "NVIDIA/skills/skills/cufolio",
@@ -975,6 +1279,9 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cufolio」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Use when a user asks to build, optimize, backtest, rebalance, or analyze a stock portfolio with Mean-CVaR, efficient frontiers, scenario generation, or NVIDIA cuOpt.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cufolio」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -987,7 +1294,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 67,
+        "github_heat": 62,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -1002,38 +1309,57 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.7,
+        "opportunity": 77.9,
         "confidence": 90.0,
         "risk": 14.6,
-        "value_score": 68.9,
+        "value_score": 68.1,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：2,110",
+        "仓库 Stars：2,111",
         "仓库最近更新：2026-06-30T23:31:21Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "包含命令或代码执行能力"
       ],
-      "repo_stars": 2110,
+      "repo_stars": 2111,
       "repo_updated_at": "2026-06-30T23:31:21Z",
       "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:27+08:00",
+      "skill_revision": "e4d99183209d233ff58ac86628162693f5364df4",
+      "content_sha256": "6da1f37f63864f3dd9b66a3a18eded793f1bae3689305afaeed9d6ead04473d6",
+      "version_label": "rev-e4d99183",
+      "observed_at": "2026-07-01T13:49:21+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
       },
-      "delta": -2.4,
-      "status": "stable"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 68.1,
+          "risk": 14.6,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "e4d99183209d233ff58ac86628162693f5364df4"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/react-best-practices",
@@ -1048,6 +1374,9 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「vercel-react-best-practices」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「vercel-react-best-practices」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -1060,7 +1389,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -1075,10 +1404,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 75.2,
+        "opportunity": 73.6,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 68.4,
+        "value_score": 66.8,
         "action": "test"
       },
       "action": "test",
@@ -1094,19 +1423,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:25+08:00",
+      "skill_revision": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e",
+      "content_sha256": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+      "version_label": "rev-237988de",
+      "observed_at": "2026-07-01T13:49:19+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -1.8,
-      "status": "stable"
+      "delta": -1.6,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 66.8,
+          "risk": 6.5,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e"
+        }
+      ]
     },
     {
       "id": "NousResearch/hermes-agent/optional-skills/autonomous-ai-agents/openhands",
@@ -1121,6 +1469,12 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「openhands」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Delegate coding to OpenHands CLI (model-agnostic, LiteLLM).",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Hermes"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「openhands」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -1133,7 +1487,7 @@
         "demand": 70,
         "leverage": 68,
         "quality": 90,
-        "github_heat": 96,
+        "github_heat": 89,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -1148,39 +1502,58 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 79.4,
+        "opportunity": 78.3,
         "confidence": 90.0,
         "risk": 20.3,
-        "value_score": 67.6,
+        "value_score": 66.5,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
       "license": "MIT",
-      "observed_at": "2026-07-01T13:22:36+08:00",
+      "skill_revision": "5fb51d3dc1f97ef89245cefe55eda818d85bf77a",
+      "content_sha256": "ff4f504c5cd1f010ecf2efae802b486798f1a26b098a4bf24ada018e754f2c72",
+      "version_label": "rev-5fb51d3d",
+      "observed_at": "2026-07-01T13:49:30+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
       },
-      "delta": -3.1,
-      "status": "cooling"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 66.5,
+          "risk": 20.3,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "5fb51d3dc1f97ef89245cefe55eda818d85bf77a"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/figma-create-new-file",
@@ -1195,6 +1568,10 @@
       "purpose": "这是一个“媒体与创作”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「figma-create-new-file」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Create a new blank Figma file. Use when the user wants to create a new Figma design or FigJam file, or when you need a new file before calling use_figma. Handles plan resolution via whoami if needed. Usage — /figma-create-new-file [editorType] [fileName] (e.g. /figma-create-new-file figjam My Whiteboard)",
       "category": "媒体与创作",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“媒体与创作”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「figma-create-new-file」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "设计、视频、音频和内容创作者",
@@ -1207,7 +1584,7 @@
         "demand": 76,
         "leverage": 82,
         "quality": 74,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -1222,10 +1599,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 74.2,
+        "opportunity": 73.1,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 67.5,
+        "value_score": 66.4,
         "action": "test"
       },
       "action": "test",
@@ -1241,19 +1618,38 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:28+08:00",
+      "skill_revision": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d",
+      "content_sha256": "23f429203bd57f186905b2523d4ff8bdf10d3b85b39fc7eed4786097d81f1adc",
+      "version_label": "rev-8f74967b",
+      "observed_at": "2026-07-01T13:49:22+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -3.2,
-      "status": "cooling"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 66.4,
+          "risk": 6.5,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d"
+        }
+      ]
     },
     {
       "id": "NousResearch/hermes-agent/optional-skills/autonomous-ai-agents/honcho",
@@ -1268,6 +1664,10 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「honcho」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Configure and use Honcho memory with Hermes -- cross-session user modeling, multi-profile peer isolation, observation config, dialectic reasoning, session summaries, and context budget enforcement. Use when setting up Honcho, troubleshooting memory, managing profiles with Honcho peers, or tuning observation, recall, and dialectic settings.",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Hermes"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「honcho」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -1280,7 +1680,7 @@
         "demand": 74,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 96,
+        "github_heat": 89,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -1295,17 +1695,17 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 82.2,
+        "opportunity": 81.1,
         "confidence": 90.0,
         "risk": 28.4,
-        "value_score": 67.4,
+        "value_score": 66.3,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -1313,22 +1713,41 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
       "license": "MIT",
-      "observed_at": "2026-07-01T13:22:35+08:00",
+      "skill_revision": "b4a24a46e25d743426f524c29f865d49cdf5a002",
+      "content_sha256": "d592e79a28a16629dad192e9bccde86ea3ef3284a0259b1157a8175d1cfa8692",
+      "version_label": "rev-b4a24a46",
+      "observed_at": "2026-07-01T13:49:30+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
       },
-      "delta": -2.5,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 66.3,
+          "risk": 28.4,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "b4a24a46e25d743426f524c29f865d49cdf5a002"
+        }
+      ]
     },
     {
       "id": "NVIDIA/skills/skills/accelerated-computing-cudf",
@@ -1343,6 +1762,9 @@
       "purpose": "这是一个“数据与分析”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「accelerated-computing-cudf」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Official NVIDIA-authored guidance for NVIDIA cuDF GPU DataFrames, pandas acceleration, dask-cuDF, ETL, joins, groupby, CSV/Parquet I/O, nullable semantics, and multi-GPU DataFrame workloads.",
       "category": "数据与分析",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“数据与分析”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「accelerated-computing-cudf」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "数据分析师、运营与业务决策人员",
@@ -1355,7 +1777,7 @@
         "demand": 84,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 67,
+        "github_heat": 62,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -1370,16 +1792,16 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.5,
+        "opportunity": 77.7,
         "confidence": 90.0,
         "risk": 19.7,
-        "value_score": 66.9,
+        "value_score": 66.1,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：2,110",
+        "仓库 Stars：2,111",
         "仓库最近更新：2026-06-30T23:31:21Z",
         "来源级别：官方/厂商"
       ],
@@ -1387,22 +1809,41 @@
         "包含命令或代码执行能力",
         "需要访问外部网络"
       ],
-      "repo_stars": 2110,
+      "repo_stars": 2111,
       "repo_updated_at": "2026-06-30T23:31:21Z",
       "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:25+08:00",
+      "skill_revision": "41fcff67caaf3d569636c1fdddad1fc58d28ea3a",
+      "content_sha256": "4b8d3851b7e84b6ffb8fc6d781f66cf340a0b6f994c9f8b88894f82f7caeb353",
+      "version_label": "rev-41fcff67",
+      "observed_at": "2026-07-01T13:49:18+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
       },
-      "delta": -2.6,
-      "status": "stable"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 66.1,
+          "risk": 19.7,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "41fcff67caaf3d569636c1fdddad1fc58d28ea3a"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/react-view-transitions",
@@ -1417,6 +1858,9 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「vercel-react-view-transitions」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries.",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「vercel-react-view-transitions」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -1429,7 +1873,7 @@
         "demand": 74,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -1444,10 +1888,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 74.8,
+        "opportunity": 73.1,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 66.2,
+        "value_score": 64.6,
         "action": "test"
       },
       "action": "test",
@@ -1463,19 +1907,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:26+08:00",
+      "skill_revision": "dcecd8e3f356c73f340676cfcefb33539435e987",
+      "content_sha256": "8c4c0f8b5581ef473fbf388b2df7d13e02d418ab2150a912b9b7eafdf4b76a01",
+      "version_label": "rev-dcecd8e3",
+      "observed_at": "2026-07-01T13:49:20+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -3.3,
-      "status": "cooling"
+      "delta": -1.6,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 64.6,
+          "risk": 11.6,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "dcecd8e3f356c73f340676cfcefb33539435e987"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/chatgpt-apps",
@@ -1490,6 +1953,10 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「chatgpt-apps」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Build, scaffold, refactor, and troubleshoot ChatGPT Apps SDK applications that combine an MCP server and widget UI. Use when Codex needs to design tools, register UI resources, wire the MCP Apps bridge or ChatGPT compatibility APIs, apply Apps SDK metadata or CSP or domain settings, or produce a docs-aligned project scaffold. Prefer a docs-first workflow by invoking the openai-docs skill or OpenAI developer docs MCP tools before generating code.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「chatgpt-apps」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -1502,7 +1969,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -1517,10 +1984,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 77.1,
+        "opportunity": 75.9,
         "confidence": 90.0,
         "risk": 20.3,
-        "value_score": 65.4,
+        "value_score": 64.3,
         "action": "test"
       },
       "action": "test",
@@ -1537,19 +2004,38 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:25+08:00",
+      "skill_revision": "6280a08c57db44ab622dcccbd853e01005edfcbd",
+      "content_sha256": "c3a13a659ce26e9d067b5a97c321e8abec6d8e878afce31b7e841dfcf2635c3a",
+      "version_label": "rev-6280a08c",
+      "observed_at": "2026-07-01T13:49:18+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.8,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 64.3,
+          "risk": 20.3,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "6280a08c57db44ab622dcccbd853e01005edfcbd"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/figma-create-design-system-rules",
@@ -1564,6 +2050,12 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「figma-create-design-system-rules」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Generates custom design system rules for the user's codebase. Use when user says \"create design system rules\", \"generate rules for my project\", \"set up design rules\", \"customize design system guidelines\", or wants to establish project-specific conventions for Figma-to-code workflows. Requires Figma MCP server connection.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「figma-create-design-system-rules」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -1576,7 +2068,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -1591,10 +2083,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 77.1,
+        "opportunity": 75.9,
         "confidence": 90.0,
         "risk": 20.3,
-        "value_score": 65.4,
+        "value_score": 64.3,
         "action": "test"
       },
       "action": "test",
@@ -1611,19 +2103,38 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:28+08:00",
+      "skill_revision": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d",
+      "content_sha256": "1f4d7e16ba5325a80da32e2e6bde0ea850ba9287f35f4675d51d55d2f0dc6e2a",
+      "version_label": "rev-42cc4ce8",
+      "observed_at": "2026-07-01T13:49:22+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.8,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 64.3,
+          "risk": 20.3,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/define-goal",
@@ -1638,6 +2149,10 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「define-goal」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Help the user define a concrete, measurable goal before starting work, especially when they ask to use the goal tool, create a goal, set an objective, clarify success criteria, or turn a fuzzy intention into a quantitative outcome. Use this skill for goal creation and goal refinement only; it does not manage durable snapshots, decision logs, or long-running execution artifacts.",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「define-goal」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -1650,7 +2165,7 @@
         "demand": 74,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -1665,10 +2180,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 74.9,
+        "opportunity": 73.7,
         "confidence": 90.0,
         "risk": 15.2,
-        "value_score": 65.1,
+        "value_score": 64.0,
         "action": "test"
       },
       "action": "test",
@@ -1684,92 +2199,38 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:26+08:00",
+      "skill_revision": "87f111bd700e0d993465f7ac741847b5daee57d6",
+      "content_sha256": "708df89ff19cbae82a762efae036735d1914b5c7e44df1832e0b723f6cd9ee30",
+      "version_label": "rev-87f111bd",
+      "observed_at": "2026-07-01T13:49:20+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -3.7,
-      "status": "cooling"
-    },
-    {
-      "id": "nexu-io/open-design/skills/after-hours-editorial-template",
-      "name": "after-hours-editorial-template",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/after-hours-editorial-template",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/after-hours-editorial-template",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/after-hours-editorial-template/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「after-hours-editorial-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「after-hours-editorial-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/after-hours-editorial-template`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 91,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 8,
-        "network": 8,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.2,
-        "confidence": 75.0,
-        "risk": 8.8,
-        "value_score": 64.2,
-        "action": "test"
-      },
-      "action": "test",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
-      ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:33+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
-      },
-      "delta": -2.9,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 64.0,
+          "risk": 15.2,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "87f111bd700e0d993465f7ac741847b5daee57d6"
+        }
+      ]
     },
     {
       "id": "NVIDIA/skills/skills/aiq-research",
@@ -1784,6 +2245,11 @@
       "purpose": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「aiq-research」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "|",
       "category": "研究与知识",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「aiq-research」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "需要检索、核验来源并形成结论的研究者和知识工作者",
@@ -1796,7 +2262,7 @@
         "demand": 80,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 67,
+        "github_heat": 62,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -1811,16 +2277,16 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.5,
+        "opportunity": 77.7,
         "confidence": 90.0,
         "risk": 28.4,
-        "value_score": 63.9,
+        "value_score": 63.1,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：2,110",
+        "仓库 Stars：2,111",
         "仓库最近更新：2026-06-30T23:31:21Z",
         "来源级别：官方/厂商"
       ],
@@ -1829,22 +2295,41 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 2110,
+      "repo_stars": 2111,
       "repo_updated_at": "2026-06-30T23:31:21Z",
       "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:26+08:00",
+      "skill_revision": "cb3c969fbbe1ceba6a8491017e30f7eb49866587",
+      "content_sha256": "24816fce4cf37a071a999f1c3a12f57eb98cde0710566d2df6b5a9fab37f790d",
+      "version_label": "rev-cb3c969f",
+      "observed_at": "2026-07-01T13:49:19+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
       },
-      "delta": -3.0,
-      "status": "cooling"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 63.1,
+          "risk": 28.4,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "cb3c969fbbe1ceba6a8491017e30f7eb49866587"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/web-design-guidelines",
@@ -1859,6 +2344,9 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「web-design-guidelines」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「web-design-guidelines」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -1871,7 +2359,7 @@
         "demand": 86,
         "leverage": 68,
         "quality": 74,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -1886,10 +2374,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 72.0,
+        "opportunity": 70.3,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 63.6,
+        "value_score": 62.0,
         "action": "test"
       },
       "action": "test",
@@ -1905,19 +2393,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:28+08:00",
+      "skill_revision": "ceae92ab319216a68274168fba9b63b998b65997",
+      "content_sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+      "version_label": "rev-ceae92ab",
+      "observed_at": "2026-07-01T13:49:22+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -1.7,
-      "status": "stable"
+      "delta": -1.6,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 62.0,
+          "risk": 11.6,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "ceae92ab319216a68274168fba9b63b998b65997"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/composition-patterns",
@@ -1932,6 +2439,9 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「vercel-composition-patterns」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「vercel-composition-patterns」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -1944,7 +2454,7 @@
         "demand": 70,
         "leverage": 68,
         "quality": 70,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -1959,10 +2469,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 69.8,
+        "opportunity": 68.1,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 63.3,
+        "value_score": 61.7,
         "action": "test"
       },
       "action": "test",
@@ -1978,19 +2488,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:24+08:00",
+      "skill_revision": "d07025bf943345bc1cf15eb923594f889ff881f0",
+      "content_sha256": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3",
+      "version_label": "rev-d07025bf",
+      "observed_at": "2026-07-01T13:49:17+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -3.2,
-      "status": "cooling"
+      "delta": -1.6,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.7,
+          "risk": 6.5,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "d07025bf943345bc1cf15eb923594f889ff881f0"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/react-native-skills",
@@ -2005,6 +2534,9 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「vercel-react-native-skills」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「vercel-react-native-skills」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -2017,7 +2549,7 @@
         "demand": 70,
         "leverage": 68,
         "quality": 70,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -2032,10 +2564,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 69.8,
+        "opportunity": 68.1,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 63.3,
+        "value_score": 61.7,
         "action": "test"
       },
       "action": "test",
@@ -2051,19 +2583,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:26+08:00",
+      "skill_revision": "73401865dd7440a43c5243b107a3763e0d2f4aae",
+      "content_sha256": "4012750a5ccbe064ca04af3835d5d1b011979d2d09d9b6df1c8128fac58e0a66",
+      "version_label": "rev-73401865",
+      "observed_at": "2026-07-01T13:49:19+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -3.2,
-      "status": "cooling"
+      "delta": -1.6,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.7,
+          "risk": 6.5,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "73401865dd7440a43c5243b107a3763e0d2f4aae"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/figma-code-connect-components",
@@ -2078,6 +2629,10 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「figma-code-connect-components」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Connects Figma design components to code components using Code Connect mapping tools. Use when user says \"code connect\", \"connect this component to code\", \"map this component\", \"link component to code\", \"create code connect mapping\", or wants to establish mappings between Figma designs and code implementations. For canvas writes via `use_figma`, use `figma-use`.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「figma-code-connect-components」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -2090,7 +2645,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -2105,10 +2660,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 77.1,
+        "opportunity": 75.9,
         "confidence": 90.0,
         "risk": 27.9,
-        "value_score": 62.7,
+        "value_score": 61.6,
         "action": "test"
       },
       "action": "test",
@@ -2125,53 +2680,75 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:27+08:00",
+      "skill_revision": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd",
+      "content_sha256": "0f19edad8aed28063a3517c419fbcbef5421d024f189fd02a17fae25093ec69d",
+      "version_label": "rev-d417e16b",
+      "observed_at": "2026-07-01T13:49:21+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.8,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.6,
+          "risk": 27.9,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd"
+        }
+      ]
     },
     {
-      "id": "nexu-io/open-design/skills/8-bit-orbit-video-template",
-      "name": "8-bit-orbit-video-template",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
+      "id": "MrGeDiao/paper-reading-zh/paper-reading-zh",
+      "name": "paper-reading-zh",
+      "author": "MrGeDiao",
+      "repo": "MrGeDiao/paper-reading-zh",
       "branch": "main",
-      "skill_path": "skills/8-bit-orbit-video-template",
+      "skill_path": "paper-reading-zh",
       "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/8-bit-orbit-video-template",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/8-bit-orbit-video-template/SKILL.md",
-      "purpose": "这是一个“媒体与创作”类 Skill，主要用于处理视频、音频或多媒体生产流程。它会把「8-bit-orbit-video-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "媒体与创作",
+      "url": "https://github.com/MrGeDiao/paper-reading-zh/tree/main/paper-reading-zh",
+      "skill_md_url": "https://github.com/MrGeDiao/paper-reading-zh/blob/main/paper-reading-zh/SKILL.md",
+      "purpose": "这是一个“文档与办公”类 Skill，主要用于读取、生成、转换或检查 PDF 文档。它会把「paper-reading-zh」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "中文论文精读工作流。Use when the user provides a paper anchor such as a PDF, arXiv/OpenReview/ACM/IEEE/venue page link, paper title, abstract/full text, figure or table screenshot, or a list of papers, and also asks for deep reading, explanation, seminar/blog-style walkthrough, implementation or reproduction analysis, engineering integration or feasibility analysis, literature survey, comparison, figure-by-figure/table-by-table reading, formula explanation, or experiment analysis. Do not use for plain translation, single-term definitions, BibTeX only, or merely finding/downloading a paper.",
+      "category": "文档与办公",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
-        "summary_cn": "这是一个“媒体与创作”类 Skill，主要用于处理视频、音频或多媒体生产流程。它会把「8-bit-orbit-video-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "设计、视频、音频和内容创作者",
-        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 媒体与创作，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/8-bit-orbit-video-template`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "summary_cn": "这是一个“文档与办公”类 Skill，主要用于读取、生成、转换或检查 PDF 文档。它会把「paper-reading-zh」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "经常处理正式文档、表格或演示材料的人",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 文档与办公，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `paper-reading-zh`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 72,
+        "demand": 88,
         "leverage": 82,
-        "quality": 74,
-        "github_heat": 91,
+        "quality": 90,
+        "github_heat": 49,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 8,
-        "network": 42,
+        "network": 8,
         "secrets": 4,
         "obfuscation": 0,
         "provenance": 26,
@@ -2179,38 +2756,354 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 79.4,
+        "opportunity": 75.9,
         "confidence": 75.0,
-        "risk": 13.8,
-        "value_score": 62.6,
+        "risk": 8.8,
+        "value_score": 61.5,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
+        "仓库 Stars：68",
+        "仓库最近更新：2026-07-01T05:48:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
-        "需要访问外部网络"
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:32+08:00",
+      "repo_stars": 68,
+      "repo_updated_at": "2026-07-01T05:48:19Z",
+      "license": "MIT",
+      "skill_revision": "03a6fe83f14660dabf9cfd6361900d52237d1669",
+      "content_sha256": "dd629972dd1d2972a7361706f7b52ad9fbc7dd1cd56ab220484aec2c6f13b9d7",
+      "version_label": "rev-03a6fe83",
+      "observed_at": "2026-07-01T13:49:25+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": false,
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
       "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
+        "stars": 68,
+        "star_delta": null,
+        "heat": 49
       },
-      "delta": -2.7,
-      "status": "stable"
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.5,
+          "risk": 8.8,
+          "stars": 68,
+          "github_heat": 49,
+          "x_heat": null,
+          "revision": "03a6fe83f14660dabf9cfd6361900d52237d1669"
+        }
+      ]
+    },
+    {
+      "id": "PramodDutta/qaskills/seed-skills/a11y-automation-axe",
+      "name": "axe-core Accessibility Automation",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
+      "branch": "main",
+      "skill_path": "seed-skills/a11y-automation-axe",
+      "source": "github",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/a11y-automation-axe",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/a11y-automation-axe/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「axe-core Accessibility Automation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Automated accessibility testing with axe-core integrated into CI pipelines, including custom rule configuration, issue prioritization, and remediation guidance.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「axe-core Accessibility Automation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/a11y-automation-axe`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 82,
+        "github_heat": 54,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.7,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 61.3,
+        "action": "test"
+      },
+      "action": "test",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "4d8d2a85f4de9b78da205ad7008fb2ab748cf0a4",
+      "content_sha256": "010d90cb6fe74d15694cf22f1598bcef492d19db3fc3d6c2efbf9f03b69c0d39",
+      "version_label": "rev-4d8d2a85",
+      "observed_at": "2026-07-01T13:49:25+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 161,
+        "star_delta": null,
+        "heat": 54
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.3,
+          "risk": 8.8,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "4d8d2a85f4de9b78da205ad7008fb2ab748cf0a4"
+        }
+      ]
+    },
+    {
+      "id": "PramodDutta/qaskills/seed-skills/ab-testing-validation",
+      "name": "A/B Test Validation",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
+      "branch": "main",
+      "skill_path": "seed-skills/ab-testing-validation",
+      "source": "github",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/ab-testing-validation",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/ab-testing-validation/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「A/B Test Validation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Validating A/B test implementations including traffic splitting accuracy, statistical significance calculation, metric tracking, and experiment cleanup.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「A/B Test Validation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/ab-testing-validation`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 82,
+        "github_heat": 54,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.7,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 61.3,
+        "action": "test"
+      },
+      "action": "test",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "4b4223b5488f587b1fbee85e7a104f56dea3ea0e",
+      "content_sha256": "9ec1d813a3c46c2572ff47f197c799495cc84cb400efb4f2f49327b0d5088507",
+      "version_label": "rev-4b4223b5",
+      "observed_at": "2026-07-01T13:49:26+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 161,
+        "star_delta": null,
+        "heat": 54
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.3,
+          "risk": 8.8,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "4b4223b5488f587b1fbee85e7a104f56dea3ea0e"
+        }
+      ]
+    },
+    {
+      "id": "PramodDutta/qaskills/seed-skills/afl-fuzzing",
+      "name": "AFL++ Fuzzing Testing",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
+      "branch": "main",
+      "skill_path": "seed-skills/afl-fuzzing",
+      "source": "github",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/afl-fuzzing",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/afl-fuzzing/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「AFL++ Fuzzing Testing」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "American Fuzzy Lop Plus Plus mutation-based fuzz testing for finding crashes, hangs, and security vulnerabilities in binary programs.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「AFL++ Fuzzing Testing」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/afl-fuzzing`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 82,
+        "github_heat": 54,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.7,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 61.3,
+        "action": "test"
+      },
+      "action": "test",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "0627fdf4cd5e86960bb7ef3b05304e372473e5be",
+      "content_sha256": "9122888b5246a156803bc8229ac41a4022e3c1261990bb6b52c6a6dce0a62627",
+      "version_label": "rev-0627fdf4",
+      "observed_at": "2026-07-01T13:49:28+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 161,
+        "star_delta": null,
+        "heat": 54
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.3,
+          "risk": 8.8,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "0627fdf4cd5e86960bb7ef3b05304e372473e5be"
+        }
+      ]
     },
     {
       "id": "NousResearch/hermes-agent/optional-skills/autonomous-ai-agents/grok",
@@ -2225,6 +3118,12 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「grok」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Delegate coding to xAI Grok Build CLI (features, PRs).",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Hermes"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「grok」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -2237,7 +3136,7 @@
         "demand": 70,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 96,
+        "github_heat": 89,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -2252,17 +3151,17 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 81.8,
+        "opportunity": 80.6,
         "confidence": 90.0,
         "risk": 41.3,
-        "value_score": 62.4,
+        "value_score": 61.3,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -2270,22 +3169,41 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
       "license": "MIT",
-      "observed_at": "2026-07-01T13:22:34+08:00",
+      "skill_revision": "4ba4131051c5804da240283e5fed7708bcab687a",
+      "content_sha256": "a19ba446be039abbf5323b44c3eaca06f71e4df86189c2885c135fdea1e35cfb",
+      "version_label": "rev-4ba41310",
+      "observed_at": "2026-07-01T13:49:29+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
       },
-      "delta": -3.0,
-      "status": "cooling"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.3,
+          "risk": 41.3,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "4ba4131051c5804da240283e5fed7708bcab687a"
+        }
+      ]
     },
     {
       "id": "anthropics/skills/skills/claude-api",
@@ -2300,6 +3218,10 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「claude-api」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "|-",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「claude-api」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -2312,7 +3234,7 @@
         "demand": 70,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 92,
+        "github_heat": 87,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -2327,16 +3249,16 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 81.1,
+        "opportunity": 80.3,
         "confidence": 90.0,
         "risk": 41.3,
-        "value_score": 61.8,
+        "value_score": 61.0,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：157,075",
+        "仓库 Stars：157,082",
         "仓库最近更新：2026-06-30T20:23:22Z",
         "来源级别：官方/厂商"
       ],
@@ -2345,22 +3267,41 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 157075,
+      "repo_stars": 157082,
       "repo_updated_at": "2026-06-30T20:23:22Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:26+08:00",
+      "skill_revision": "494e282c892b690298928a5a9657d3ed7b83bd14",
+      "content_sha256": "398bbd480bf46bbc46d47b9c1cdc67322bb631c4ab15260a9b090686369155e1",
+      "version_label": "rev-494e282c",
+      "observed_at": "2026-07-01T13:49:19+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 157075,
-        "star_delta": 26,
-        "heat": 92
+        "stars": 157082,
+        "star_delta": 7,
+        "heat": 87
       },
-      "delta": -3.6,
-      "status": "cooling"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 61.0,
+          "risk": 41.3,
+          "stars": 157082,
+          "github_heat": 87,
+          "x_heat": null,
+          "revision": "494e282c892b690298928a5a9657d3ed7b83bd14"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/cloudflare-deploy",
@@ -2375,6 +3316,10 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「cloudflare-deploy」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「cloudflare-deploy」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -2387,7 +3332,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -2402,10 +3347,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 76.2,
+        "opportunity": 75.1,
         "confidence": 90.0,
         "risk": 28.4,
-        "value_score": 61.7,
+        "value_score": 60.6,
         "action": "test"
       },
       "action": "test",
@@ -2423,19 +3368,38 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:26+08:00",
+      "skill_revision": "e2d73abb7e5a550af3d9e40797a28259bddba97d",
+      "content_sha256": "d7632537cf19be17cf33d2c696b9d9c2ea3ee51026030e9b203d5b9255e75b15",
+      "version_label": "rev-e2d73abb",
+      "observed_at": "2026-07-01T13:49:19+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.5,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 60.6,
+          "risk": 28.4,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "e2d73abb7e5a550af3d9e40797a28259bddba97d"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/vercel-cli-with-tokens",
@@ -2450,6 +3414,9 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「vercel-cli-with-tokens」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login — e.g. \"deploy to vercel\", \"set up vercel\", \"add environment variables to vercel\".",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「vercel-cli-with-tokens」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -2462,7 +3429,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -2477,10 +3444,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 76.1,
+        "opportunity": 74.4,
         "confidence": 90.0,
         "risk": 28.4,
-        "value_score": 61.6,
+        "value_score": 60.1,
         "action": "test"
       },
       "action": "test",
@@ -2498,19 +3465,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:27+08:00",
+      "skill_revision": "814423d0c40f56853e0f4f2f64d03a02266dadf4",
+      "content_sha256": "c06bea99e75eab07fde4fae26069baa002f82f39b53f07981704c2901551dd4c",
+      "version_label": "rev-814423d0",
+      "observed_at": "2026-07-01T13:49:21+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.1,
-      "status": "stable"
+      "delta": -1.5,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 60.1,
+          "risk": 28.4,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "814423d0c40f56853e0f4f2f64d03a02266dadf4"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/vercel-optimize",
@@ -2525,6 +3511,9 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「vercel-optimize」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limited Astro apps. Collect Vercel metrics, usage, project config, and code scan results first; investigate only metric-backed candidates; produce ranked recommendations grounded in verified files and version-aware Vercel/framework docs. Trigger for Vercel bill reduction, slow or expensive routes, caching opportunities, Function Invocations, Build Minutes, Fast Data Transfer, Core Web Vitals, Bot Management, Fluid compute, or cost breakdown requests.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「vercel-optimize」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -2537,7 +3526,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -2552,10 +3541,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 76.1,
+        "opportunity": 74.4,
         "confidence": 90.0,
         "risk": 28.4,
-        "value_score": 61.6,
+        "value_score": 60.1,
         "action": "test"
       },
       "action": "test",
@@ -2573,19 +3562,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:27+08:00",
+      "skill_revision": "c8a6d6d7075b2cc3f7921da89de86e6926f78985",
+      "content_sha256": "95ae2683b30d892d165af92a350c5628b68106f395a59b448857b654e306ed91",
+      "version_label": "rev-c8a6d6d7",
+      "observed_at": "2026-07-01T13:49:22+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.1,
-      "status": "stable"
+      "delta": -1.5,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 60.1,
+          "risk": 28.4,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "c8a6d6d7075b2cc3f7921da89de86e6926f78985"
+        }
+      ]
     },
     {
       "id": "NVIDIA/skills/skills/aiq-deploy",
@@ -2600,6 +3608,11 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「aiq-deploy」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "|",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于执行部署、运维与环境管理。它会把「aiq-deploy」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -2612,7 +3625,7 @@
         "demand": 82,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 67,
+        "github_heat": 62,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -2627,16 +3640,16 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.3,
+        "opportunity": 77.4,
         "confidence": 90.0,
         "risk": 37.8,
-        "value_score": 60.4,
+        "value_score": 59.6,
         "action": "quarantine"
       },
       "action": "quarantine",
       "hard_gate": true,
       "evidence": [
-        "仓库 Stars：2,110",
+        "仓库 Stars：2,111",
         "仓库最近更新：2026-06-30T23:31:21Z",
         "来源级别：官方/厂商"
       ],
@@ -2645,56 +3658,82 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 2110,
+      "repo_stars": 2111,
       "repo_updated_at": "2026-06-30T23:31:21Z",
       "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:25+08:00",
+      "skill_revision": "7bb611d75ada64a80b6af1980c13717684828ba7",
+      "content_sha256": "9bfad6034823422b564c0ff3ff7d462eef237fec129f4f5fb1c027f625bc2b9f",
+      "version_label": "rev-7bb611d7",
+      "observed_at": "2026-07-01T13:49:19+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
       },
-      "delta": -2.8,
-      "status": "stable"
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 59.6,
+          "risk": 37.8,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "7bb611d75ada64a80b6af1980c13717684828ba7"
+        }
+      ]
     },
     {
-      "id": "nexu-io/open-design/skills/ad-creative",
-      "name": "ad-creative",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
+      "id": "PramodDutta/qaskills/seed-skills/accessibility-a11y-enhanced",
+      "name": "Accessibility A11y Enhanced",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
       "branch": "main",
-      "skill_path": "skills/ad-creative",
+      "skill_path": "seed-skills/accessibility-a11y-enhanced",
       "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/ad-creative",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/ad-creative/SKILL.md",
-      "purpose": "这是一个“媒体与创作”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ad-creative」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "媒体与创作",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/accessibility-a11y-enhanced",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/accessibility-a11y-enhanced/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「Accessibility A11y Enhanced」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Comprehensive WCAG compliance and accessibility testing covering ARIA, keyboard navigation, screen readers, color contrast, and automated a11y validation.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
       "explanation_cn": {
-        "summary_cn": "这是一个“媒体与创作”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ad-creative」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "设计、视频、音频和内容创作者",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 媒体与创作，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/ad-creative`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「Accessibility A11y Enhanced」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/accessibility-a11y-enhanced`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 72,
+        "demand": 86,
         "leverage": 82,
-        "quality": 74,
-        "github_heat": 91,
+        "quality": 90,
+        "github_heat": 54,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 48,
-        "network": 42,
+        "network": 8,
         "secrets": 4,
         "obfuscation": 0,
         "provenance": 26,
@@ -2702,334 +3741,156 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 79.4,
+        "opportunity": 76.6,
         "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 59.8,
+        "risk": 16.8,
+        "value_score": 59.2,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
         "来源级别：社区发现"
       ],
       "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
+        "包含命令或代码执行能力"
       ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:32+08:00",
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "0d3febfe38ab0aefa94f2ce274fac646a1ac33c9",
+      "content_sha256": "34c1bcb15e03a962f0ccc4ab89053ba9594532e1be3c9d55122eaf5dd1bbeb2c",
+      "version_label": "rev-0d3febfe",
+      "observed_at": "2026-07-01T13:49:27+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": false,
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
       "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
+        "stars": 161,
+        "star_delta": null,
+        "heat": 54
       },
-      "delta": -2.7,
-      "status": "stable"
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 59.2,
+          "risk": 16.8,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "0d3febfe38ab0aefa94f2ce274fac646a1ac33c9"
+        }
+      ]
     },
     {
-      "id": "nexu-io/open-design/skills/article-magazine",
-      "name": "article-magazine",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
+      "id": "PramodDutta/qaskills/seed-skills/agentic-testing",
+      "name": "Agentic Testing Patterns",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
       "branch": "main",
-      "skill_path": "skills/article-magazine",
+      "skill_path": "seed-skills/agentic-testing",
       "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/article-magazine",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/article-magazine/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「article-magazine」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Huashu / huashu-md-html-inspired magazine article layout for turning Markdown or notes into a polished long-form HTML essay.",
-      "category": "通用效率",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/agentic-testing",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/agentic-testing/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「Agentic Testing Patterns」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "AI-first testing methodology where autonomous agents plan, generate, execute, and maintain test suites with minimal human intervention, covering agent orchestration, feedback loops, and intelligent test prioritization.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
       "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「article-magazine」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "通过 SKILL.md 为 Agent 提供可复用的任务流程。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/article-magazine`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「Agentic Testing Patterns」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/agentic-testing`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 74,
-        "leverage": 68,
-        "quality": 62,
-        "github_heat": 91,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 54,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 8,
-        "network": 42,
-        "secrets": 4,
+        "network": 8,
+        "secrets": 62,
         "obfuscation": 0,
         "provenance": 26,
         "mismatch": 5,
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 75.9,
+        "opportunity": 76.6,
         "confidence": 75.0,
-        "risk": 13.8,
-        "value_score": 59.7,
+        "risk": 17.4,
+        "value_score": 59.0,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
         "来源级别：社区发现"
       ],
       "caveats": [
-        "需要访问外部网络"
+        "可能读取或使用凭据"
       ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:36+08:00",
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "1d63cfae9fa5dc29981b8013058a5aa6b4798087",
+      "content_sha256": "a64aed95c3aea011e5da9d6ac8082a9c71565b6ef176790318add2573607329d",
+      "version_label": "rev-1d63cfae",
+      "observed_at": "2026-07-01T13:49:29+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": false,
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
       "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
+        "stars": 161,
+        "star_delta": null,
+        "heat": 54
       },
-      "delta": -2.3,
-      "status": "stable"
-    },
-    {
-      "id": "nexu-io/open-design/skills/ai-music-album",
-      "name": "ai-music-album",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/ai-music-album",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/ai-music-album",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/ai-music-album/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ai-music-album」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ai-music-album」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/ai-music-album`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 91,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.2,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 59.6,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:34+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
-      },
-      "delta": -2.9,
-      "status": "stable"
-    },
-    {
-      "id": "nexu-io/open-design/skills/algorithmic-art",
-      "name": "algorithmic-art",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/algorithmic-art",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/algorithmic-art",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/algorithmic-art/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「algorithmic-art」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「algorithmic-art」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/algorithmic-art`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 91,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.2,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 59.6,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:35+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
-      },
-      "delta": -2.9,
-      "status": "stable"
-    },
-    {
-      "id": "nexu-io/open-design/skills/apple-hig",
-      "name": "apple-hig",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/apple-hig",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/apple-hig",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/apple-hig/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「apple-hig」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「apple-hig」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/apple-hig`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 91,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.2,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 59.6,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:35+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
-      },
-      "delta": -2.9,
-      "status": "stable"
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 59.0,
+          "risk": 17.4,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "1d63cfae9fa5dc29981b8013058a5aa6b4798087"
+        }
+      ]
     },
     {
       "id": "NVIDIA/skills/skills/cuopt-install",
@@ -3044,6 +3905,9 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于执行部署、运维与环境管理。它会把「cuopt-install」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Install cuOpt for Python, C, or server via pip, conda, or Docker; verify the install. For building cuOpt from source, see cuopt-developer.",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于执行部署、运维与环境管理。它会把「cuopt-install」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -3056,7 +3920,7 @@
         "demand": 74,
         "leverage": 68,
         "quality": 90,
-        "github_heat": 67,
+        "github_heat": 62,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -3071,16 +3935,16 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 75.1,
+        "opportunity": 74.2,
         "confidence": 90.0,
         "risk": 32.6,
-        "value_score": 59.1,
+        "value_score": 58.4,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：2,110",
+        "仓库 Stars：2,111",
         "仓库最近更新：2026-06-30T23:31:21Z",
         "来源级别：官方/厂商"
       ],
@@ -3088,22 +3952,621 @@
         "包含命令或代码执行能力",
         "存在下载后直接执行模式"
       ],
-      "repo_stars": 2110,
+      "repo_stars": 2111,
       "repo_updated_at": "2026-06-30T23:31:21Z",
       "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:28+08:00",
+      "skill_revision": "f0839ec93c12ea1617c669572995e8a0951bfe1d",
+      "content_sha256": "3d0a5ef4c30ab8691dd36ffa5ebdc599a40655f2ee69af14a2a6c40b83c3c581",
+      "version_label": "rev-f0839ec9",
+      "observed_at": "2026-07-01T13:49:22+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
       },
-      "delta": -3.9,
-      "status": "cooling"
+      "delta": -0.7,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 58.4,
+          "risk": 32.6,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "f0839ec93c12ea1617c669572995e8a0951bfe1d"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/ascent",
+      "name": "ascent",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "ascent",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/ascent",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/ascent/SKILL.md",
+      "purpose": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「ascent」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Planning career strategy for job change/side-business/independence. Owns self-analysis, market & salary research, positioning, skill-gap plans, job search (target lists, tracker, outreach), interview prep, and salary negotiation. Advisory only — no code. Use when planning career moves. Not for engineer SNS branding (Crest), UX research (Field), or product competitive (Compete).",
+      "category": "研究与知识",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「ascent」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "需要检索、核验来源并形成结论的研究者和知识工作者",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 研究与知识，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `ascent`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 84,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 70,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.8,
+        "confidence": 75.0,
+        "risk": 17.4,
+        "value_score": 58.3,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "07d88d655aae02c04653cc5ad19ddbe6eb13eb5d",
+      "content_sha256": "2286f5b09f5f7723843eebdef2c5a8dc80f325a7bd933986af01fa13cedd384a",
+      "version_label": "rev-07d88d65",
+      "observed_at": "2026-07-01T13:49:29+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 58.3,
+          "risk": 17.4,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "07d88d655aae02c04653cc5ad19ddbe6eb13eb5d"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/accord",
+      "name": "accord",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "accord",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/accord",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/accord/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「accord」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Authoring unified specification packages across Business/Development/Design teams via staged elaboration (L0 Vision → L1 Requirements → L2 Team Detail → L3 Acceptance Criteria). No code. Use when authoring cross-team specs, building L0-L3 packages, or aligning Biz/Dev/Design on a single source of truth.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「accord」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `accord`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.6,
+        "confidence": 75.0,
+        "risk": 17.4,
+        "value_score": 58.1,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "be446efd08e3dc35dc8de843e283da8b0b31909a",
+      "content_sha256": "3c24f3be9a4545da9334590a520f7a61b432403c507abd026b3a4e8f93fc534e",
+      "version_label": "rev-be446efd",
+      "observed_at": "2026-07-01T13:49:26+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 58.1,
+          "risk": 17.4,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "be446efd08e3dc35dc8de843e283da8b0b31909a"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/agora",
+      "name": "agora",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "agora",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/agora",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/agora/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「agora」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Designing learning and curriculum content. Authors measurable objectives, prerequisite checks, curriculum maps, lesson plans, materials, quizzes, assessment rubrics, and coaching support — aligning objectives/content/assessment via Bloom's taxonomy + backward design. No code. Use when designing curricula. Not for technical specs (Scribe), QA cases (Drill), or diff-to-doc (Tome).",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「agora」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `agora`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.6,
+        "confidence": 75.0,
+        "risk": 17.4,
+        "value_score": 58.1,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "5d5eecf1d8bd55b58f270ff52b93b0f15980e2fc",
+      "content_sha256": "00f14eeb0e41f32eb7d1f1db004e129412596540ee3ba43b63d29332fee52cb2",
+      "version_label": "rev-5d5eecf1",
+      "observed_at": "2026-07-01T13:49:27+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 58.1,
+          "risk": 17.4,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "5d5eecf1d8bd55b58f270ff52b93b0f15980e2fc"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/artisan",
+      "name": "artisan",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "artisan",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/artisan",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/artisan/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「artisan」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Implementing production frontend code for React/Vue/Svelte. Handles hooks design, state management, Server Components, form handling, and data fetching. Converts Forge prototypes to production-quality code.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「artisan」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `artisan`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.6,
+        "confidence": 75.0,
+        "risk": 17.4,
+        "value_score": 58.1,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "134990c8d0a1584a30950d66b2cc9859429a7728",
+      "content_sha256": "9a8246352499158af65bfe3f73fa91ddb25162022fd5184f21f2cd9cf4b76cc1",
+      "version_label": "rev-134990c8",
+      "observed_at": "2026-07-01T13:49:29+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 58.1,
+          "risk": 17.4,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "134990c8d0a1584a30950d66b2cc9859429a7728"
+        }
+      ]
+    },
+    {
+      "id": "NVIDIA/skills/skills/cudaq-guide",
+      "name": "cudaq-guide",
+      "author": "NVIDIA",
+      "repo": "NVIDIA/skills",
+      "branch": "main",
+      "skill_path": "skills/cudaq-guide",
+      "source": "official",
+      "url": "https://github.com/NVIDIA/skills/tree/main/skills/cudaq-guide",
+      "skill_md_url": "https://github.com/NVIDIA/skills/blob/main/skills/cudaq-guide/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cudaq-guide」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "CUDA-Q onboarding guide for installation, test programs, GPU simulation, QPU hardware, and quantum applications.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cudaq-guide」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/cudaq-guide`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 62,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 75,
+        "execution": 48,
+        "network": 42,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 4,
+        "mismatch": 5,
+        "evidence_confidence": 90
+      },
+      "radar": {
+        "opportunity": 77.9,
+        "confidence": 90.0,
+        "risk": 44.6,
+        "value_score": 57.6,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：2,111",
+        "仓库最近更新：2026-06-30T23:31:21Z",
+        "来源级别：官方/厂商"
+      ],
+      "caveats": [
+        "请求高权限或宽泛文件权限",
+        "包含命令或代码执行能力",
+        "需要访问外部网络",
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 2111,
+      "repo_updated_at": "2026-06-30T23:31:21Z",
+      "license": "NOASSERTION",
+      "skill_revision": "51af53bf3f37f5691ab6e38e372f4459a93bb35f",
+      "content_sha256": "fd9462b962fa83d41235d85188b0026fdd3eabe566e3c09927d68466986a1a58",
+      "version_label": "rev-51af53bf",
+      "observed_at": "2026-07-01T13:49:20+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
+      "github_signal": {
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
+      },
+      "delta": -0.8,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 57.6,
+          "risk": 44.6,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "51af53bf3f37f5691ab6e38e372f4459a93bb35f"
+        }
+      ]
+    },
+    {
+      "id": "NVIDIA/skills/skills/cuopt-developer",
+      "name": "cuopt-developer",
+      "author": "NVIDIA",
+      "repo": "NVIDIA/skills",
+      "branch": "main",
+      "skill_path": "skills/cuopt-developer",
+      "source": "official",
+      "url": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-developer",
+      "skill_md_url": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-developer/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cuopt-developer」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Modify, build, test, debug, and contribute to NVIDIA cuOpt (C++/CUDA, Python, server, CI). Use for solver internals, PRs, DCO, and code conventions.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cuopt-developer」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/cuopt-developer`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 62,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 75,
+        "execution": 95,
+        "network": 42,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 4,
+        "mismatch": 5,
+        "evidence_confidence": 90
+      },
+      "radar": {
+        "opportunity": 77.9,
+        "confidence": 90.0,
+        "risk": 45.3,
+        "value_score": 57.4,
+        "action": "quarantine"
+      },
+      "action": "quarantine",
+      "hard_gate": true,
+      "evidence": [
+        "仓库 Stars：2,111",
+        "仓库最近更新：2026-06-30T23:31:21Z",
+        "来源级别：官方/厂商"
+      ],
+      "caveats": [
+        "请求高权限或宽泛文件权限",
+        "包含潜在破坏性命令",
+        "需要访问外部网络"
+      ],
+      "repo_stars": 2111,
+      "repo_updated_at": "2026-06-30T23:31:21Z",
+      "license": "NOASSERTION",
+      "skill_revision": "ecc1187e2946e1c07b5b72edf4cab40f3ab934fe",
+      "content_sha256": "92a3aef4cf607656d665087b69829663dcca2a518c19adeb5f52018fbf2929a4",
+      "version_label": "rev-ecc1187e",
+      "observed_at": "2026-07-01T13:49:22+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
+      "github_signal": {
+        "stars": 2111,
+        "star_delta": 1,
+        "heat": 62
+      },
+      "delta": -0.7,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 57.4,
+          "risk": 45.3,
+          "stars": 2111,
+          "github_heat": 62,
+          "x_heat": null,
+          "revision": "ecc1187e2946e1c07b5b72edf4cab40f3ab934fe"
+        }
+      ]
     },
     {
       "id": "vercel-labs/agent-skills/skills/deploy-to-vercel",
@@ -3118,6 +4581,11 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「deploy-to-vercel」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「deploy-to-vercel」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -3130,7 +4598,7 @@
         "demand": 86,
         "leverage": 68,
         "quality": 82,
-        "github_heat": 78,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 52,
         "maintenance": 68,
@@ -3145,10 +4613,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 72.9,
+        "opportunity": 71.2,
         "confidence": 90.0,
         "risk": 28.4,
-        "value_score": 58.6,
+        "value_score": 57.0,
         "action": "watch"
       },
       "action": "watch",
@@ -3166,170 +4634,38 @@
       "repo_stars": 28539,
       "repo_updated_at": "2026-06-10T21:21:47Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:24+08:00",
+      "skill_revision": "a0251ce89a7636230be9c5b989a81e1a54a52a96",
+      "content_sha256": "cfcc3dd479ab2e0ae721ddf39b8af84d977321487672f1487c8d6855f576927b",
+      "version_label": "rev-a0251ce8",
+      "observed_at": "2026-07-01T13:49:18+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 28539,
-        "star_delta": 5,
-        "heat": 78
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.0,
-      "status": "stable"
-    },
-    {
-      "id": "NVIDIA/skills/skills/cudaq-guide",
-      "name": "cudaq-guide",
-      "author": "NVIDIA",
-      "repo": "NVIDIA/skills",
-      "branch": "main",
-      "skill_path": "skills/cudaq-guide",
-      "source": "official",
-      "url": "https://github.com/NVIDIA/skills/tree/main/skills/cudaq-guide",
-      "skill_md_url": "https://github.com/NVIDIA/skills/blob/main/skills/cudaq-guide/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cudaq-guide」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "CUDA-Q onboarding guide for installation, test programs, GPU simulation, QPU hardware, and quantum applications.",
-      "category": "软件开发",
-      "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cudaq-guide」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "开发者、技术团队与代码审查人员",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/cudaq-guide`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 86,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 67,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 75,
-        "execution": 48,
-        "network": 42,
-        "secrets": 62,
-        "obfuscation": 0,
-        "provenance": 4,
-        "mismatch": 5,
-        "evidence_confidence": 90
-      },
-      "radar": {
-        "opportunity": 78.7,
-        "confidence": 90.0,
-        "risk": 44.6,
-        "value_score": 58.4,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：2,110",
-        "仓库最近更新：2026-06-30T23:31:21Z",
-        "来源级别：官方/厂商"
-      ],
-      "caveats": [
-        "请求高权限或宽泛文件权限",
-        "包含命令或代码执行能力",
-        "需要访问外部网络",
-        "可能读取或使用凭据"
-      ],
-      "repo_stars": 2110,
-      "repo_updated_at": "2026-06-30T23:31:21Z",
-      "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:27+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
-      },
-      "delta": -2.4,
-      "status": "stable"
-    },
-    {
-      "id": "NVIDIA/skills/skills/cuopt-developer",
-      "name": "cuopt-developer",
-      "author": "NVIDIA",
-      "repo": "NVIDIA/skills",
-      "branch": "main",
-      "skill_path": "skills/cuopt-developer",
-      "source": "official",
-      "url": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-developer",
-      "skill_md_url": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-developer/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cuopt-developer」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Modify, build, test, debug, and contribute to NVIDIA cuOpt (C++/CUDA, Python, server, CI). Use for solver internals, PRs, DCO, and code conventions.",
-      "category": "软件开发",
-      "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「cuopt-developer」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "开发者、技术团队与代码审查人员",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/cuopt-developer`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 86,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 67,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 75,
-        "execution": 95,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 4,
-        "mismatch": 5,
-        "evidence_confidence": 90
-      },
-      "radar": {
-        "opportunity": 78.7,
-        "confidence": 90.0,
-        "risk": 45.3,
-        "value_score": 58.1,
-        "action": "quarantine"
-      },
-      "action": "quarantine",
-      "hard_gate": true,
-      "evidence": [
-        "仓库 Stars：2,110",
-        "仓库最近更新：2026-06-30T23:31:21Z",
-        "来源级别：官方/厂商"
-      ],
-      "caveats": [
-        "请求高权限或宽泛文件权限",
-        "包含潜在破坏性命令",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 2110,
-      "repo_updated_at": "2026-06-30T23:31:21Z",
-      "license": "NOASSERTION",
-      "observed_at": "2026-07-01T13:22:28+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 2110,
-        "star_delta": 5,
-        "heat": 67
-      },
-      "delta": -2.5,
-      "status": "stable"
+      "delta": -1.6,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 57.0,
+          "risk": 28.4,
+          "stars": 28539,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "a0251ce89a7636230be9c5b989a81e1a54a52a96"
+        }
+      ]
     },
     {
       "id": "openai/skills/skills/.curated/cli-creator",
@@ -3344,6 +4680,11 @@
       "purpose": "这是一个“软件开发”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「cli-creator」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "Build a composable CLI for Codex from API docs, an OpenAPI spec, existing curl examples, an SDK, a web app, an admin tool, or a local script. Use when the user wants Codex to create a command-line tool that can run from any repo, expose composable read/write commands, return stable JSON, manage auth, and pair with a companion skill.",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Cursor"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“软件开发”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「cli-creator」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
@@ -3356,7 +4697,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 75,
+        "github_heat": 68,
         "x_heat": null,
         "momentum": 65,
         "maintenance": 75,
@@ -3371,10 +4712,10 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 77.1,
+        "opportunity": 75.9,
         "confidence": 90.0,
         "risk": 41.3,
-        "value_score": 58.0,
+        "value_score": 56.9,
         "action": "watch"
       },
       "action": "watch",
@@ -3392,19 +4733,332 @@
       "repo_stars": 23079,
       "repo_updated_at": "2026-06-24T02:36:15Z",
       "license": null,
-      "observed_at": "2026-07-01T13:22:25+08:00",
+      "skill_revision": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4",
+      "content_sha256": "24058eabf0aafce6def3fb937ac93cbe3fa341c653c658dc589edb77f73d6152",
+      "version_label": "rev-60e5a9a0",
+      "observed_at": "2026-07-01T13:49:19+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
         "stars": 23079,
-        "star_delta": 3,
-        "heat": 75
+        "star_delta": 0,
+        "heat": 68
       },
-      "delta": -2.8,
-      "status": "stable"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 56.9,
+          "risk": 41.3,
+          "stars": 23079,
+          "github_heat": 68,
+          "x_heat": null,
+          "revision": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/atelier",
+      "name": "atelier",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "atelier",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/atelier",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/atelier/SKILL.md",
+      "purpose": "这是一个“文档与办公”类 Skill，主要用于制作和优化演示文稿。它会把「atelier」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Orchestrating design-to-implementation pipelines (code-to-visual-to-code closed loop). Persists a project design system across downstream agents. Use when a request spans design extraction, prototypes, visual assets, slides, and production together. Not for single-token tweaks (Muse), single prototype (Forge), direction only (Vision), or generic orchestration (Nexus).",
+      "category": "文档与办公",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“文档与办公”类 Skill，主要用于制作和优化演示文稿。它会把「atelier」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "经常处理正式文档、表格或演示材料的人",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 文档与办公，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `atelier`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 88,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 42,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.8,
+        "confidence": 75.0,
+        "risk": 22.5,
+        "value_score": 56.5,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "需要访问外部网络",
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "3deb20705a1ea6ff34adaa9e12d81b4655e0b372",
+      "content_sha256": "0f072f36b549a555f6c0f2388a915ba54836ee4536775fa44be3a7f149e331b3",
+      "version_label": "rev-3deb2070",
+      "observed_at": "2026-07-01T13:49:30+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 56.5,
+          "risk": 22.5,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "3deb20705a1ea6ff34adaa9e12d81b4655e0b372"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/architect",
+      "name": "architect",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "architect",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/architect",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/architect/SKILL.md",
+      "purpose": "这是一个“安全与合规”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「architect」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Designing new skill agents via gap analysis, overlap detection, SKILL.md + reference generation, and Nexus integration. Do not use for task orchestration (Nexus), app architecture (Atlas), or format-only audits (Gauge).",
+      "category": "安全与合规",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“安全与合规”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「architect」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "安全、审计、合规和平台工程团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 安全与合规，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `architect`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 80,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 70,
+        "permissions": 10,
+        "execution": 8,
+        "network": 42,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.3,
+        "confidence": 75.0,
+        "risk": 22.5,
+        "value_score": 56.1,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "需要访问外部网络",
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "684846c8299bd5e7266a61390d7f51b9ef91d5ed",
+      "content_sha256": "718c7ea59acdb2aab2fff039a37d2626913971e9c9fdab7ffff224283813bfae",
+      "version_label": "rev-684846c8",
+      "observed_at": "2026-07-01T13:49:28+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 56.1,
+          "risk": 22.5,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "684846c8299bd5e7266a61390d7f51b9ef91d5ed"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/atlas",
+      "name": "atlas",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "atlas",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/atlas",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/atlas/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于标准化通用效率相关任务。它会把「atlas」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Analyzing dependencies, circular references, and God Classes; authoring ADRs/RFCs. Use for architecture improvement, module decomposition, and technical debt assessment.",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于标准化通用效率相关任务。它会把「atlas」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `atlas`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 42,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 74.2,
+        "confidence": 75.0,
+        "risk": 22.5,
+        "value_score": 55.2,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "需要访问外部网络",
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "f72b7acb849c62d74f19f5cf2e95a8879f6a5e62",
+      "content_sha256": "abf4057dab8b3bd2f38445a16df3afb9f89b0cd884050f29f185e644d73e5e49",
+      "version_label": "rev-f72b7acb",
+      "observed_at": "2026-07-01T13:49:31+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 55.2,
+          "risk": 22.5,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "f72b7acb849c62d74f19f5cf2e95a8879f6a5e62"
+        }
+      ]
     },
     {
       "id": "NousResearch/hermes-agent/skills/computer-use",
@@ -3419,6 +5073,12 @@
       "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「computer-use」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
       "description": "|",
       "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Claude",
+        "Hermes",
+        "Cursor"
+      ],
       "explanation_cn": {
         "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「computer-use」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "希望把重复任务标准化的个人或团队",
@@ -3431,7 +5091,7 @@
         "demand": 70,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 96,
+        "github_heat": 89,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -3446,17 +5106,17 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 81.8,
+        "opportunity": 80.6,
         "confidence": 90.0,
         "risk": 58.9,
-        "value_score": 56.2,
+        "value_score": 55.1,
         "action": "quarantine"
       },
       "action": "quarantine",
       "hard_gate": true,
       "evidence": [
-        "仓库 Stars：206,634",
-        "仓库最近更新：2026-07-01T03:58:31Z",
+        "仓库 Stars：206,645",
+        "仓库最近更新：2026-07-01T05:45:19Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -3465,49 +5125,75 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 206634,
-      "repo_updated_at": "2026-07-01T03:58:31Z",
+      "repo_stars": 206645,
+      "repo_updated_at": "2026-07-01T05:45:19Z",
       "license": "MIT",
-      "observed_at": "2026-07-01T13:22:31+08:00",
+      "skill_revision": "6c7fe9816d0b53572bcf799271d55cc05b777234",
+      "content_sha256": "33fdce112f142cd3ec1978b53720099b706b3b51e1781d37c3b4f30f32ebdddd",
+      "version_label": "rev-6c7fe981",
+      "observed_at": "2026-07-01T13:49:26+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": false,
+      "updated_since_last": false,
+      "update_status": "baseline",
+      "previous_revision": null,
+      "last_skill_update_at": null,
+      "change_summary": [],
       "github_signal": {
-        "stars": 206634,
-        "star_delta": 52,
-        "heat": 96
+        "stars": 206645,
+        "star_delta": 11,
+        "heat": 89
       },
-      "delta": -3.0,
-      "status": "cooling"
+      "delta": -1.1,
+      "status": "stable",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 55.1,
+          "risk": 58.9,
+          "stars": 206645,
+          "github_heat": 89,
+          "x_heat": null,
+          "revision": "6c7fe9816d0b53572bcf799271d55cc05b777234"
+        }
+      ]
     },
     {
-      "id": "jal-co/shieldcn/skills/shieldcn-badges",
-      "name": "shieldcn-badges",
-      "author": "jal-co",
-      "repo": "jal-co/shieldcn",
+      "id": "PramodDutta/qaskills/seed-skills/accessibility-auditor",
+      "name": "Accessibility Auditor",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
       "branch": "main",
-      "skill_path": "skills/shieldcn-badges",
+      "skill_path": "seed-skills/accessibility-auditor",
       "source": "github",
-      "url": "https://github.com/jal-co/shieldcn/tree/main/skills/shieldcn-badges",
-      "skill_md_url": "https://github.com/jal-co/shieldcn/blob/main/skills/shieldcn-badges/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「shieldcn-badges」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Create polished shieldcn README badges, badge groups, charts, headers, sponsors grids, and full README hero sections. Use when a user wants shadcn/ui-styled badges, Shields.io replacement, npm/GitHub/CI/status badges, star-history or download charts, README header banners, contributor/sponsor images, or README Studio guidance. Triggers include \"add badges\", \"add shields\", \"README badges\", \"npm badge\", \"GitHub stars badge\", \"CI badge\", \"star history chart\", \"download chart\", \"README header\", \"README banner\", \"contributors grid\", \"sponsors grid\", \"build a README\", \"README Studio\", \"shieldcn\", and requests to make a project README look better.",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/accessibility-auditor",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/accessibility-auditor/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「Accessibility Auditor」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Comprehensive WCAG 2.1 AA compliance testing combining automated axe-core scans with manual keyboard navigation, screen reader compatibility, and focus management verification",
       "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
       "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「shieldcn-badges」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「Accessibility Auditor」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
         "best_for_cn": "开发者、技术团队与代码审查人员",
         "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
         "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/shieldcn-badges`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/accessibility-auditor`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 60,
+        "github_heat": 54,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -3522,17 +5208,17 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 77.6,
+        "opportunity": 76.6,
         "confidence": 75.0,
         "risk": 30.6,
-        "value_score": 55.2,
+        "value_score": 54.4,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：518",
-        "仓库最近更新：2026-07-01T05:15:33Z",
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
         "来源级别：社区发现"
       ],
       "caveats": [
@@ -3540,131 +5226,82 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 518,
-      "repo_updated_at": "2026-07-01T05:15:33Z",
-      "license": "MIT",
-      "observed_at": "2026-07-01T13:22:31+08:00",
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "b153c750ff4695f655952011ee34654ca7c0236d",
+      "content_sha256": "0d358a5daeb18e9ff1b7ef2bda264dd1f2da6b2b1524d7ed8b8b61fcdeb22c64",
+      "version_label": "rev-b153c750",
+      "observed_at": "2026-07-01T13:49:27+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
       "github_signal": {
-        "stars": 518,
+        "stars": 161,
         "star_delta": null,
-        "heat": 60
+        "heat": 54
       },
       "delta": 0,
-      "status": "new"
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 54.4,
+          "risk": 30.6,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "b153c750ff4695f655952011ee34654ca7c0236d"
+        }
+      ]
     },
     {
-      "id": "nexu-io/open-design/skills/agent-browser",
-      "name": "agent-browser",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
+      "id": "PramodDutta/qaskills/seed-skills/ai-agent-eval",
+      "name": "AI Agent Evaluation",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
       "branch": "main",
-      "skill_path": "skills/agent-browser",
+      "skill_path": "seed-skills/ai-agent-eval",
       "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/agent-browser",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/agent-browser/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-browser」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/ai-agent-eval",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/ai-agent-eval/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「AI Agent Evaluation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Comprehensive evaluation patterns for AI agents including multi-turn conversation testing, LLM-as-judge frameworks, benchmark suites, regression detection, and systematic eval pipelines for measuring agent quality and safety.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
       "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-browser」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「AI Agent Evaluation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
         "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/agent-browser`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/ai-agent-eval`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 70,
+        "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 91,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 88,
-        "network": 75,
-        "secrets": 62,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 80.9,
-        "confidence": 75.0,
-        "risk": 43.5,
-        "value_score": 53.6,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：73,489",
-        "仓库最近更新：2026-07-01T05:20:31Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "存在下载后直接执行模式",
-        "可能读取或使用凭据"
-      ],
-      "repo_stars": 73489,
-      "repo_updated_at": "2026-07-01T05:20:31Z",
-      "license": "Apache-2.0",
-      "observed_at": "2026-07-01T13:22:33+08:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": false,
-      "github_signal": {
-        "stars": 73489,
-        "star_delta": 44,
-        "heat": 91
-      },
-      "delta": -3.3,
-      "status": "cooling"
-    },
-    {
-      "id": "Hanyuyuan6/remote-gpu-trainer/.",
-      "name": "remote-gpu-trainer",
-      "author": "Hanyuyuan6",
-      "repo": "Hanyuyuan6/remote-gpu-trainer",
-      "branch": "main",
-      "skill_path": ".",
-      "source": "github",
-      "url": "https://github.com/Hanyuyuan6/remote-gpu-trainer/tree/main/.",
-      "skill_md_url": "https://github.com/Hanyuyuan6/remote-gpu-trainer/blob/main/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于标准化通用效率相关任务。它会把「remote-gpu-trainer」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于标准化通用效率相关任务。它会把「remote-gpu-trainer」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `.`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 44,
+        "github_heat": 54,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 48,
-        "network": 8,
+        "network": 42,
         "secrets": 62,
         "obfuscation": 0,
         "provenance": 26,
@@ -3672,50 +5309,269 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 73.1,
+        "opportunity": 76.6,
         "confidence": 75.0,
-        "risk": 25.5,
+        "risk": 30.6,
+        "value_score": 54.4,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "包含命令或代码执行能力",
+        "需要访问外部网络",
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "cea75304b98dc49210619a6e654f59a6209e6f4b",
+      "content_sha256": "3d18492ed41f7bfdb9e05cbb7d33c0aae917a29b8113376e95d63661034e9a2a",
+      "version_label": "rev-cea75304",
+      "observed_at": "2026-07-01T13:49:30+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 161,
+        "star_delta": null,
+        "heat": 54
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 54.4,
+          "risk": 30.6,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "cea75304b98dc49210619a6e654f59a6209e6f4b"
+        }
+      ]
+    },
+    {
+      "id": "PramodDutta/qaskills/seed-skills/agent-browser",
+      "name": "Agent Browser Automation",
+      "author": "PramodDutta",
+      "repo": "PramodDutta/qaskills",
+      "branch": "main",
+      "skill_path": "seed-skills/agent-browser",
+      "source": "github",
+      "url": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/agent-browser",
+      "skill_md_url": "https://github.com/PramodDutta/qaskills/blob/main/seed-skills/agent-browser/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「Agent Browser Automation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Fast Rust-based headless browser automation CLI with Node.js fallback for AI agents, featuring navigation, clicking, typing, snapshots, and structured commands optimized for agent workflows.",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「Agent Browser Automation」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `seed-skills/agent-browser`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 54,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 48,
+        "network": 42,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.2,
+        "confidence": 75.0,
+        "risk": 30.6,
         "value_score": 53.2,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：29",
-        "仓库最近更新：2026-07-01T05:20:36Z",
+        "仓库 Stars：161",
+        "仓库最近更新：2026-07-01T05:47:51Z",
         "来源级别：社区发现"
       ],
       "caveats": [
         "包含命令或代码执行能力",
+        "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 29,
-      "repo_updated_at": "2026-07-01T05:20:36Z",
-      "license": "MIT",
-      "observed_at": "2026-07-01T13:22:30+08:00",
+      "repo_stars": 161,
+      "repo_updated_at": "2026-07-01T05:47:51Z",
+      "license": null,
+      "skill_revision": "f6b9ebb483df656ea3c7066c3d4cd3dcc783fca5",
+      "content_sha256": "91bbeb68dbf44b80c68f94851fb0933726c565355b65c82b27338e90cd930c34",
+      "version_label": "rev-f6b9ebb4",
+      "observed_at": "2026-07-01T13:49:28+08:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
       "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
       "github_signal": {
-        "stars": 29,
+        "stars": 161,
         "star_delta": null,
-        "heat": 44
+        "heat": 54
       },
       "delta": 0,
-      "status": "new"
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 53.2,
+          "risk": 30.6,
+          "stars": 161,
+          "github_heat": 54,
+          "x_heat": null,
+          "revision": "f6b9ebb483df656ea3c7066c3d4cd3dcc783fca5"
+        }
+      ]
+    },
+    {
+      "id": "simota/agent-skills/anvil",
+      "name": "anvil",
+      "author": "simota",
+      "repo": "simota/agent-skills",
+      "branch": "main",
+      "skill_path": "anvil",
+      "source": "github",
+      "url": "https://github.com/simota/agent-skills/tree/main/anvil",
+      "skill_md_url": "https://github.com/simota/agent-skills/blob/main/anvil/SKILL.md",
+      "purpose": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「anvil」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Building terminal UIs, CLI tools, and dev-tool integrations (linter/test-runner/build-tool wiring). Use when CLI/TUI design or implementation is needed. Language-agnostic — supports Node.js, Python, Go, and Rust.",
+      "category": "软件开发",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“软件开发”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「anvil」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `anvil`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 86,
+        "leverage": 82,
+        "quality": 90,
+        "github_heat": 48,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 75,
+        "execution": 95,
+        "network": 42,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 75.6,
+        "confidence": 75.0,
+        "risk": 56.2,
+        "value_score": 44.6,
+        "action": "quarantine"
+      },
+      "action": "quarantine",
+      "hard_gate": true,
+      "evidence": [
+        "仓库 Stars：58",
+        "仓库最近更新：2026-07-01T05:46:22Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "请求高权限或宽泛文件权限",
+        "包含潜在破坏性命令",
+        "需要访问外部网络",
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 58,
+      "repo_updated_at": "2026-07-01T05:46:22Z",
+      "license": "MIT",
+      "skill_revision": "b13a69080958a0dbdd61defeaea8e5117691291b",
+      "content_sha256": "efae03d7ba3c5f21dd434795d63d53ad3640262cba6d5e8b8b332747de5f5a88",
+      "version_label": "rev-b13a6908",
+      "observed_at": "2026-07-01T13:49:28+08:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-07-01T13:49:31+08:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 58,
+        "star_delta": null,
+        "heat": 48
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-07-01T13:49:31+08:00",
+          "value": 44.6,
+          "risk": 56.2,
+          "stars": 58,
+          "github_heat": 48,
+          "x_heat": null,
+          "revision": "b13a69080958a0dbdd61defeaea8e5117691291b"
+        }
+      ]
     }
   ],
   "gaps": [
     {
       "title": "更可靠的软件开发 Skill",
-      "reason": "该类需求信号较强，但当前候选平均质量 87、风险 25，仍有改进空间。",
-      "score": 73
+      "reason": "该类需求信号较强，但当前候选平均质量 87、风险 23，仍有改进空间。",
+      "score": 72
     },
     {
       "title": "更可靠的文档与办公 Skill",
-      "reason": "该类需求信号较强，但当前候选平均质量 85、风险 13，仍有改进空间。",
+      "reason": "该类需求信号较强，但当前候选平均质量 87、风险 14，仍有改进空间。",
       "score": 71
     },
     {

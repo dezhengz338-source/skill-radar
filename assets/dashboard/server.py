@@ -8,6 +8,7 @@ import base64
 import concurrent.futures
 import hashlib
 import http.client
+import io
 import json
 import math
 import os
@@ -23,6 +24,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import webbrowser
+import zipfile
 from datetime import datetime, timedelta
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -264,6 +266,22 @@ def explain_in_chinese(name: str, description: str, category: str, text: str, pa
     }
 
 
+def infer_platforms(text: str, repo: str, path: str) -> list[str]:
+    haystack = f"{text}\n{repo}\n{path}".lower()
+    platforms = ["通用 SKILL.md"]
+    rules = {
+        "Codex": ("codex", "openai/skills", ".codex"),
+        "Claude": ("claude", "anthropic", ".claude"),
+        "Hermes": ("hermes", "nousresearch"),
+        "Cursor": ("cursor", ".cursor"),
+        "GitHub Copilot": ("copilot", "github agent"),
+    }
+    for platform, terms in rules.items():
+        if any(term in haystack for term in terms):
+            platforms.append(platform)
+    return platforms
+
+
 def risk_scan(text: str) -> tuple[dict, bool, list[str]]:
     lower = text.lower()
     findings = []
@@ -409,11 +427,13 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
     tree = github_api(f"repos/{owner}/{repo_name}/git/trees/{urllib.parse.quote(branch)}?recursive=1")
     excluded_parts = {"test", "tests", "fixture", "fixtures", "e2e", "example", "examples", "sample", "samples"}
     paths = []
+    path_shas = {}
     for item in tree.get("tree", []):
         path_value = item.get("path", "")
         parts = {part.lower() for part in PurePosixPath(path_value).parts}
         if item.get("type") == "blob" and path_value.endswith("SKILL.md") and not parts.intersection(excluded_parts):
             paths.append(path_value)
+            path_shas[path_value] = item.get("sha")
     preferred = sorted(paths, key=lambda p: (
         not (p.startswith("skills/") or p.startswith("optional-skills/")),
         p.count("/"), p.lower()
@@ -449,6 +469,8 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
         }
         radar = calculate_radar(scores, hard_gate)
         explanation = explain_in_chinese(name, description, category, text, skill_path)
+        content_sha256 = hashlib.sha256(text.encode("utf-8")).hexdigest()
+        revision = path_shas.get(skill_file) or content_sha256
         results.append({
             "id": f"{owner}/{repo_name}/{skill_path}",
             "name": name,
@@ -462,6 +484,7 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
             "purpose": explanation["summary_cn"],
             "description": description,
             "category": category,
+            "platforms": infer_platforms(text, f"{owner}/{repo_name}", skill_path),
             "explanation_cn": explanation,
             "scores": scores,
             "radar": radar,
@@ -476,6 +499,9 @@ def discover_repo(owner: str, repo_name: str, source: str, max_skills: int) -> l
             "repo_stars": stars,
             "repo_updated_at": repo.get("pushed_at"),
             "license": (repo.get("license") or {}).get("spdx_id"),
+            "skill_revision": revision,
+            "content_sha256": content_sha256,
+            "version_label": f"rev-{revision[:8]}",
             "observed_at": now_iso(),
         })
     return results
@@ -499,9 +525,32 @@ def trending_repos(limit: int = 3) -> list[tuple[str, str, str]]:
 
 def compare_previous(candidates: list[dict], previous: dict) -> None:
     old = {item.get("id"): item for item in previous.get("candidates", [])}
+    observed_at = now_iso()
     for item in candidates:
         prior = old.get(item["id"])
         item["is_new"] = prior is None
+        prior_hash = prior.get("content_sha256") if prior else None
+        changed = bool(prior_hash and item.get("content_sha256") != prior_hash)
+        item["updated_since_last"] = changed
+        item["update_status"] = (
+            "new" if prior is None else "baseline" if not prior_hash else "updated" if changed else "unchanged"
+        )
+        item["previous_revision"] = prior.get("skill_revision") if prior else None
+        item["last_skill_update_at"] = (
+            observed_at if changed or prior is None else prior.get("last_skill_update_at")
+        )
+        changes = []
+        if changed:
+            changes.append("SKILL.md 内容指纹发生变化")
+            old_risk = float(prior.get("radar", {}).get("risk", 0))
+            new_risk = float(item.get("radar", {}).get("risk", 0))
+            if abs(new_risk - old_risk) >= 5:
+                changes.append(f"风险分 {old_risk:.0f} → {new_risk:.0f}")
+            old_quality = float(prior.get("scores", {}).get("quality", 0))
+            new_quality = float(item.get("scores", {}).get("quality", 0))
+            if abs(new_quality - old_quality) >= 5:
+                changes.append(f"质量分 {old_quality:.0f} → {new_quality:.0f}")
+        item["change_summary"] = changes
         if prior:
             star_delta = max(0, int(item.get("repo_stars") or 0) - int(prior.get("repo_stars") or 0))
             velocity = clamp(30 + math.log1p(star_delta) * 18) if star_delta else 25
@@ -525,6 +574,31 @@ def compare_previous(candidates: list[dict], previous: dict) -> None:
             }
             item["delta"] = 0
             item["status"] = "new"
+        prior_history = list(prior.get("history", [])) if prior else []
+        if prior and not prior_history:
+            prior_history.append({
+                "observed_at": prior.get("observed_at") or previous.get("meta", {}).get("observed_at"),
+                "value": prior.get("radar", {}).get("value_score"),
+                "risk": prior.get("radar", {}).get("risk"),
+                "stars": prior.get("repo_stars"),
+                "github_heat": prior.get("scores", {}).get("github_heat"),
+                "x_heat": prior.get("scores", {}).get("x_heat"),
+                "revision": prior.get("skill_revision"),
+            })
+        point = {
+            "observed_at": observed_at,
+            "value": item["radar"]["value_score"],
+            "risk": item["radar"]["risk"],
+            "stars": item.get("repo_stars"),
+            "github_heat": item.get("scores", {}).get("github_heat"),
+            "x_heat": item.get("scores", {}).get("x_heat"),
+            "revision": item.get("skill_revision"),
+        }
+        if prior_history and str(prior_history[-1].get("observed_at", ""))[:10] == observed_at[:10]:
+            prior_history[-1] = point
+        else:
+            prior_history.append(point)
+        item["history"] = prior_history[-30:]
 
 
 def infer_gaps(candidates: list[dict]) -> list[dict]:
@@ -592,6 +666,10 @@ def refresh_snapshot() -> dict:
                 "sources_scanned": len(seen_repos),
                 "x_status": x_status,
                 "x_enriched": sum(1 for item in candidates if item.get("scores", {}).get("x_heat") is not None),
+                "updated_skills": sum(1 for item in candidates if item.get("updated_since_last")),
+                "removed_skills": len({
+                    item.get("id") for item in previous.get("candidates", [])
+                } - {item.get("id") for item in candidates}),
                 "errors": errors,
             },
             "candidates": candidates,
@@ -652,6 +730,50 @@ def download_skill(candidate: dict, destination: Path) -> None:
                         raise ValueError("Skill 内单个文件超过 5MB")
                     shutil.copytree(source, destination)
                     return
+    archive_url = f"https://codeload.github.com/{repo}/zip/refs/heads/{urllib.parse.quote(branch)}"
+    try:
+        archive_bytes = request_bytes(archive_url, accept="application/zip", max_bytes=MAX_DOWNLOAD)
+        with zipfile.ZipFile(io.BytesIO(archive_bytes)) as archive:
+            prefix_parts = None
+            selected = []
+            total = 0
+            for info in archive.infolist():
+                parts = PurePosixPath(info.filename).parts
+                if len(parts) < 2:
+                    continue
+                if prefix_parts is None:
+                    prefix_parts = parts[0]
+                relative_repo = PurePosixPath(*parts[1:])
+                try:
+                    relative = relative_repo.relative_to(path)
+                except ValueError:
+                    continue
+                if info.is_dir():
+                    continue
+                if any(part in {"", ".."} for part in relative.parts):
+                    raise ValueError("源码压缩包包含不安全路径")
+                if ((info.external_attr >> 16) & 0o170000) == 0o120000:
+                    raise ValueError("Skill 包含符号链接，已拒绝自动处理")
+                if info.file_size > 5 * 1024 * 1024:
+                    raise ValueError("Skill 内单个文件超过 5MB")
+                total += info.file_size
+                selected.append((info, relative))
+            if not selected or not any(rel.as_posix() == "SKILL.md" for _, rel in selected):
+                raise ValueError("源码压缩包中没有目标 SKILL.md")
+            if len(selected) > MAX_SKILL_FILES or total > MAX_SKILL_BYTES:
+                raise ValueError("Skill 文件数量或体积超过安全限制")
+            destination.mkdir(parents=True, exist_ok=False)
+            base = destination.resolve()
+            for info, relative in selected:
+                target = (destination / Path(*relative.parts)).resolve()
+                if base not in target.parents:
+                    raise ValueError("目标路径越界")
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(archive.read(info))
+            return
+    except (OSError, urllib.error.URLError, zipfile.BadZipFile):
+        if destination.exists():
+            shutil.rmtree(destination, ignore_errors=True)
     tree = github_api(f"repos/{repo}/git/trees/{urllib.parse.quote(branch)}?recursive=1")
     matching = []
     total = 0
@@ -743,6 +865,46 @@ def install_hermes(candidate: dict) -> dict:
     return {"target": "hermes", "path": str(destination), "via": "safe-copy"}
 
 
+def export_portable(candidate: dict) -> dict:
+    if candidate.get("hard_gate") or candidate.get("action") == "quarantine":
+        raise PermissionError("该候选触发安全隔离，禁止导出可安装包")
+    name = safe_name(candidate["name"])
+    with tempfile.TemporaryDirectory(prefix="skill-radar-export-") as temp_dir:
+        skill_dir = Path(temp_dir) / name
+        download_skill(candidate, skill_dir)
+        manifest = {
+            "schema": "skill-radar-portable/v1",
+            "name": candidate.get("name"),
+            "source": candidate.get("url"),
+            "canonical_id": candidate.get("id"),
+            "revision": candidate.get("skill_revision"),
+            "platforms": candidate.get("platforms") or ["通用 SKILL.md"],
+            "exported_at": now_iso(),
+        }
+        instructions = f"""# {candidate.get('name')} 通用 Skill 包
+
+此压缩包保留原始 Skill 目录结构和 `SKILL.md`。
+
+## 安装
+
+- Codex：把 `{name}` 文件夹复制到 `$CODEX_HOME/skills/` 或 `~/.codex/skills/`。
+- Claude 兼容 Agent：把完整文件夹导入该 Agent 的 Skills 目录。
+- Hermes：优先使用 `hermes skills install {candidate.get('id')}`；也可手动导入完整文件夹。
+- 其他支持 `SKILL.md` 的 Agent：导入完整文件夹，不要只复制单个 Markdown 文件。
+
+安装前请检查脚本、依赖、联网行为和凭据需求。来源：{candidate.get('url')}
+"""
+        archive_path = Path(temp_dir) / f"{name}-portable.zip"
+        with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+            for file_path in skill_dir.rglob("*"):
+                if file_path.is_file():
+                    archive.write(file_path, f"{name}/{file_path.relative_to(skill_dir).as_posix()}")
+            archive.writestr(f"{name}/skill-radar-manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2))
+            archive.writestr(f"{name}/INSTALL.zh-CN.md", instructions)
+        encoded = base64.b64encode(archive_path.read_bytes()).decode("ascii")
+    return {"filename": f"{name}-portable.zip", "content_base64": encoded, "manifest": manifest}
+
+
 def schedule_command(enabled: bool, run_time: str) -> dict:
     if os.name != "nt":
         raise NotImplementedError("当前版本只支持在 Windows 中一键创建每日任务")
@@ -780,7 +942,7 @@ def last_refresh() -> datetime | None:
 
 
 class RadarHandler(SimpleHTTPRequestHandler):
-    server_version = "SkillRadar/1.2"
+    server_version = "SkillRadar/1.3"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(APP_DIR), **kwargs)
@@ -826,7 +988,7 @@ class RadarHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
         if parsed.path == "/api/session":
-            return self.json_response({"token": TOKEN, "service": "skill-radar", "version": "1.2"})
+            return self.json_response({"token": TOKEN, "service": "skill-radar", "version": "1.3"})
         if parsed.path == "/api/status":
             config = load_config()
             last = last_refresh()
@@ -867,6 +1029,9 @@ class RadarHandler(SimpleHTTPRequestHandler):
                 if result is None:
                     raise ValueError("安装目标必须是 codex 或 hermes")
                 return self.json_response({"ok": True, **result})
+            if parsed.path == "/api/export":
+                candidate = find_candidate(str(data.get("id", "")))
+                return self.json_response({"ok": True, **export_portable(candidate)})
             if parsed.path == "/api/schedule":
                 result = schedule_command(bool(data.get("enabled")), str(data.get("time", "08:00")))
                 return self.json_response({"ok": True, **result})
@@ -919,6 +1084,25 @@ Use references and validate every claim.
         "evidence_confidence": 85,
     }
     assert calculate_radar(scores)["value_score"] > 50
+    assert "Codex" in infer_platforms("Use with Codex", "owner/repo", "skills/sample")
+    current = [{
+        "id": "owner/repo/sample", "content_sha256": "b" * 64, "skill_revision": "new",
+        "repo_stars": 12, "scores": scores.copy(), "radar": calculate_radar(scores),
+        "hard_gate": False,
+    }]
+    previous = {
+        "meta": {"observed_at": "2026-06-30T08:00:00+08:00"},
+        "candidates": [{
+            "id": "owner/repo/sample", "content_sha256": "a" * 64, "skill_revision": "old",
+            "repo_stars": 10, "scores": {**scores, "quality": 70},
+            "radar": calculate_radar({**scores, "quality": 70}),
+            "observed_at": "2026-06-30T08:00:00+08:00",
+        }],
+    }
+    compare_previous(current, previous)
+    assert current[0]["update_status"] == "updated"
+    assert current[0]["updated_since_last"] is True
+    assert len(current[0]["history"]) == 2
     print("Skill Radar server self-test passed.")
     return 0
 

@@ -135,6 +135,11 @@ function normalizeCandidate(candidate) {
     purpose: candidate.purpose || candidate.description || "暂无用途说明",
     description: candidate.description || candidate.purpose || "暂无详细说明。",
     source: candidate.source || "github",
+    category: candidate.category || "未分类",
+    platforms: Array.isArray(candidate.platforms) && candidate.platforms.length ? candidate.platforms : ["通用 SKILL.md"],
+    history: Array.isArray(candidate.history) ? candidate.history : [],
+    update_status: candidate.update_status || (candidate.updated_since_last ? "updated" : "unknown"),
+    updated_since_last: Boolean(candidate.updated_since_last),
     delta: Number(candidate.delta ?? 0),
     status: candidate.status || (Number(candidate.delta) > 5 ? "rising" : Number(candidate.delta) < -3 ? "cooling" : "stable"),
     is_new: Boolean(candidate.is_new),
@@ -207,6 +212,8 @@ function render() {
   renderRadarOptions();
   renderRadar();
   renderSignals();
+  renderHistory();
+  renderFilterOptions();
   renderTable();
   renderGaps();
   renderPrompt();
@@ -275,17 +282,78 @@ function renderSignals() {
     `<div class="signal-row"><label>${label}</label><div class="signal-track"><i style="width:${count/max*100}%"></i></div><b>${count}</b></div>`
   ).join("");
 }
+function renderFilterOptions() {
+  const configs = [
+    ["categoryFilter", [...new Set(state.candidates.map(x => x.category).filter(Boolean))].sort()],
+    ["platformFilter", [...new Set(state.candidates.flatMap(x => x.platforms || [])).filter(Boolean)].sort()]
+  ];
+  configs.forEach(([id, values]) => {
+    const select = el(id);
+    const current = select.value || "all";
+    const label = id === "categoryFilter" ? "全部领域" : "全部平台";
+    select.innerHTML = `<option value="all">${label}</option>${values.map(value =>
+      `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`
+    ).join("")}`;
+    select.value = values.includes(current) ? current : "all";
+  });
+}
+function renderHistory() {
+  const skill = state.candidates.find(x => x.id === selectedId);
+  const history = (skill?.history || []).filter(point => point?.value != null).slice(-30);
+  const svg = el("historyChart");
+  const empty = el("historyEmpty");
+  const updates = state.candidates.filter(x => x.updated_since_last);
+  el("updateSummary").textContent = `${updates.length} 个 Skill 检测到新版本 · 保留最近 30 次观测`;
+  el("updateFeed").innerHTML = updates.length
+    ? updates.slice(0, 5).map(x => `<button class="update-item" data-detail="${escapeHtml(x.id)}">
+        <span class="update-dot"></span><span><strong>${escapeHtml(x.name)}</strong><small>${escapeHtml(x.version_label || "新修订")} · ${formatDate(x.last_skill_update_at)}</small></span><em>查看 →</em>
+      </button>`).join("")
+    : `<div class="update-placeholder"><strong>本期没有内容变更</strong><p>版本检测只比较 Skill 内容指纹，不会把仓库中无关文件的变化误报为新版本。</p></div>`;
+  if (!history.length) {
+    svg.innerHTML = "";
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = history.length >= 2;
+  const width = 640, height = 210, left = 36, right = 18, top = 20, bottom = 30;
+  const plotW = width - left - right, plotH = height - top - bottom;
+  const xAt = index => left + (history.length === 1 ? plotW / 2 : index * plotW / (history.length - 1));
+  const yAt = value => top + (100 - clamp(value)) / 100 * plotH;
+  let markup = "";
+  [0, 25, 50, 75, 100].forEach(value => {
+    const y = yAt(value);
+    markup += `<line class="history-grid-line" x1="${left}" y1="${y}" x2="${width-right}" y2="${y}"/><text class="history-axis-label" x="4" y="${y+3}">${value}</text>`;
+  });
+  const valuePoints = history.map((point, index) => `${xAt(index)},${yAt(point.value)}`).join(" ");
+  const riskPoints = history.map((point, index) => `${xAt(index)},${yAt(point.risk ?? 0)}`).join(" ");
+  markup += `<polyline class="history-value-line" points="${valuePoints}"/><polyline class="history-risk-line" points="${riskPoints}"/>`;
+  history.forEach((point, index) => {
+    const label = point.observed_at ? String(point.observed_at).slice(5,10) : `#${index+1}`;
+    markup += `<circle class="history-value-point" cx="${xAt(index)}" cy="${yAt(point.value)}" r="3"><title>${label} 价值 ${Math.round(point.value)}</title></circle>`;
+    if (index === 0 || index === history.length - 1) markup += `<text class="history-date-label" x="${xAt(index)}" y="${height-7}">${label}</text>`;
+  });
+  svg.innerHTML = markup;
+}
 function activeSources() {
   return [...document.querySelectorAll("[data-source]:checked")].map(x => x.dataset.source);
 }
 function filteredCandidates() {
   const query = el("searchInput").value.trim().toLowerCase();
   const action = el("actionFilter").value;
+  const category = el("categoryFilter").value;
+  const platform = el("platformFilter").value;
+  const valueRange = el("valueFilter").value;
+  const [valueMin, valueMax] = valueRange === "all" ? [0, 100] : valueRange.split("-").map(Number);
   const sources = activeSources();
   return state.candidates.filter(x => {
-    const text = `${x.name} ${x.author} ${x.purpose}`.toLowerCase();
-    const tabMatch = activeTab === "all" || (activeTab === "new" && x.is_new) || (activeTab === "rising" && x.status === "rising") || (activeTab === "safe" && x.radar.risk < 30);
-    return sources.includes(x.source) && tabMatch && (action === "all" || x.action === action) && (!query || text.includes(query));
+    const text = `${x.name} ${x.author} ${x.purpose} ${x.description} ${x.repo || ""} ${x.category} ${(x.platforms || []).join(" ")}`.toLowerCase();
+    const tabMatch = activeTab === "all" || (activeTab === "new" && x.is_new) || (activeTab === "rising" && x.status === "rising") || (activeTab === "updated" && x.updated_since_last) || (activeTab === "safe" && x.radar.risk < 30);
+    const valueMatch = x.radar.value_score >= valueMin && x.radar.value_score <= valueMax;
+    return sources.includes(x.source) && tabMatch && valueMatch
+      && (action === "all" || x.action === action)
+      && (category === "all" || x.category === category)
+      && (platform === "all" || (x.platforms || []).includes(platform))
+      && (!query || text.includes(query));
   }).sort((a,b) => b.radar.value_score - a.radar.value_score);
 }
 function renderTable() {
@@ -297,7 +365,7 @@ function renderTable() {
     return `<tr>
       <td class="rank">${String(index + 1).padStart(2, "0")}</td>
       <td><div class="skill-cell"><span class="skill-avatar">${escapeHtml(x.name.slice(0,2).toUpperCase())}</span><div><strong>${escapeHtml(x.name)}</strong><small>${escapeHtml(x.author)} · ${sourceLabel(x.source)}</small></div></div></td>
-      <td>${escapeHtml(x.purpose)}</td>
+      <td><div class="purpose-cell">${escapeHtml(x.purpose)}<small>${escapeHtml(x.category)} · ${escapeHtml((x.platforms || ["通用 SKILL.md"]).slice(0,2).join(" / "))}${x.updated_since_last ? ' · <b>新版本</b>' : ""}</small></div></td>
       <td><div class="score-ring" style="--score:${x.radar.value_score}">${Math.round(x.radar.value_score)}</div></td>
       <td><div class="heat-pair"><span>GH <b>${ghHeat}</b></span><span>X <b>${xHeat}</b></span></div></td>
       <td><span class="risk-pill ${riskClass}">● ${riskLabel}</span></td>
@@ -335,7 +403,7 @@ function renderService() {
       : "服务运行期间每 24 小时更新")
     : "联网、安装和每日任务不可用";
   el("sourceHealth").innerHTML = service.online
-    ? `<span>联网源</span><strong>${state.meta?.sources_scanned || 0} 个仓库 · X ${state.meta?.x_status === "ok" ? `${state.meta?.x_enriched || 0} 项` : "未配置"} · ${state.meta?.errors?.length || 0} 个异常</strong>`
+    ? `<span>联网源</span><strong>${state.meta?.sources_scanned || 0} 个仓库 · ${state.meta?.updated_skills || 0} 个更新 · X ${state.meta?.x_status === "ok" ? `${state.meta?.x_enriched || 0} 项` : "未配置"} · ${state.meta?.errors?.length || 0} 个异常</strong>`
     : "<span>联网源</span><strong>等待本地服务</strong>";
   if (service.status) {
     el("codexPath").textContent = service.status.codex_path || "~/.codex/skills";
@@ -423,6 +491,7 @@ function openDrawer(id) {
   selectedId = id;
   el("radarSelect").value = id;
   renderRadar();
+  renderHistory();
   const [riskLabel, riskClass] = riskMeta(x.radar.risk);
   const bars = Object.keys(OPPORTUNITY_WEIGHTS).filter(k => x.scores?.[k] != null).map(k =>
     `<div class="score-bar"><span>${LABELS[k]}</span><i style="--value:${clamp(x.scores?.[k])}"></i><b>${Math.round(clamp(x.scores?.[k]))}</b></div>`
@@ -465,11 +534,20 @@ function openDrawer(id) {
         <strong>X / Twitter（最近 7 天）</strong><p>${x.x_signal?.status === "ok" ? `提及 ${x.x_signal.posts} 条、独立作者 ${x.x_signal.authors} 位、综合互动 ${x.x_signal.engagement}，热度分 ${Math.round(x.scores.x_heat)}。` : "暂无可信 API 数据，当前评分未把 X 热度按 0 分处理。"}</p>
       </div>
     </section>
+    <section class="detail-section">
+      <h3>版本与兼容性</h3>
+      <div class="cn-detail">
+        <strong>当前修订</strong><p>${escapeHtml(x.version_label || "尚未建立内容指纹")}${x.updated_since_last ? "；本期检测到新版本。" : "；本期未检测到内容变化。"}</p>
+        <strong>兼容平台</strong><p>${escapeHtml((x.platforms || ["通用 SKILL.md"]).join("、"))}</p>
+        <strong>变更摘要</strong><p>${x.change_summary?.length ? x.change_summary.map(escapeHtml).join("；") : "暂无需要提醒的内容变化。"}</p>
+      </div>
+    </section>
     <section class="detail-section"><h3>关键证据</h3>${x.evidence.length ? `<ul>${x.evidence.map(v => `<li>${escapeHtml(typeof v === "string" ? v : v.claim || JSON.stringify(v))}</li>`).join("")}</ul>` : "<p>尚未记录结构化证据。</p>"}</section>
     <section class="detail-section"><h3>注意事项</h3>${x.caveats.length ? `<ul>${x.caveats.map(v => `<li>${escapeHtml(v)}</li>`).join("")}</ul>` : `<p><span class="risk-pill ${riskClass}">${riskLabel}</span> 暂无额外说明。</p>`}</section>
     <div class="drawer-install">
       <button class="btn primary" data-install="${escapeHtml(x.id)}" data-target="codex" ${installDisabled ? "disabled" : ""}>安装到 Codex</button>
       <button class="btn ghost" data-install="${escapeHtml(x.id)}" data-target="hermes" ${installDisabled ? "disabled" : ""}>安装到 Hermes</button>
+      <button class="btn ghost portable-export" data-package-export="${escapeHtml(x.id)}" ${installDisabled ? "disabled" : ""}>导出通用 Skill 包</button>
     </div>
     ${x.action === "quarantine" ? '<p class="form-error">该候选触发安全隔离，已禁止一键安装。</p>' : !service.online ? '<p class="form-error">启动联网版后才能安装。</p>' : ""}`;
   el("drawerBackdrop").hidden = false;
@@ -507,6 +585,28 @@ async function applyInstall() {
   } finally {
     el("applyInstall").textContent = "确认安装";
     el("applyInstall").disabled = !el("installConfirm").checked;
+  }
+}
+async function exportPortable(id) {
+  if (!service.online) return toast("启动联网版后才能导出完整 Skill 包");
+  const button = document.querySelector(`[data-package-export="${CSS.escape(id)}"]`);
+  if (button) { button.disabled = true; button.textContent = "正在打包…"; }
+  try {
+    const result = await apiPost("/api/export", { id });
+    const binary = atob(result.content_base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+    const url = URL.createObjectURL(new Blob([bytes], { type: "application/zip" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = result.filename || "skill-portable.zip";
+    link.click();
+    URL.revokeObjectURL(url);
+    toast("通用 Skill 包已导出");
+  } catch (error) {
+    toast(`导出失败：${error.message}`);
+  } finally {
+    if (button) { button.disabled = false; button.textContent = "导出通用 Skill 包"; }
   }
 }
 function closeDrawer() {
@@ -551,6 +651,8 @@ document.addEventListener("click", event => {
   if (detail) openDrawer(detail.dataset.detail);
   const install = event.target.closest("[data-install]");
   if (install) openInstall(install.dataset.install, install.dataset.target);
+  const packageExport = event.target.closest("[data-package-export]");
+  if (packageExport) exportPortable(packageExport.dataset.packageExport);
 });
 document.querySelectorAll(".tab").forEach(button => button.addEventListener("click", () => {
   document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
@@ -566,9 +668,19 @@ document.querySelectorAll(".nav-item").forEach(button => button.addEventListener
   document.querySelector(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
   if (button.dataset.view === "watchlist") { el("actionFilter").value = "watch"; renderTable(); }
 }));
-el("radarSelect").addEventListener("change", e => { selectedId = e.target.value; renderRadar(); });
+el("radarSelect").addEventListener("change", e => { selectedId = e.target.value; renderRadar(); renderHistory(); });
 el("searchInput").addEventListener("input", renderTable);
 el("actionFilter").addEventListener("change", renderTable);
+el("categoryFilter").addEventListener("change", renderTable);
+el("platformFilter").addEventListener("change", renderTable);
+el("valueFilter").addEventListener("change", renderTable);
+el("resetFilters").addEventListener("click", () => {
+  el("searchInput").value = "";
+  ["actionFilter", "categoryFilter", "platformFilter", "valueFilter"].forEach(id => { el(id).value = "all"; });
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x.dataset.tab === "all"));
+  activeTab = "all";
+  renderTable();
+});
 el("showRisk").addEventListener("click", () => { el("actionFilter").value = "quarantine"; renderTable(); document.querySelector(".ranking-panel").scrollIntoView({ behavior: "smooth" }); });
 el("openImport").addEventListener("click", openImport);
 el("closeImport").addEventListener("click", closeImport);

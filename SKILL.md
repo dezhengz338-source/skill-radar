@@ -67,10 +67,11 @@ When a previous snapshot exists, match canonical IDs and calculate:
 
 - New entrants and removals.
 - Rank, adoption, activity, and value-score changes.
-- Material code, permission, ownership, or license changes.
+- `SKILL.md` content-fingerprint changes, plus material permission, ownership, or license changes.
 - Staleness: no meaningful update despite unresolved compatibility or security issues.
 
 If no snapshot exists, label the result `baseline`; do not call a Skill “rising” from a single observation.
+Keep at most 30 observation points per Skill. Treat a missing prior content fingerprint as version-baseline migration, not as an update.
 
 ## Report the radar
 
@@ -107,8 +108,9 @@ For the connected mode on Windows:
 4. Use **启用每日任务** to create an explicit Windows daily task at 08:00.
 5. Open a candidate to read the Chinese explanation, evidence, risk, and permissions.
 6. Use **安装到 Codex** or **安装到 Hermes** only after reviewing and confirming the install dialog.
+7. Use **导出通用 Skill 包** when the target Agent is not Codex or Hermes; keep the complete folder because bundled resources may be required.
 
-The local service binds only to `127.0.0.1`. It scans official catalogs and current GitHub repositories, keeps dated snapshots, and rejects overwrite, path traversal, oversized packages, symbolic links, and quarantined candidates. Codex installs go to `$CODEX_HOME/skills` or `~/.codex/skills`. Hermes installs prefer the official `hermes skills install` command and otherwise use `$HERMES_HOME/skills/radar` or `~/.hermes/skills/radar`.
+The local service binds only to `127.0.0.1`. It scans official catalogs and current GitHub repositories, keeps rolling history, and rejects overwrite, path traversal, oversized packages, symbolic links, and quarantined candidates. Codex installs go to `$CODEX_HOME/skills` or `~/.codex/skills`. Hermes installs prefer the official `hermes skills install` command and otherwise use `$HERMES_HOME/skills/radar` or `~/.hermes/skills/radar`. Portable exports retain the original files and add a manifest plus Chinese installation notes; compatibility labels are signals, not proof of full runtime support.
 
 For static mode, open `assets/dashboard/index.html` directly and import a snapshot through **导入 JSON**. Static mode cannot scan, schedule, or install.
 

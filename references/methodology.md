@@ -105,3 +105,14 @@ Each candidate should contain:
 ```
 
 Use `null` for unknown scores. The calculator reweights available dimensions and reports missing fields.
+
+Version-monitoring fields:
+
+- `content_sha256`: hash of the exact `SKILL.md` bytes observed during the scan.
+- `skill_revision`: Git blob SHA when available, otherwise the content hash.
+- `version_label`: short display revision such as `rev-a49d2c18`.
+- `update_status`: `new`, `baseline`, `updated`, or `unchanged`.
+- `updated_since_last`: true only when both old and new content fingerprints exist and differ.
+- `history`: at most 30 observations containing value, risk, Stars, GitHub/X heat, and revision.
+
+Do not infer a Skill update from repository `pushed_at` alone. A monorepo may change without changing the tracked Skill. When migrating an older snapshot that has no content fingerprint, establish `baseline` instead of reporting every Skill as updated.
