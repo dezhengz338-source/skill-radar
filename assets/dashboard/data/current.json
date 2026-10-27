@@ -1,6 +1,6 @@
 {
   "meta": {
-    "observed_at": "2026-10-26T02:45:31+00:00",
+    "observed_at": "2026-10-27T03:19:48+00:00",
     "window_days": 30,
     "baseline": false,
     "demo": false,
@@ -9,7 +9,7 @@
     "x_status": "unavailable",
     "x_enriched": 0,
     "updated_skills": 0,
-    "removed_skills": 13,
+    "removed_skills": 16,
     "errors": []
   },
   "candidates": [
@@ -66,20 +66,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "fe83be99a0456c6dd62455005b54c463d0acfaa1",
       "content_sha256": "6636244d779f103fc47c874b44d7a75c94aa62226aa200cfa41d38198cb49124",
       "version_label": "rev-fe83be99",
-      "observed_at": "2026-10-26T02:45:29+00:00",
+      "observed_at": "2026-10-27T03:19:46+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -91,22 +91,13 @@
       "last_skill_update_at": "2026-09-20T02:55:33+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 74.6,
-          "risk": 6.5,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "fe83be99a0456c6dd62455005b54c463d0acfaa1"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 74.6,
@@ -364,6 +355,15 @@
           "value": 74.6,
           "risk": 6.5,
           "stars": 257083,
+          "github_heat": 96,
+          "x_heat": null,
+          "revision": "fe83be99a0456c6dd62455005b54c463d0acfaa1"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 74.6,
+          "risk": 6.5,
+          "stars": 257451,
           "github_heat": 96,
           "x_heat": null,
           "revision": "fe83be99a0456c6dd62455005b54c463d0acfaa1"
@@ -423,20 +423,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "c7b481c2dcf9867b7b35870696f0790be7acb05b",
       "content_sha256": "f8b1a0cf2392a1da0d3890e1ebc6429b1edb83a8f076e104b8f7c8cb7465d1be",
       "version_label": "rev-c7b481c2",
-      "observed_at": "2026-10-26T02:45:29+00:00",
+      "observed_at": "2026-10-27T03:19:46+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -448,22 +448,13 @@
       "last_skill_update_at": "2026-09-04T02:29:07+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 74.6,
-          "risk": 6.5,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "c7b481c2dcf9867b7b35870696f0790be7acb05b"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 74.6,
@@ -721,6 +712,15 @@
           "value": 74.6,
           "risk": 6.5,
           "stars": 257083,
+          "github_heat": 96,
+          "x_heat": null,
+          "revision": "c7b481c2dcf9867b7b35870696f0790be7acb05b"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 74.6,
+          "risk": 6.5,
+          "stars": 257451,
           "github_heat": 96,
           "x_heat": null,
           "revision": "c7b481c2dcf9867b7b35870696f0790be7acb05b"
@@ -780,20 +780,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "a8232e1aa9b4c1d7ab24ede2273fed2545613b89",
       "content_sha256": "a030cce5a966e68b5b283fd530416adbebd6c1dc10c7592edc8d96bcffb2edc6",
       "version_label": "rev-a8232e1a",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -805,22 +805,13 @@
       "last_skill_update_at": "2026-09-20T02:55:33+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 72.8,
-          "risk": 15.2,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "a8232e1aa9b4c1d7ab24ede2273fed2545613b89"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 72.8,
@@ -1081,6 +1072,15 @@
           "github_heat": 96,
           "x_heat": null,
           "revision": "a8232e1aa9b4c1d7ab24ede2273fed2545613b89"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 72.8,
+          "risk": 15.2,
+          "stars": 257451,
+          "github_heat": 96,
+          "x_heat": null,
+          "revision": "a8232e1aa9b4c1d7ab24ede2273fed2545613b89"
         }
       ]
     },
@@ -1115,7 +1115,7 @@
         "quality": 82,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -1128,29 +1128,29 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.7,
+        "opportunity": 78.6,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 71.7,
+        "value_score": 71.6,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "9f63fee82de84cd4230e1d0e322247b61eb4c94c",
       "content_sha256": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b",
       "version_label": "rev-9f63fee8",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -1162,22 +1162,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": 0.0,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 74.1,
-          "risk": 6.5,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "9f63fee82de84cd4230e1d0e322247b61eb4c94c"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 73.7,
@@ -1438,6 +1429,15 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "9f63fee82de84cd4230e1d0e322247b61eb4c94c"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 71.6,
+          "risk": 6.5,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "9f63fee82de84cd4230e1d0e322247b61eb4c94c"
         }
       ]
     },
@@ -1496,20 +1496,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "2286c8df0d771671ad513e771947bafbfc9663a8",
       "content_sha256": "d697957e832c0c17c807464d106a471b8be15f573049b1f008c700ff89506e4a",
       "version_label": "rev-2286c8df",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -1521,22 +1521,13 @@
       "last_skill_update_at": "2026-09-04T02:29:07+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 71.5,
-          "risk": 15.2,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "2286c8df0d771671ad513e771947bafbfc9663a8"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 71.5,
@@ -1797,6 +1788,15 @@
           "github_heat": 96,
           "x_heat": null,
           "revision": "2286c8df0d771671ad513e771947bafbfc9663a8"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 71.5,
+          "risk": 15.2,
+          "stars": 257451,
+          "github_heat": 96,
+          "x_heat": null,
+          "revision": "2286c8df0d771671ad513e771947bafbfc9663a8"
         }
       ]
     },
@@ -1830,7 +1830,7 @@
         "quality": 82,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -1843,7 +1843,7 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 77.8,
+        "opportunity": 77.7,
         "confidence": 90.0,
         "risk": 6.5,
         "value_score": 70.8,
@@ -1852,20 +1852,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e",
       "content_sha256": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
       "version_label": "rev-237988de",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -1877,22 +1877,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 69.3,
-          "risk": 6.5,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 69.5,
@@ -2153,6 +2144,15 @@
           "github_heat": 88,
           "x_heat": null,
           "revision": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 70.8,
+          "risk": 6.5,
+          "stars": 33063,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e"
         }
       ]
     },
@@ -2187,7 +2187,7 @@
         "quality": 90,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -2203,26 +2203,26 @@
         "opportunity": 79.3,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 70.5,
+        "value_score": 70.4,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "634f6fa42e4e697fa6afd293acd7fb8246574876",
       "content_sha256": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef",
       "version_label": "rev-634f6fa4",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -2234,22 +2234,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": 0.0,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 73.0,
-          "risk": 11.6,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "634f6fa42e4e697fa6afd293acd7fb8246574876"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 72.5,
@@ -2510,6 +2501,15 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "634f6fa42e4e697fa6afd293acd7fb8246574876"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 70.4,
+          "risk": 11.6,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "634f6fa42e4e697fa6afd293acd7fb8246574876"
         }
       ]
     },
@@ -2543,7 +2543,7 @@
         "quality": 90,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -2559,26 +2559,26 @@
         "opportunity": 77.3,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 70.4,
+        "value_score": 70.3,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "eea9e89fbe6432801ef7102a095a714f3b33d449",
       "content_sha256": "1520343c8814c972fee001cac6d6185976d6eb3f4edcac33afe95c10f3b3228b",
       "version_label": "rev-eea9e89f",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -2590,22 +2590,13 @@
       "last_skill_update_at": "2026-08-29T05:13:07+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 68.8,
-          "risk": 6.5,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "eea9e89fbe6432801ef7102a095a714f3b33d449"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 69.1,
@@ -2866,6 +2857,15 @@
           "github_heat": 88,
           "x_heat": null,
           "revision": "eea9e89fbe6432801ef7102a095a714f3b33d449"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 70.3,
+          "risk": 6.5,
+          "stars": 33063,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "eea9e89fbe6432801ef7102a095a714f3b33d449"
         }
       ]
     },
@@ -2900,7 +2900,7 @@
         "quality": 86,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -2916,26 +2916,26 @@
         "opportunity": 79.1,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 70.3,
+        "value_score": 70.2,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "a5a69839ef4a161131d80b6daef10037a9686f4a",
       "content_sha256": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
       "version_label": "rev-a5a69839",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -2947,22 +2947,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": 0.0,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 72.7,
-          "risk": 11.6,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "a5a69839ef4a161131d80b6daef10037a9686f4a"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 72.3,
@@ -3223,6 +3214,15 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "a5a69839ef4a161131d80b6daef10037a9686f4a"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 70.2,
+          "risk": 11.6,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "a5a69839ef4a161131d80b6daef10037a9686f4a"
         }
       ]
     },
@@ -3257,7 +3257,7 @@
         "quality": 82,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -3270,29 +3270,29 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 76.7,
+        "opportunity": 76.6,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 69.8,
+        "value_score": 69.7,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "49ebbcad692ffdf70e518087468609a5c4ab9e22",
       "content_sha256": "9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad",
       "version_label": "rev-49ebbcad",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -3304,22 +3304,13 @@
       "last_skill_update_at": "2026-08-18T00:53:10+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": 0.0,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 72.2,
-          "risk": 6.5,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "49ebbcad692ffdf70e518087468609a5c4ab9e22"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 71.8,
@@ -3580,6 +3571,15 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "49ebbcad692ffdf70e518087468609a5c4ab9e22"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 69.7,
+          "risk": 6.5,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "49ebbcad692ffdf70e518087468609a5c4ab9e22"
         }
       ]
     },
@@ -3638,21 +3638,21 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "993ba7392140fbcf14f2fb3bbe4f1ef7f9a43951",
       "content_sha256": "6cd96ccabb85c4abd7a325ecf7d12678f7e7ce39194920136865bb69ad98cd3c",
       "version_label": "rev-993ba739",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -3664,22 +3664,13 @@
       "last_skill_update_at": "2026-09-20T02:55:33+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 69.7,
-          "risk": 20.3,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "993ba7392140fbcf14f2fb3bbe4f1ef7f9a43951"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 69.7,
@@ -3940,6 +3931,15 @@
           "github_heat": 96,
           "x_heat": null,
           "revision": "993ba7392140fbcf14f2fb3bbe4f1ef7f9a43951"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 69.7,
+          "risk": 20.3,
+          "stars": 257451,
+          "github_heat": 96,
+          "x_heat": null,
+          "revision": "993ba7392140fbcf14f2fb3bbe4f1ef7f9a43951"
         }
       ]
     },
@@ -3974,7 +3974,7 @@
         "quality": 82,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -3987,29 +3987,29 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.7,
+        "opportunity": 78.6,
         "confidence": 90.0,
         "risk": 14.6,
-        "value_score": 68.9,
+        "value_score": 68.8,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "包含命令或代码执行能力"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "fb954a460a1ea2294e9595e87fecce8df043eeba",
       "content_sha256": "8017469ea95fb7d28225c62daf8e2f3492a7b516fc64c18c28977cbf8980b7fe",
       "version_label": "rev-fb954a46",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -4021,22 +4021,13 @@
       "last_skill_update_at": "2026-07-18T01:56:08+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": 0.0,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 71.3,
-          "risk": 14.6,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "fb954a460a1ea2294e9595e87fecce8df043eeba"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 70.9,
@@ -4297,6 +4288,15 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "fb954a460a1ea2294e9595e87fecce8df043eeba"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 68.8,
+          "risk": 14.6,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "fb954a460a1ea2294e9595e87fecce8df043eeba"
         }
       ]
     },
@@ -4329,10 +4329,10 @@
         "demand": 86,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 8,
@@ -4353,20 +4353,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf",
       "content_sha256": "1f487ef3565e5ac1ee6c93cbeb9ac666292b30285877c82ddb0a77c9777fe92f",
       "version_label": "rev-c71ed6e7",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -4378,22 +4378,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 69.4,
-          "risk": 6.5,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 70.0,
@@ -4654,6 +4645,15 @@
           "github_heat": 83,
           "x_heat": null,
           "revision": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 68.3,
+          "risk": 6.5,
+          "stars": 28330,
+          "github_heat": 84,
+          "x_heat": null,
+          "revision": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf"
         }
       ]
     },
@@ -4709,21 +4709,21 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "包含命令或代码执行能力",
         "需要访问外部网络"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "8245f13658d20a5fbd50d88e04143acb4291fb32",
       "content_sha256": "f46d744980c5ea4bea2c2fbe236923c751081e52afa9498ebd9ccd15f33b6a81",
       "version_label": "rev-8245f136",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -4735,22 +4735,13 @@
       "last_skill_update_at": "2026-10-16T02:44:37+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.5,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 66.8,
-          "risk": 19.7,
-          "stars": 3450,
-          "github_heat": 72,
-          "x_heat": null,
-          "revision": "dc2d100f4d49580eefbdb59e7c890c3a2a6643e3"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 66.3,
@@ -5008,6 +4999,15 @@
           "value": 67.9,
           "risk": 19.7,
           "stars": 3733,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "8245f13658d20a5fbd50d88e04143acb4291fb32"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 67.9,
+          "risk": 19.7,
+          "stars": 3748,
           "github_heat": 73,
           "x_heat": null,
           "revision": "8245f13658d20a5fbd50d88e04143acb4291fb32"
@@ -5069,21 +5069,21 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "包含命令或代码执行能力",
         "需要访问外部网络"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "f7889bbe840de0d9b986c3ce0fb2b602cad2e4cf",
       "content_sha256": "f38fe3f2680c5ecbfbdb5109159954d5f0475a7f8238a38aa1e0b813329e4687",
       "version_label": "rev-f7889bbe",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -5095,22 +5095,13 @@
       "last_skill_update_at": "2026-09-05T02:30:20+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.5,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 66.8,
-          "risk": 19.7,
-          "stars": 3450,
-          "github_heat": 72,
-          "x_heat": null,
-          "revision": "f7889bbe840de0d9b986c3ce0fb2b602cad2e4cf"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 66.3,
@@ -5371,6 +5362,15 @@
           "github_heat": 73,
           "x_heat": null,
           "revision": "f7889bbe840de0d9b986c3ce0fb2b602cad2e4cf"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 67.9,
+          "risk": 19.7,
+          "stars": 3748,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "f7889bbe840de0d9b986c3ce0fb2b602cad2e4cf"
         }
       ]
     },
@@ -5405,7 +5405,7 @@
         "quality": 78,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -5418,29 +5418,29 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 74.6,
+        "opportunity": 74.5,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 67.8,
+        "value_score": 67.7,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
       "content_sha256": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
       "version_label": "rev-47c72c60",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -5452,22 +5452,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": 0.0,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 70.2,
-          "risk": 6.5,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 69.8,
@@ -5728,6 +5719,15 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 67.7,
+          "risk": 6.5,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59"
         }
       ]
     },
@@ -5786,21 +5786,21 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "4955f29fc3160c688cf35186bf9d22515b3396c8",
       "content_sha256": "7abd61ab5c9be09f20c7f15caace5f7ee95722bc179fcca4bc4c730ea64dc598",
       "version_label": "rev-4955f29f",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:48+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -5812,22 +5812,13 @@
       "last_skill_update_at": "2026-09-20T02:55:33+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 67.6,
-          "risk": 20.3,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "4955f29fc3160c688cf35186bf9d22515b3396c8"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 67.6,
@@ -6088,6 +6079,15 @@
           "github_heat": 96,
           "x_heat": null,
           "revision": "4955f29fc3160c688cf35186bf9d22515b3396c8"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 67.6,
+          "risk": 20.3,
+          "stars": 257451,
+          "github_heat": 96,
+          "x_heat": null,
+          "revision": "4955f29fc3160c688cf35186bf9d22515b3396c8"
         }
       ]
     },
@@ -6122,7 +6122,7 @@
         "quality": 74,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -6135,29 +6135,29 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 75.8,
+        "opportunity": 75.7,
         "confidence": 90.0,
         "risk": 11.6,
-        "value_score": 67.2,
+        "value_score": 67.1,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "cefeaeb20cc29a803af0335d7c7155b066d8770f",
       "content_sha256": "f27992510c051355dfe68c92394d509af730da5298094ec86834ee40bbd31376",
       "version_label": "rev-cefeaeb2",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -6169,22 +6169,13 @@
       "last_skill_update_at": "2026-08-19T00:54:17+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": 0.0,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 69.6,
-          "risk": 11.6,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "cefeaeb20cc29a803af0335d7c7155b066d8770f"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 69.2,
@@ -6445,6 +6436,15 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "cefeaeb20cc29a803af0335d7c7155b066d8770f"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 67.1,
+          "risk": 11.6,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "cefeaeb20cc29a803af0335d7c7155b066d8770f"
         }
       ]
     },
@@ -6501,8 +6501,8 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -6510,13 +6510,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "482d4a16e29ebbc9d728d9c0475ad2963737f364",
       "content_sha256": "1264edc366860d17ff5fb520f36893c59ce9bb0082e91268ee82a0ecf6d57517",
       "version_label": "rev-482d4a16",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -6528,22 +6528,13 @@
       "last_skill_update_at": "2026-10-03T03:23:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 66.9,
-          "risk": 28.4,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "61f8001b249023552b1ea6d2a65e649c7176496e"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 66.9,
@@ -6804,6 +6795,15 @@
           "github_heat": 96,
           "x_heat": null,
           "revision": "482d4a16e29ebbc9d728d9c0475ad2963737f364"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 66.9,
+          "risk": 28.4,
+          "stars": 257451,
+          "github_heat": 96,
+          "x_heat": null,
+          "revision": "482d4a16e29ebbc9d728d9c0475ad2963737f364"
         }
       ]
     },
@@ -6836,10 +6836,10 @@
         "demand": 76,
         "leverage": 82,
         "quality": 74,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 8,
@@ -6860,20 +6860,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d",
       "content_sha256": "23f429203bd57f186905b2523d4ff8bdf10d3b85b39fc7eed4786097d81f1adc",
       "version_label": "rev-8f74967b",
-      "observed_at": "2026-10-26T02:45:28+00:00",
+      "observed_at": "2026-10-27T03:19:45+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -6885,22 +6885,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 67.5,
-          "risk": 6.5,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 68.1,
@@ -7161,6 +7152,15 @@
           "github_heat": 83,
           "x_heat": null,
           "revision": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 66.4,
+          "risk": 6.5,
+          "stars": 28330,
+          "github_heat": 84,
+          "x_heat": null,
+          "revision": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d"
         }
       ]
     },
@@ -7194,7 +7194,7 @@
         "quality": 74,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -7207,7 +7207,7 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 74.6,
+        "opportunity": 74.5,
         "confidence": 90.0,
         "risk": 11.6,
         "value_score": 66.0,
@@ -7216,20 +7216,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "需要访问外部网络"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "ceae92ab319216a68274168fba9b63b998b65997",
       "content_sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
       "version_label": "rev-ceae92ab",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -7241,22 +7241,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 64.4,
-          "risk": 11.6,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "ceae92ab319216a68274168fba9b63b998b65997"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 64.7,
@@ -7517,6 +7508,15 @@
           "github_heat": 88,
           "x_heat": null,
           "revision": "ceae92ab319216a68274168fba9b63b998b65997"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 66.0,
+          "risk": 11.6,
+          "stars": 33063,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "ceae92ab319216a68274168fba9b63b998b65997"
         }
       ]
     },
@@ -7550,7 +7550,7 @@
         "quality": 70,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -7566,26 +7566,26 @@
         "opportunity": 72.3,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 65.7,
+        "value_score": 65.6,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "d07025bf943345bc1cf15eb923594f889ff881f0",
       "content_sha256": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3",
       "version_label": "rev-d07025bf",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -7597,22 +7597,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 64.1,
-          "risk": 6.5,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "d07025bf943345bc1cf15eb923594f889ff881f0"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 64.4,
@@ -7870,6 +7861,15 @@
           "value": 65.7,
           "risk": 6.5,
           "stars": 33013,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "d07025bf943345bc1cf15eb923594f889ff881f0"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 65.6,
+          "risk": 6.5,
+          "stars": 33063,
           "github_heat": 88,
           "x_heat": null,
           "revision": "d07025bf943345bc1cf15eb923594f889ff881f0"
@@ -7906,7 +7906,7 @@
         "quality": 70,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -7922,26 +7922,26 @@
         "opportunity": 72.3,
         "confidence": 90.0,
         "risk": 6.5,
-        "value_score": 65.7,
+        "value_score": 65.6,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "73401865dd7440a43c5243b107a3763e0d2f4aae",
       "content_sha256": "4012750a5ccbe064ca04af3835d5d1b011979d2d09d9b6df1c8128fac58e0a66",
       "version_label": "rev-73401865",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -7953,22 +7953,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 64.1,
-          "risk": 6.5,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "73401865dd7440a43c5243b107a3763e0d2f4aae"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 64.4,
@@ -8226,6 +8217,15 @@
           "value": 65.7,
           "risk": 6.5,
           "stars": 33013,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "73401865dd7440a43c5243b107a3763e0d2f4aae"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 65.6,
+          "risk": 6.5,
+          "stars": 33063,
           "github_heat": 88,
           "x_heat": null,
           "revision": "73401865dd7440a43c5243b107a3763e0d2f4aae"
@@ -8284,21 +8284,21 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "包含命令或代码执行能力",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "10e0035972459cfd3b7142777b7989888162fd1c",
       "content_sha256": "0d8d430a48a1f0c63325b06e05d3dd6c948063d6625df65100d0c162f39a24a7",
       "version_label": "rev-10e00359",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:45+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -8310,11 +8310,11 @@
       "last_skill_update_at": "2026-10-10T03:53:15+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.4,
+      "delta": 0.0,
       "status": "stable",
       "history": [
         {
@@ -8469,6 +8469,15 @@
           "github_heat": 73,
           "x_heat": null,
           "revision": "10e0035972459cfd3b7142777b7989888162fd1c"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 65.5,
+          "risk": 23.2,
+          "stars": 3748,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "10e0035972459cfd3b7142777b7989888162fd1c"
         }
       ]
     },
@@ -8524,8 +8533,8 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -8533,13 +8542,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "0c7695ac679e6c684828865e181e7a1a03926208",
       "content_sha256": "cdeb2c9f0abe0deadc14d1e5d29993389574f9b81b93017a80461ef7b52b2973",
       "version_label": "rev-0c7695ac",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -8551,11 +8560,11 @@
       "last_skill_update_at": "2026-10-03T03:23:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.5,
+      "delta": 0.0,
       "status": "stable",
       "history": [
         {
@@ -8773,6 +8782,15 @@
           "github_heat": 73,
           "x_heat": null,
           "revision": "0c7695ac679e6c684828865e181e7a1a03926208"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 65.0,
+          "risk": 28.4,
+          "stars": 3748,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "0c7695ac679e6c684828865e181e7a1a03926208"
         }
       ]
     },
@@ -8831,8 +8849,8 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -8840,13 +8858,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "dffda5de0de7fa0f57d0c1ae46a31dea4bcdd35b",
       "content_sha256": "a6c1e9faf9b138301eed8c76b43ca996c5c7e55c98985ff7f7236e5b0b9feddc",
       "version_label": "rev-dffda5de",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -8858,22 +8876,13 @@
       "last_skill_update_at": "2026-09-05T02:30:20+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.5,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 63.8,
-          "risk": 28.4,
-          "stars": 3450,
-          "github_heat": 72,
-          "x_heat": null,
-          "revision": "dffda5de0de7fa0f57d0c1ae46a31dea4bcdd35b"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 63.3,
@@ -9134,6 +9143,15 @@
           "github_heat": 73,
           "x_heat": null,
           "revision": "dffda5de0de7fa0f57d0c1ae46a31dea4bcdd35b"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 64.8,
+          "risk": 28.4,
+          "stars": 3748,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "dffda5de0de7fa0f57d0c1ae46a31dea4bcdd35b"
         }
       ]
     },
@@ -9166,10 +9184,10 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 8,
@@ -9190,7 +9208,7 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
@@ -9198,13 +9216,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "6280a08c57db44ab622dcccbd853e01005edfcbd",
       "content_sha256": "c3a13a659ce26e9d067b5a97c321e8abec6d8e878afce31b7e841dfcf2635c3a",
       "version_label": "rev-6280a08c",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -9216,22 +9234,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 65.4,
-          "risk": 20.3,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "6280a08c57db44ab622dcccbd853e01005edfcbd"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 66.0,
@@ -9490,6 +9499,15 @@
           "risk": 20.3,
           "stars": 28308,
           "github_heat": 83,
+          "x_heat": null,
+          "revision": "6280a08c57db44ab622dcccbd853e01005edfcbd"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 64.3,
+          "risk": 20.3,
+          "stars": 28330,
+          "github_heat": 84,
           "x_heat": null,
           "revision": "6280a08c57db44ab622dcccbd853e01005edfcbd"
         }
@@ -9526,10 +9544,10 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 8,
@@ -9550,7 +9568,7 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
@@ -9558,13 +9576,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d",
       "content_sha256": "1f4d7e16ba5325a80da32e2e6bde0ea850ba9287f35f4675d51d55d2f0dc6e2a",
       "version_label": "rev-42cc4ce8",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -9576,22 +9594,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 65.4,
-          "risk": 20.3,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 66.0,
@@ -9852,102 +9861,15 @@
           "github_heat": 83,
           "x_heat": null,
           "revision": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d"
-        }
-      ]
-    },
-    {
-      "id": "nexu-io/open-design/skills/after-hours-editorial-template",
-      "name": "after-hours-editorial-template",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/after-hours-editorial-template",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/after-hours-editorial-template",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/after-hours-editorial-template/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「after-hours-editorial-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md",
-        "Cursor"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「after-hours-editorial-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/after-hours-editorial-template`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 90,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 8,
-        "network": 8,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.0,
-        "confidence": 75.0,
-        "risk": 8.8,
-        "value_score": 64.1,
-        "action": "test"
-      },
-      "action": "test",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
-      ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "73002addbc3a6590dbb912cb605c60b1c4214576",
-      "content_sha256": "d32adf3724add543c148e41debc8c958c8c90227d27e3831101949b27a153829",
-      "version_label": "rev-73002add",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 103968,
-        "star_delta": null,
-        "heat": 90
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
+        },
         {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 64.1,
-          "risk": 8.8,
-          "stars": 103968,
-          "github_heat": 90,
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 64.3,
+          "risk": 20.3,
+          "stars": 28330,
+          "github_heat": 84,
           "x_heat": null,
-          "revision": "73002addbc3a6590dbb912cb605c60b1c4214576"
+          "revision": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d"
         }
       ]
     },
@@ -9981,7 +9903,7 @@
         "quality": 90,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -9994,7 +9916,7 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.7,
+        "opportunity": 78.6,
         "confidence": 90.0,
         "risk": 28.4,
         "value_score": 64.0,
@@ -10003,7 +9925,7 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
@@ -10012,13 +9934,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "814423d0c40f56853e0f4f2f64d03a02266dadf4",
       "content_sha256": "c06bea99e75eab07fde4fae26069baa002f82f39b53f07981704c2901551dd4c",
       "version_label": "rev-814423d0",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -10030,22 +9952,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 62.5,
-          "risk": 28.4,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "814423d0c40f56853e0f4f2f64d03a02266dadf4"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 62.7,
@@ -10303,6 +10216,15 @@
           "value": 64.0,
           "risk": 28.4,
           "stars": 33013,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "814423d0c40f56853e0f4f2f64d03a02266dadf4"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 64.0,
+          "risk": 28.4,
+          "stars": 33063,
           "github_heat": 88,
           "x_heat": null,
           "revision": "814423d0c40f56853e0f4f2f64d03a02266dadf4"
@@ -10339,7 +10261,7 @@
         "quality": 90,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -10352,7 +10274,7 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 78.7,
+        "opportunity": 78.6,
         "confidence": 90.0,
         "risk": 28.4,
         "value_score": 64.0,
@@ -10361,7 +10283,7 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
@@ -10370,13 +10292,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "c8a6d6d7075b2cc3f7921da89de86e6926f78985",
       "content_sha256": "95ae2683b30d892d165af92a350c5628b68106f395a59b448857b654e306ed91",
       "version_label": "rev-c8a6d6d7",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -10388,22 +10310,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 62.5,
-          "risk": 28.4,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "c8a6d6d7075b2cc3f7921da89de86e6926f78985"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 62.7,
@@ -10664,6 +10577,15 @@
           "github_heat": 88,
           "x_heat": null,
           "revision": "c8a6d6d7075b2cc3f7921da89de86e6926f78985"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 64.0,
+          "risk": 28.4,
+          "stars": 33063,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "c8a6d6d7075b2cc3f7921da89de86e6926f78985"
         }
       ]
     },
@@ -10696,10 +10618,10 @@
         "demand": 74,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 8,
@@ -10720,20 +10642,20 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "87f111bd700e0d993465f7ac741847b5daee57d6",
       "content_sha256": "708df89ff19cbae82a762efae036735d1914b5c7e44df1832e0b723f6cd9ee30",
       "version_label": "rev-87f111bd",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -10745,22 +10667,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 65.1,
-          "risk": 15.2,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "87f111bd700e0d993465f7ac741847b5daee57d6"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 65.7,
@@ -11021,6 +10934,15 @@
           "github_heat": 83,
           "x_heat": null,
           "revision": "87f111bd700e0d993465f7ac741847b5daee57d6"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 64.0,
+          "risk": 15.2,
+          "stars": 28330,
+          "github_heat": 84,
+          "x_heat": null,
+          "revision": "87f111bd700e0d993465f7ac741847b5daee57d6"
         }
       ]
     },
@@ -11079,21 +11001,21 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
         "包含命令或代码执行能力",
         "存在下载后直接执行模式"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "e5abc564e448640acf67fc67d89fc9a26ed1bcfa",
       "content_sha256": "465abb287b7c355a90a3855faeb9cd5c0135674c024be0470294218284ef4295",
       "version_label": "rev-e5abc564",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -11105,22 +11027,13 @@
       "last_skill_update_at": "2026-09-05T02:30:20+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.4,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 62.5,
-          "risk": 32.6,
-          "stars": 3450,
-          "github_heat": 72,
-          "x_heat": null,
-          "revision": "e5abc564e448640acf67fc67d89fc9a26ed1bcfa"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 62.0,
@@ -11381,6 +11294,15 @@
           "github_heat": 73,
           "x_heat": null,
           "revision": "e5abc564e448640acf67fc67d89fc9a26ed1bcfa"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 63.5,
+          "risk": 32.6,
+          "stars": 3748,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "e5abc564e448640acf67fc67d89fc9a26ed1bcfa"
         }
       ]
     },
@@ -11412,7 +11334,7 @@
         "demand": 86,
         "leverage": 82,
         "quality": 78,
-        "github_heat": 90,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -11427,46 +11349,46 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 81.2,
+        "opportunity": 81.6,
         "confidence": 75.0,
         "risk": 17.4,
-        "value_score": 62.9,
+        "value_score": 63.2,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
       "license": "MIT",
       "skill_revision": "2d71e469adb4520dca7b9a29e28a5b656c5c2800",
       "content_sha256": "e7782ba1d01c0db56b81ae0070bb5750b0d4b82d9e438a4428af5fd5c0c07f0b",
       "version_label": "rev-2d71e469",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:46+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "2d71e469adb4520dca7b9a29e28a5b656c5c2800",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.3,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
@@ -11474,6 +11396,15 @@
           "risk": 17.4,
           "stars": 107330,
           "github_heat": 90,
+          "x_heat": null,
+          "revision": "2d71e469adb4520dca7b9a29e28a5b656c5c2800"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 63.2,
+          "risk": 17.4,
+          "stars": 107708,
+          "github_heat": 92,
           "x_heat": null,
           "revision": "2d71e469adb4520dca7b9a29e28a5b656c5c2800"
         }
@@ -11509,7 +11440,7 @@
         "demand": 80,
         "leverage": 82,
         "quality": 78,
-        "github_heat": 90,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -11524,46 +11455,46 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 81.0,
+        "opportunity": 81.3,
         "confidence": 75.0,
         "risk": 17.4,
-        "value_score": 62.7,
+        "value_score": 63.0,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
       "license": "MIT",
       "skill_revision": "71fb6dfc645c541e7cfe4bfb20680d880b3fa4e4",
       "content_sha256": "aecb97509c80954b283637d74ddfebb217d90eaa19cde28837d6b851776dc606",
       "version_label": "rev-71fb6dfc",
-      "observed_at": "2026-10-26T02:45:31+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "71fb6dfc645c541e7cfe4bfb20680d880b3fa4e4",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.3,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
@@ -11571,6 +11502,15 @@
           "risk": 17.4,
           "stars": 107330,
           "github_heat": 90,
+          "x_heat": null,
+          "revision": "71fb6dfc645c541e7cfe4bfb20680d880b3fa4e4"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 63.0,
+          "risk": 17.4,
+          "stars": 107708,
+          "github_heat": 92,
           "x_heat": null,
           "revision": "71fb6dfc645c541e7cfe4bfb20680d880b3fa4e4"
         }
@@ -11604,7 +11544,7 @@
         "demand": 84,
         "leverage": 82,
         "quality": 74,
-        "github_heat": 90,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -11619,46 +11559,46 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 81.0,
+        "opportunity": 81.3,
         "confidence": 75.0,
         "risk": 17.4,
-        "value_score": 62.7,
+        "value_score": 63.0,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
       "license": "MIT",
       "skill_revision": "63c5ca173a110ba4c957f568d4c8b051666ec593",
       "content_sha256": "3a5ef2439dba7ac5dfcb9f46da822b878dab58774d1b4ebef3b6ba7879d5b9c7",
       "version_label": "rev-63c5ca17",
-      "observed_at": "2026-10-26T02:45:31+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "63c5ca173a110ba4c957f568d4c8b051666ec593",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.3,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
@@ -11668,45 +11608,54 @@
           "github_heat": 90,
           "x_heat": null,
           "revision": "63c5ca173a110ba4c957f568d4c8b051666ec593"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 63.0,
+          "risk": 17.4,
+          "stars": 107708,
+          "github_heat": 92,
+          "x_heat": null,
+          "revision": "63c5ca173a110ba4c957f568d4c8b051666ec593"
         }
       ]
     },
     {
-      "id": "nexu-io/open-design/skills/8-bit-orbit-video-template",
-      "name": "8-bit-orbit-video-template",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/8-bit-orbit-video-template",
+      "id": "paperclipai/paperclip/skills/paperclip-converting-plans-to-tasks",
+      "name": "paperclip-converting-plans-to-tasks",
+      "author": "paperclipai",
+      "repo": "paperclipai/paperclip",
+      "branch": "master",
+      "skill_path": "skills/paperclip-converting-plans-to-tasks",
       "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/8-bit-orbit-video-template",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/8-bit-orbit-video-template/SKILL.md",
-      "purpose": "这是一个“媒体与创作”类 Skill，主要用于处理视频、音频或多媒体生产流程。它会把「8-bit-orbit-video-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "媒体与创作",
+      "url": "https://github.com/paperclipai/paperclip/tree/master/skills/paperclip-converting-plans-to-tasks",
+      "skill_md_url": "https://github.com/paperclipai/paperclip/blob/master/skills/paperclip-converting-plans-to-tasks/SKILL.md",
+      "purpose": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「paperclip-converting-plans-to-tasks」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": ">",
+      "category": "研究与知识",
       "platforms": [
         "通用 SKILL.md"
       ],
       "explanation_cn": {
-        "summary_cn": "这是一个“媒体与创作”类 Skill，主要用于处理视频、音频或多媒体生产流程。它会把「8-bit-orbit-video-template」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "设计、视频、音频和内容创作者",
-        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 媒体与创作，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/8-bit-orbit-video-template`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "summary_cn": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「paperclip-converting-plans-to-tasks」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "需要检索、核验来源并形成结论的研究者和知识工作者",
+        "how_it_works_cn": "通过 SKILL.md 为 Agent 提供可复用的任务流程。",
+        "typical_use_cn": "当任务涉及 研究与知识，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/paperclip-converting-plans-to-tasks`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 72,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 90,
+        "demand": 80,
+        "leverage": 68,
+        "quality": 62,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
-        "uniqueness": 62,
+        "uniqueness": 70,
         "permissions": 10,
         "execution": 8,
-        "network": 42,
+        "network": 8,
         "secrets": 4,
         "obfuscation": 0,
         "provenance": 26,
@@ -11714,55 +11663,64 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 79.2,
+        "opportunity": 77.2,
         "confidence": 75.0,
-        "risk": 13.8,
-        "value_score": 62.5,
+        "risk": 8.8,
+        "value_score": 62.6,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
-        "需要访问外部网络"
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "e08190fa6449b2da53d10ff9d526c6e40c503097",
-      "content_sha256": "4493e5c363e447e05210d0a715c8db8b9a742f42eb21a2c2be63b63da3ede80a",
-      "version_label": "rev-e08190fa",
-      "observed_at": "2026-10-26T02:45:29+00:00",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
+      "license": "MIT",
+      "skill_revision": "a6ae07864c4a02e03199cb2cfc7a3dfda436a300",
+      "content_sha256": "87936d3444fe4dbb906dbf22f6072ecc0300b5753e2b179f480d35d93e3d207b",
+      "version_label": "rev-a6ae0786",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "a6ae07864c4a02e03199cb2cfc7a3dfda436a300",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 103968,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.3,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 62.5,
-          "risk": 13.8,
-          "stars": 103968,
+          "value": 62.3,
+          "risk": 8.8,
+          "stars": 107330,
           "github_heat": 90,
           "x_heat": null,
-          "revision": "e08190fa6449b2da53d10ff9d526c6e40c503097"
+          "revision": "a6ae07864c4a02e03199cb2cfc7a3dfda436a300"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 62.6,
+          "risk": 8.8,
+          "stars": 107708,
+          "github_heat": 92,
+          "x_heat": null,
+          "revision": "a6ae07864c4a02e03199cb2cfc7a3dfda436a300"
         }
       ]
     },
@@ -11821,8 +11779,8 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：257,083",
-        "仓库最近更新：2026-10-26T02:40:53Z",
+        "仓库 Stars：257,451",
+        "仓库最近更新：2026-10-27T03:15:45Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -11830,13 +11788,13 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 257083,
-      "repo_updated_at": "2026-10-26T02:40:53Z",
+      "repo_stars": 257451,
+      "repo_updated_at": "2026-10-27T03:15:45Z",
       "license": "MIT",
       "skill_revision": "4f40504c2971abc6e5de29d7558ed8d782183c6a",
       "content_sha256": "51623f5627eb62c739497f158267f6192c952a2ba73c6ed4591856561f3b207b",
       "version_label": "rev-4f40504c",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -11848,22 +11806,13 @@
       "last_skill_update_at": "2026-09-20T02:55:33+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 257083,
-        "star_delta": 251,
+        "stars": 257451,
+        "star_delta": 368,
         "heat": 96
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 62.4,
-          "risk": 41.3,
-          "stars": 249259,
-          "github_heat": 96,
-          "x_heat": null,
-          "revision": "4f40504c2971abc6e5de29d7558ed8d782183c6a"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 62.4,
@@ -12124,101 +12073,15 @@
           "github_heat": 96,
           "x_heat": null,
           "revision": "4f40504c2971abc6e5de29d7558ed8d782183c6a"
-        }
-      ]
-    },
-    {
-      "id": "paperclipai/paperclip/skills/paperclip-converting-plans-to-tasks",
-      "name": "paperclip-converting-plans-to-tasks",
-      "author": "paperclipai",
-      "repo": "paperclipai/paperclip",
-      "branch": "master",
-      "skill_path": "skills/paperclip-converting-plans-to-tasks",
-      "source": "github",
-      "url": "https://github.com/paperclipai/paperclip/tree/master/skills/paperclip-converting-plans-to-tasks",
-      "skill_md_url": "https://github.com/paperclipai/paperclip/blob/master/skills/paperclip-converting-plans-to-tasks/SKILL.md",
-      "purpose": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「paperclip-converting-plans-to-tasks」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": ">",
-      "category": "研究与知识",
-      "platforms": [
-        "通用 SKILL.md"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“研究与知识”类 Skill，主要用于开展资料研究、来源核验与知识整理。它会把「paperclip-converting-plans-to-tasks」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "需要检索、核验来源并形成结论的研究者和知识工作者",
-        "how_it_works_cn": "通过 SKILL.md 为 Agent 提供可复用的任务流程。",
-        "typical_use_cn": "当任务涉及 研究与知识，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/paperclip-converting-plans-to-tasks`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 80,
-        "leverage": 68,
-        "quality": 62,
-        "github_heat": 90,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 70,
-        "permissions": 10,
-        "execution": 8,
-        "network": 8,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 76.9,
-        "confidence": 75.0,
-        "risk": 8.8,
-        "value_score": 62.3,
-        "action": "test"
-      },
-      "action": "test",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
-      ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
-      "license": "MIT",
-      "skill_revision": "a6ae07864c4a02e03199cb2cfc7a3dfda436a300",
-      "content_sha256": "87936d3444fe4dbb906dbf22f6072ecc0300b5753e2b179f480d35d93e3d207b",
-      "version_label": "rev-a6ae0786",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
+        },
         {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 62.3,
-          "risk": 8.8,
-          "stars": 107330,
-          "github_heat": 90,
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 62.4,
+          "risk": 41.3,
+          "stars": 257451,
+          "github_heat": 96,
           "x_heat": null,
-          "revision": "a6ae07864c4a02e03199cb2cfc7a3dfda436a300"
+          "revision": "4f40504c2971abc6e5de29d7558ed8d782183c6a"
         }
       ]
     },
@@ -12250,7 +12113,7 @@
         "demand": 70,
         "leverage": 82,
         "quality": 78,
-        "github_heat": 90,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -12265,46 +12128,46 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 79.4,
+        "opportunity": 79.8,
         "confidence": 75.0,
         "risk": 16.8,
-        "value_score": 61.7,
+        "value_score": 61.9,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
         "包含命令或代码执行能力"
       ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
       "license": "MIT",
       "skill_revision": "b90a1aa8cf591b41aa57172182e834731696dc18",
       "content_sha256": "51e8e591837fb8ab77c39be03d8b32b5e80124bb8af4cb88753f02c12ee05ed3",
       "version_label": "rev-b90a1aa8",
-      "observed_at": "2026-10-26T02:45:31+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "b90a1aa8cf591b41aa57172182e834731696dc18",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.2,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
@@ -12312,6 +12175,15 @@
           "risk": 16.8,
           "stars": 107330,
           "github_heat": 90,
+          "x_heat": null,
+          "revision": "b90a1aa8cf591b41aa57172182e834731696dc18"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 61.9,
+          "risk": 16.8,
+          "stars": 107708,
+          "github_heat": 92,
           "x_heat": null,
           "revision": "b90a1aa8cf591b41aa57172182e834731696dc18"
         }
@@ -12346,10 +12218,10 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 75,
         "execution": 8,
@@ -12370,7 +12242,7 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
@@ -12378,13 +12250,13 @@
         "请求高权限或宽泛文件权限",
         "需要访问外部网络"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd",
       "content_sha256": "0f19edad8aed28063a3517c419fbcbef5421d024f189fd02a17fae25093ec69d",
       "version_label": "rev-d417e16b",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -12396,22 +12268,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 62.7,
-          "risk": 27.9,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 63.3,
@@ -12672,102 +12535,15 @@
           "github_heat": 83,
           "x_heat": null,
           "revision": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd"
-        }
-      ]
-    },
-    {
-      "id": "nexu-io/open-design/skills/animate",
-      "name": "animate",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/animate",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/animate",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/animate/SKILL.md",
-      "purpose": "这是一个“媒体与创作”类 Skill，主要用于处理视频、音频或多媒体生产流程。它会把「animate」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Implement purposeful interface animations: easing, springs, interruption, exits, and reduced motion. Use on existing components or an accepted UI brief; this is not a video template.",
-      "category": "媒体与创作",
-      "platforms": [
-        "通用 SKILL.md"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“媒体与创作”类 Skill，主要用于处理视频、音频或多媒体生产流程。它会把「animate」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "设计、视频、音频和内容创作者",
-        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 媒体与创作，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/animate`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 76,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 90,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 8,
-        "network": 42,
-        "secrets": 62,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 81.4,
-        "confidence": 75.0,
-        "risk": 22.5,
-        "value_score": 61.3,
-        "action": "test"
-      },
-      "action": "test",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "需要访问外部网络",
-        "可能读取或使用凭据"
-      ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "0961ab9a6549e43025802f5ae0c20c8f75eed364",
-      "content_sha256": "0e0786fe996fa78083facfa45d501c3914ce4eaea37c8e7ce15e398095ba2d90",
-      "version_label": "rev-0961ab9a",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 103968,
-        "star_delta": null,
-        "heat": 90
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
+        },
         {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 61.3,
-          "risk": 22.5,
-          "stars": 103968,
-          "github_heat": 90,
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 61.6,
+          "risk": 27.9,
+          "stars": 28330,
+          "github_heat": 84,
           "x_heat": null,
-          "revision": "0961ab9a6549e43025802f5ae0c20c8f75eed364"
+          "revision": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd"
         }
       ]
     },
@@ -12803,7 +12579,7 @@
         "quality": 82,
         "github_heat": 88,
         "x_heat": null,
-        "momentum": 60,
+        "momentum": 59,
         "maintenance": 72,
         "uniqueness": 62,
         "permissions": 10,
@@ -12819,13 +12595,13 @@
         "opportunity": 75.4,
         "confidence": 90.0,
         "risk": 28.4,
-        "value_score": 61.0,
+        "value_score": 60.9,
         "action": "test"
       },
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：33,013",
+        "仓库 Stars：33,063",
         "仓库最近更新：2026-10-14T17:58:45Z",
         "来源级别：官方/厂商"
       ],
@@ -12834,13 +12610,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 33013,
+      "repo_stars": 33063,
       "repo_updated_at": "2026-10-14T17:58:45Z",
       "license": null,
       "skill_revision": "a0251ce89a7636230be9c5b989a81e1a54a52a96",
       "content_sha256": "cfcc3dd479ab2e0ae721ddf39b8af84d977321487672f1487c8d6855f576927b",
       "version_label": "rev-a0251ce8",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -12852,22 +12628,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 33013,
-        "star_delta": 53,
+        "stars": 33063,
+        "star_delta": 50,
         "heat": 88
       },
-      "delta": -0.2,
+      "delta": -0.1,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 59.4,
-          "risk": 28.4,
-          "stars": 31587,
-          "github_heat": 86,
-          "x_heat": null,
-          "revision": "a0251ce89a7636230be9c5b989a81e1a54a52a96"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 59.7,
@@ -13128,6 +12895,15 @@
           "github_heat": 88,
           "x_heat": null,
           "revision": "a0251ce89a7636230be9c5b989a81e1a54a52a96"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 60.9,
+          "risk": 28.4,
+          "stars": 33063,
+          "github_heat": 88,
+          "x_heat": null,
+          "revision": "a0251ce89a7636230be9c5b989a81e1a54a52a96"
         }
       ]
     },
@@ -13160,10 +12936,10 @@
         "demand": 86,
         "leverage": 82,
         "quality": 82,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 48,
@@ -13184,7 +12960,7 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
@@ -13193,13 +12969,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "e2d73abb7e5a550af3d9e40797a28259bddba97d",
       "content_sha256": "d7632537cf19be17cf33d2c696b9d9c2ea3ee51026030e9b203d5b9255e75b15",
       "version_label": "rev-e2d73abb",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -13211,22 +12987,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 61.7,
-          "risk": 28.4,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "e2d73abb7e5a550af3d9e40797a28259bddba97d"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 62.4,
@@ -13487,6 +13254,15 @@
           "github_heat": 83,
           "x_heat": null,
           "revision": "e2d73abb7e5a550af3d9e40797a28259bddba97d"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 60.6,
+          "risk": 28.4,
+          "stars": 28330,
+          "github_heat": 84,
+          "x_heat": null,
+          "revision": "e2d73abb7e5a550af3d9e40797a28259bddba97d"
         }
       ]
     },
@@ -13542,8 +13318,8 @@
       "action": "test",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -13551,13 +13327,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "7db4a35da48235a1542c25c62bd6ddbb12f1ed59",
       "content_sha256": "afd96c38f832ab5b67b7b9f0ff967e387639c73676979bfe7cd9b34f20d55e90",
       "version_label": "rev-7db4a35d",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:45+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -13569,11 +13345,11 @@
       "last_skill_update_at": "2026-10-03T03:23:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.5,
+      "delta": 0.0,
       "status": "stable",
       "history": [
         {
@@ -13791,45 +13567,55 @@
           "github_heat": 73,
           "x_heat": null,
           "revision": "7db4a35da48235a1542c25c62bd6ddbb12f1ed59"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 60.3,
+          "risk": 28.4,
+          "stars": 3748,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "7db4a35da48235a1542c25c62bd6ddbb12f1ed59"
         }
       ]
     },
     {
-      "id": "nexu-io/open-design/skills/ad-creative",
-      "name": "ad-creative",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
+      "id": "shenysun/skills-manager/.claude/skills/team",
+      "name": "team",
+      "author": "shenysun",
+      "repo": "shenysun/skills-manager",
       "branch": "main",
-      "skill_path": "skills/ad-creative",
+      "skill_path": ".claude/skills/team",
       "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/ad-creative",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/ad-creative/SKILL.md",
-      "purpose": "这是一个“媒体与创作”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ad-creative」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "媒体与创作",
+      "url": "https://github.com/shenysun/skills-manager/tree/main/.claude/skills/team",
+      "skill_md_url": "https://github.com/shenysun/skills-manager/blob/main/.claude/skills/team/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「team」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Run the four-role Herdr team (pm, po, dev, qa panes) that ships one feature of this repo. In the main session the user runs /team as the orchestrator (up, status, go, down); in a role pane the orchestrator prompts /team role: pm|po|dev|qa. Requires HERDR_ENV=1.",
+      "category": "通用效率",
       "platforms": [
-        "通用 SKILL.md"
+        "通用 SKILL.md",
+        "Claude"
       ],
       "explanation_cn": {
-        "summary_cn": "这是一个“媒体与创作”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ad-creative」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "设计、视频、音频和内容创作者",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 媒体与创作，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/ad-creative`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于诊断问题、执行测试并形成可复现证据。它会把「team」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料；包含验证或测试要求。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `.claude/skills/team`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 72,
+        "demand": 74,
         "leverage": 82,
-        "quality": 74,
-        "github_heat": 90,
+        "quality": 78,
+        "github_heat": 54,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
         "uniqueness": 62,
         "permissions": 10,
-        "execution": 48,
-        "network": 42,
+        "execution": 8,
+        "network": 8,
         "secrets": 4,
         "obfuscation": 0,
         "provenance": 26,
@@ -13837,30 +13623,29 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 79.2,
+        "opportunity": 73.9,
         "confidence": 75.0,
-        "risk": 21.9,
+        "risk": 8.8,
         "value_score": 59.7,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
+        "仓库 Stars：179",
+        "仓库最近更新：2026-10-27T03:19:32Z",
         "来源级别：社区发现"
       ],
       "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "81e5543b7408aa669624e596582a08c0af128b69",
-      "content_sha256": "4239ff9ebedc97868ce2b2e1aed133dcbc243cc53d5cf9a57f90d22cf5d81bf7",
-      "version_label": "rev-81e5543b",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "repo_stars": 179,
+      "repo_updated_at": "2026-10-27T03:19:32Z",
+      "license": "MIT",
+      "skill_revision": "0fb3107e2b3943133396d4cd0738cadf014ab5b0",
+      "content_sha256": "4f691b9b716bbd6427615d622549706393debdcb086fa101f757625fd374507f",
+      "version_label": "rev-0fb3107e",
+      "observed_at": "2026-10-27T03:19:46+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -13869,314 +13654,24 @@
       "updated_since_last": false,
       "update_status": "new",
       "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 103968,
+        "stars": 179,
         "star_delta": null,
-        "heat": 90
+        "heat": 54
       },
       "delta": 0,
       "status": "new",
       "history": [
         {
-          "observed_at": "2026-10-26T02:45:31+00:00",
+          "observed_at": "2026-10-27T03:19:48+00:00",
           "value": 59.7,
-          "risk": 21.9,
-          "stars": 103968,
-          "github_heat": 90,
+          "risk": 8.8,
+          "stars": 179,
+          "github_heat": 54,
           "x_heat": null,
-          "revision": "81e5543b7408aa669624e596582a08c0af128b69"
-        }
-      ]
-    },
-    {
-      "id": "nexu-io/open-design/skills/ai-music-album",
-      "name": "ai-music-album",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/ai-music-album",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/ai-music-album",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/ai-music-album/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ai-music-album」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md",
-        "Claude"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「ai-music-album」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/ai-music-album`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 90,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.0,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 59.5,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "32029ec403dbd6a671371c9508db4f1d94426745",
-      "content_sha256": "442f8a2890e1c39a10e5ec2236ae10072c0c9154ca08aa1041e38370afe3a7e7",
-      "version_label": "rev-32029ec4",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 103968,
-        "star_delta": null,
-        "heat": 90
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 59.5,
-          "risk": 21.9,
-          "stars": 103968,
-          "github_heat": 90,
-          "x_heat": null,
-          "revision": "32029ec403dbd6a671371c9508db4f1d94426745"
-        }
-      ]
-    },
-    {
-      "id": "nexu-io/open-design/skills/algorithmic-art",
-      "name": "algorithmic-art",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/algorithmic-art",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/algorithmic-art",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/algorithmic-art/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「algorithmic-art」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md",
-        "Claude"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「algorithmic-art」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/algorithmic-art`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 90,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.0,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 59.5,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "7b4478274d4879ed28128de984601d4f9dac4dc1",
-      "content_sha256": "c9d2eb5c8bd08b791889b24ed368c11b4fb6901b97809279d1d2907439a1eb4b",
-      "version_label": "rev-7b447827",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 103968,
-        "star_delta": null,
-        "heat": 90
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 59.5,
-          "risk": 21.9,
-          "stars": 103968,
-          "github_heat": 90,
-          "x_heat": null,
-          "revision": "7b4478274d4879ed28128de984601d4f9dac4dc1"
-        }
-      ]
-    },
-    {
-      "id": "nexu-io/open-design/skills/apple-hig",
-      "name": "apple-hig",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/apple-hig",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/apple-hig",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/apple-hig/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「apple-hig」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「apple-hig」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/apple-hig`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 74,
-        "github_heat": 90,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 79.0,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 59.5,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "c104c85f65f0a98c348e710231da054dea338eb1",
-      "content_sha256": "a78b3d95c0af4e3646c9925ad4f0e37c1a7ab0f09a7e0855ac1cfc75fb2db8f8",
-      "version_label": "rev-c104c85f",
-      "observed_at": "2026-10-26T02:45:31+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 103968,
-        "star_delta": null,
-        "heat": 90
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 59.5,
-          "risk": 21.9,
-          "stars": 103968,
-          "github_heat": 90,
-          "x_heat": null,
-          "revision": "c104c85f65f0a98c348e710231da054dea338eb1"
+          "revision": "0fb3107e2b3943133396d4cd0738cadf014ab5b0"
         }
       ]
     },
@@ -14211,7 +13706,7 @@
         "demand": 80,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 90,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -14226,17 +13721,17 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 82.3,
+        "opportunity": 82.7,
         "confidence": 75.0,
         "risk": 30.6,
-        "value_score": 59.3,
+        "value_score": 59.6,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
@@ -14244,30 +13739,30 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
       "license": "MIT",
       "skill_revision": "06977ec673e8227b21583d1a38c350d8e33fb07d",
       "content_sha256": "275c7506ff5264f5caeb4a9ea0da37900d09e7e717702978b48b883524d194a2",
       "version_label": "rev-06977ec6",
-      "observed_at": "2026-10-26T02:45:31+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "06977ec673e8227b21583d1a38c350d8e33fb07d",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.3,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
@@ -14275,6 +13770,15 @@
           "risk": 30.6,
           "stars": 107330,
           "github_heat": 90,
+          "x_heat": null,
+          "revision": "06977ec673e8227b21583d1a38c350d8e33fb07d"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 59.6,
+          "risk": 30.6,
+          "stars": 107708,
+          "github_heat": 92,
           "x_heat": null,
           "revision": "06977ec673e8227b21583d1a38c350d8e33fb07d"
         }
@@ -14308,7 +13812,7 @@
         "demand": 74,
         "leverage": 68,
         "quality": 66,
-        "github_heat": 90,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -14323,46 +13827,46 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 76.2,
+        "opportunity": 76.6,
         "confidence": 75.0,
         "risk": 17.4,
-        "value_score": 58.7,
+        "value_score": 59.0,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
         "可能读取或使用凭据"
       ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
       "license": "MIT",
       "skill_revision": "f93aeacb45d1279935023d0a268bd7aeccbbbd4f",
       "content_sha256": "c51aa39e31db07a354aa0904faa943a25ac20228bda1242974b8946d9f817aad",
       "version_label": "rev-f93aeacb",
-      "observed_at": "2026-10-26T02:45:29+00:00",
+      "observed_at": "2026-10-27T03:19:46+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "f93aeacb45d1279935023d0a268bd7aeccbbbd4f",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.3,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
@@ -14372,6 +13876,110 @@
           "github_heat": 90,
           "x_heat": null,
           "revision": "f93aeacb45d1279935023d0a268bd7aeccbbbd4f"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 59.0,
+          "risk": 17.4,
+          "stars": 107708,
+          "github_heat": 92,
+          "x_heat": null,
+          "revision": "f93aeacb45d1279935023d0a268bd7aeccbbbd4f"
+        }
+      ]
+    },
+    {
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/taishang-laojun",
+      "name": "taishang-laojun",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
+      "branch": "main",
+      "skill_path": "skills/taishang-laojun",
+      "source": "github",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/taishang-laojun",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/taishang-laojun/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「taishang-laojun」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "太上老君炼丹炉总控台。用柳爷做自媒体的思路帮创作者把别人的爆款和自己的经历炼成自己的视频：读懂用户此刻在哪、这次要交出什么，再按需调用访谈、找对标拆爆款、选题、系列策划、开头结构、成稿、标题、复盘、变现承接。用户想拍视频但不知道拍什么、手里有参考不知怎么用、有题没稿、要改标题或开头、发了效果不对、替老板或客户做号时使用。",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「taishang-laojun」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/taishang-laojun`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 90,
+        "github_heat": 51,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 72.4,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 58.5,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "e68c6aab9feb30fa5f87a8a153bbc5724ace2b33",
+      "content_sha256": "1f56c9aaa7e0201a1ef46a8d577c284c1e8a59e103d2cce4d4f9f4406f9b3355",
+      "version_label": "rev-e68c6aab",
+      "observed_at": "2026-10-27T03:19:45+00:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 93,
+        "star_delta": null,
+        "heat": 51
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 58.5,
+          "risk": 8.8,
+          "stars": 93,
+          "github_heat": 51,
+          "x_heat": null,
+          "revision": "e68c6aab9feb30fa5f87a8a153bbc5724ace2b33"
         }
       ]
     },
@@ -14406,7 +14014,7 @@
         "quality": 90,
         "github_heat": 95,
         "x_heat": null,
-        "momentum": 55,
+        "momentum": 54,
         "maintenance": 70,
         "uniqueness": 62,
         "permissions": 10,
@@ -14419,7 +14027,7 @@
         "evidence_confidence": 90
       },
       "radar": {
-        "opportunity": 77.6,
+        "opportunity": 77.5,
         "confidence": 90.0,
         "risk": 41.3,
         "value_score": 58.4,
@@ -14428,7 +14036,7 @@
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：183,775",
+        "仓库 Stars：184,014",
         "仓库最近更新：2026-10-09T18:45:52Z",
         "来源级别：官方/厂商"
       ],
@@ -14437,13 +14045,13 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 183775,
+      "repo_stars": 184014,
       "repo_updated_at": "2026-10-09T18:45:52Z",
       "license": null,
       "skill_revision": "fe7e28a55c713933ff98e017112e53c61d8f5537",
       "content_sha256": "40537cca17c4aa86e4ce83ced39efcbfb1204905e3cf4c4ff98f2eab011e4b7f",
       "version_label": "rev-fe7e28a5",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -14455,22 +14063,13 @@
       "last_skill_update_at": "2026-10-10T03:53:15+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 183775,
-        "star_delta": 241,
+        "stars": 184014,
+        "star_delta": 239,
         "heat": 95
       },
-      "delta": -0.1,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 60.9,
-          "risk": 41.3,
-          "stars": 178567,
-          "github_heat": 95,
-          "x_heat": null,
-          "revision": "6ffb7621e3f29eb3474ecdad91eb0370fbc623fd"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 60.5,
@@ -14731,38 +14330,48 @@
           "github_heat": 95,
           "x_heat": null,
           "revision": "fe7e28a55c713933ff98e017112e53c61d8f5537"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 58.4,
+          "risk": 41.3,
+          "stars": 184014,
+          "github_heat": 95,
+          "x_heat": null,
+          "revision": "fe7e28a55c713933ff98e017112e53c61d8f5537"
         }
       ]
     },
     {
-      "id": "JKHeadley/instar/skills/instar-dev",
-      "name": "instar-dev",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/tslj-monetize",
+      "name": "tslj-monetize",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
       "branch": "main",
-      "skill_path": "skills/instar-dev",
+      "skill_path": "skills/tslj-monetize",
       "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/instar-dev",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/instar-dev/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「instar-dev」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Instar-specific development skill used by the instar-developing agent (Echo, or any agent assigned instar-dev responsibilities). Wraps /build with mandatory side-effects review, signal-vs-authority principle check, and artifact generation. Structural enforcement via pre-commit/pre-push hooks — the instar repo refuses commits and pushes that didn't come through this skill. NOT a user-facing skill — end users should never invoke it.",
-      "category": "软件开发",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/tslj-monetize",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/tslj-monetize/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-monetize」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "成丹：变现承接。用户明确想变现、接活、做产品或开源项目、处理“来的人不对”的商业问题时使用。区分曝光、需求与成交，看清展示的东西招来了谁，设计一个能兑现、合规、可小范围验证的交付和承接路径；不保证收益。",
+      "category": "通用效率",
       "platforms": [
-        "通用 SKILL.md"
+        "通用 SKILL.md",
+        "Codex"
       ],
       "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「instar-dev」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "开发者、技术团队与代码审查人员",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/instar-dev`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-monetize」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/tslj-monetize`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 86,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 50,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 86,
+        "github_heat": 51,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -14770,36 +14379,36 @@
         "permissions": 10,
         "execution": 8,
         "network": 8,
-        "secrets": 62,
+        "secrets": 4,
         "obfuscation": 0,
         "provenance": 26,
         "mismatch": 5,
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 75.9,
+        "opportunity": 71.9,
         "confidence": 75.0,
-        "risk": 17.4,
-        "value_score": 58.4,
+        "risk": 8.8,
+        "value_score": 58.1,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
         "来源级别：社区发现"
       ],
       "caveats": [
-        "可能读取或使用凭据"
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
       ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "3c39b591ae813c8653fd3317bc6f7854ee01f595",
-      "content_sha256": "9a75c36ba5217604ef10bbb8eba8558c76675b519128d79c946a9242836bc665",
-      "version_label": "rev-3c39b591",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "74bbc4158077660deb407ff9ef8bc9bd9e3a0c97",
+      "content_sha256": "f55a4daf5efb481dbb1a73df42d532520f220f4dae7c9169b77e2ab3948d7ac5",
+      "version_label": "rev-74bbc415",
+      "observed_at": "2026-10-27T03:19:46+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -14808,24 +14417,505 @@
       "updated_since_last": false,
       "update_status": "new",
       "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 84,
+        "stars": 93,
         "star_delta": null,
-        "heat": 50
+        "heat": 51
       },
       "delta": 0,
       "status": "new",
       "history": [
         {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 58.4,
-          "risk": 17.4,
-          "stars": 84,
-          "github_heat": 50,
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 58.1,
+          "risk": 8.8,
+          "stars": 93,
+          "github_heat": 51,
           "x_heat": null,
-          "revision": "3c39b591ae813c8653fd3317bc6f7854ee01f595"
+          "revision": "74bbc4158077660deb407ff9ef8bc9bd9e3a0c97"
+        }
+      ]
+    },
+    {
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/tslj-select",
+      "name": "tslj-select",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
+      "branch": "main",
+      "skill_path": "skills/tslj-select",
+      "source": "github",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/tslj-select",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/tslj-select/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-select」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "选材：找对标、拆爆款。炼丹炉的原料关：按用户的条件找对标，把一条爆款拆开看它为什么爆，再用复读、客户、替换三关掂量它到用户手里还成不成立，定出借哪个机制、换掉什么、用用户的哪件事接住。也用于判断该用哪个 AI 工具。用户刷到一条爆款想拍成自己的、在找对标、不知道该学谁时使用。",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-select」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/tslj-select`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 86,
+        "github_heat": 51,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 71.9,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 58.1,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "a4b5e558c84a8d6e34de6a03662ccbe2a73255c9",
+      "content_sha256": "1277102de3b847282f3aad48006773beecf33090cd2cf88d354c37e653fe01db",
+      "version_label": "rev-a4b5e558",
+      "observed_at": "2026-10-27T03:19:46+00:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 93,
+        "star_delta": null,
+        "heat": 51
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 58.1,
+          "risk": 8.8,
+          "stars": 93,
+          "github_heat": 51,
+          "x_heat": null,
+          "revision": "a4b5e558c84a8d6e34de6a03662ccbe2a73255c9"
+        }
+      ]
+    },
+    {
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/tslj-idea",
+      "name": "tslj-idea",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
+      "branch": "main",
+      "skill_path": "skills/tslj-idea",
+      "source": "github",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/tslj-idea",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/tslj-idea/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-idea」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "看火：选题判断。从用户的经历、场景、参考或热点里判断能拍什么，给出少量私人定制、带理由的方向并推荐一个；也用于判断一个已有选题值不值得拍、会招来什么人。用户不知道拍什么、手里有热点或参考想找切入点、想知道某个选题行不行时使用。",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-idea」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/tslj-idea`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 82,
+        "github_heat": 51,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 71.5,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 57.7,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "6a0e63d9c60ec3bf02c457cbdadac4cce747818e",
+      "content_sha256": "f1722340dc1d6457f0d5961df27cc2d56882e3bc4854ddde1deddfede55c14ee",
+      "version_label": "rev-6a0e63d9",
+      "observed_at": "2026-10-27T03:19:45+00:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 93,
+        "star_delta": null,
+        "heat": 51
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 57.7,
+          "risk": 8.8,
+          "stars": 93,
+          "github_heat": 51,
+          "x_heat": null,
+          "revision": "6a0e63d9c60ec3bf02c457cbdadac4cce747818e"
+        }
+      ]
+    },
+    {
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/tslj-script",
+      "name": "tslj-script",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
+      "branch": "main",
+      "skill_path": "skills/tslj-script",
+      "source": "github",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/tslj-script",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/tslj-script/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-script」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "回炉：完整成稿与改稿。把用户的素材或参考观点写成可以直接念的完整逐字稿，也修改已有稿件和 AI 初稿；从“我要表达什么”出发借观点，不照搬别人的脉络。用户要完整口播稿、要改稿、要把别人的爆款改成自己的时使用。",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-script」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/tslj-script`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 82,
+        "github_heat": 51,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 71.5,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 57.7,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "a66f1d51876faf06b0e5b1ac1e89223f7d87fc1c",
+      "content_sha256": "90cbfe59bacbf687b11ca25780a1c4b2a05e5e9c0fa50b2fa1182783f8b3f0c5",
+      "version_label": "rev-a66f1d51",
+      "observed_at": "2026-10-27T03:19:46+00:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 93,
+        "star_delta": null,
+        "heat": 51
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 57.7,
+          "risk": 8.8,
+          "stars": 93,
+          "github_heat": 51,
+          "x_heat": null,
+          "revision": "a66f1d51876faf06b0e5b1ac1e89223f7d87fc1c"
+        }
+      ]
+    },
+    {
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/tslj-title",
+      "name": "tslj-title",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
+      "branch": "main",
+      "skill_path": "skills/tslj-title",
+      "source": "github",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/tslj-title",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/tslj-title/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-title」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "收丹：标题。视频剪完没标题、对现有标题不满意、想判断一个标题好不好时使用。先从内容里提炼“总”，再用“跟我有关”（认人、认事、认心）从陌生人视角出标题，每个标注它让观众觉得跟自己有关的理由。",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-title」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/tslj-title`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 82,
+        "github_heat": 51,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 71.5,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 57.7,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "b86f8d0963bed665b45e323f00543ed8ef19b148",
+      "content_sha256": "2ae7e89aa4d0149824d5bcdacce6bbea7eaed25ba358ebd5c252411f8b4689fe",
+      "version_label": "rev-b86f8d09",
+      "observed_at": "2026-10-27T03:19:46+00:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 93,
+        "star_delta": null,
+        "heat": 51
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 57.7,
+          "risk": 8.8,
+          "stars": 93,
+          "github_heat": 51,
+          "x_heat": null,
+          "revision": "b86f8d0963bed665b45e323f00543ed8ef19b148"
+        }
+      ]
+    },
+    {
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/tslj-series",
+      "name": "tslj-series",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
+      "branch": "main",
+      "skill_path": "skills/tslj-series",
+      "source": "github",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/tslj-series",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/tslj-series/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-series」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "丹方：系列策划。帮用户设计一个能一期一期拍下去的系列：每期固定什么、换什么，素材从哪来、能撑多久，会招来什么人，第一期怎么拍，拍几期看什么信号决定继续还是换。用户想持续更新但不知道拍什么、账号内容东一条西一条、拍了几条就断更、想做出“看他就够了”的固定栏目时使用。",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex",
+        "Claude"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-series」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/tslj-series`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 78,
+        "github_heat": 51,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 4,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 71.1,
+        "confidence": 75.0,
+        "risk": 8.8,
+        "value_score": 57.3,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "自动扫描未发现明显高危模式；安装前仍需人工查看脚本和依赖。"
+      ],
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "2d2eee212b28ad997abe1f3b9a48049b4b6be690",
+      "content_sha256": "c3f04dfa0b6c2a7e43a1b3ec3468479b0e6978d353e6760c647f7a5e3dabeb21",
+      "version_label": "rev-2d2eee21",
+      "observed_at": "2026-10-27T03:19:46+00:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 93,
+        "star_delta": null,
+        "heat": 51
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 57.3,
+          "risk": 8.8,
+          "stars": 93,
+          "github_heat": 51,
+          "x_heat": null,
+          "revision": "2d2eee212b28ad997abe1f3b9a48049b4b6be690"
         }
       ]
     },
@@ -14859,10 +14949,10 @@
         "demand": 86,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 83,
+        "github_heat": 84,
         "x_heat": null,
-        "momentum": 42,
-        "maintenance": 64,
+        "momentum": 41,
+        "maintenance": 63,
         "uniqueness": 62,
         "permissions": 10,
         "execution": 88,
@@ -14883,7 +14973,7 @@
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：28,308",
+        "仓库 Stars：28,330",
         "仓库最近更新：2026-09-08T20:35:26Z",
         "来源级别：官方/厂商"
       ],
@@ -14892,13 +14982,13 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 28308,
+      "repo_stars": 28330,
       "repo_updated_at": "2026-09-08T20:35:26Z",
       "license": null,
       "skill_revision": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4",
       "content_sha256": "24058eabf0aafce6def3fb937ac93cbe3fa341c653c658dc589edb77f73d6152",
       "version_label": "rev-60e5a9a0",
-      "observed_at": "2026-10-26T02:45:26+00:00",
+      "observed_at": "2026-10-27T03:19:44+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -14910,22 +15000,13 @@
       "last_skill_update_at": null,
       "change_summary": [],
       "github_signal": {
-        "stars": 28308,
-        "star_delta": 18,
-        "heat": 83
+        "stars": 28330,
+        "star_delta": 22,
+        "heat": 84
       },
       "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 58.0,
-          "risk": 41.3,
-          "stars": 27646,
-          "github_heat": 82,
-          "x_heat": null,
-          "revision": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 58.7,
@@ -15186,103 +15267,15 @@
           "github_heat": 83,
           "x_heat": null,
           "revision": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4"
-        }
-      ]
-    },
-    {
-      "id": "JKHeadley/instar/skills/agent-identity",
-      "name": "agent-identity",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
-      "branch": "main",
-      "skill_path": "skills/agent-identity",
-      "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/agent-identity",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/agent-identity/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「agent-identity」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Set up persistent agent identity files (AGENT.md, USER.md, MEMORY.md) and teach the agent to read them at every session start. Works in any Claude Code project — no external dependencies required. Trigger words: who am I, identity, remember me, agent name, my principles, who are you, what are my values.",
-      "category": "软件开发",
-      "platforms": [
-        "通用 SKILL.md",
-        "Claude"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于生成、编辑或评估视觉内容。它会把「agent-identity」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "开发者、技术团队与代码审查人员",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/agent-identity`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 86,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 50,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 75.9,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 56.9,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "508b3e2731b81b7d21fd64717aa241343900ca67",
-      "content_sha256": "c30d1978501c31565f308284c6e4d978bbbbb87f5350dbaab14022a33597ac45",
-      "version_label": "rev-508b3e27",
-      "observed_at": "2026-10-26T02:45:29+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 84,
-        "star_delta": null,
-        "heat": 50
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
+        },
         {
-          "observed_at": "2026-10-26T02:45:31+00:00",
+          "observed_at": "2026-10-27T03:19:48+00:00",
           "value": 56.9,
-          "risk": 21.9,
-          "stars": 84,
-          "github_heat": 50,
+          "risk": 41.3,
+          "stars": 28330,
+          "github_heat": 84,
           "x_heat": null,
-          "revision": "508b3e2731b81b7d21fd64717aa241343900ca67"
+          "revision": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4"
         }
       ]
     },
@@ -15338,8 +15331,8 @@
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：3,733",
-        "仓库最近更新：2026-10-26T00:12:40Z",
+        "仓库 Stars：3,748",
+        "仓库最近更新：2026-10-27T01:28:24Z",
         "来源级别：官方/厂商"
       ],
       "caveats": [
@@ -15348,13 +15341,13 @@
         "需要访问外部网络",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 3733,
-      "repo_updated_at": "2026-10-26T00:12:40Z",
+      "repo_stars": 3748,
+      "repo_updated_at": "2026-10-27T01:28:24Z",
       "license": "Apache-2.0",
       "skill_revision": "da127ba3b8fc297c7f1182e054b2b451e193f06b",
       "content_sha256": "c15374cef9c1a274ce94c73d4d4fddf65805411672bf553eb63ad1b3589c8c0e",
       "version_label": "rev-da127ba3",
-      "observed_at": "2026-10-26T02:45:27+00:00",
+      "observed_at": "2026-10-27T03:19:45+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -15366,22 +15359,13 @@
       "last_skill_update_at": "2026-07-15T01:53:17+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 3733,
-        "star_delta": 14,
+        "stars": 3748,
+        "star_delta": 15,
         "heat": 73
       },
-      "delta": 0.5,
+      "delta": 0.0,
       "status": "stable",
       "history": [
-        {
-          "observed_at": "2026-09-27T03:09:49+00:00",
-          "value": 55.7,
-          "risk": 44.6,
-          "stars": 3450,
-          "github_heat": 72,
-          "x_heat": null,
-          "revision": "da127ba3b8fc297c7f1182e054b2b451e193f06b"
-        },
         {
           "observed_at": "2026-09-28T03:06:17+00:00",
           "value": 55.2,
@@ -15642,6 +15626,111 @@
           "github_heat": 73,
           "x_heat": null,
           "revision": "da127ba3b8fc297c7f1182e054b2b451e193f06b"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 56.7,
+          "risk": 44.6,
+          "stars": 3748,
+          "github_heat": 73,
+          "x_heat": null,
+          "revision": "da127ba3b8fc297c7f1182e054b2b451e193f06b"
+        }
+      ]
+    },
+    {
+      "id": "liuhaisi2026212-maker/taishang-laojun/skills/tslj-open",
+      "name": "tslj-open",
+      "author": "liuhaisi2026212-maker",
+      "repo": "liuhaisi2026212-maker/taishang-laojun",
+      "branch": "main",
+      "skill_path": "skills/tslj-open",
+      "source": "github",
+      "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/tree/main/skills/tslj-open",
+      "skill_md_url": "https://github.com/liuhaisi2026212-maker/taishang-laojun/blob/main/skills/tslj-open/SKILL.md",
+      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-open」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "开炉：开头与结构。给已选的主题或真实现场设计第一句话、紧接着的证据画面、中段推进和收尾，说清每一步观众在想什么、为什么这样排；也用于拍完之后按素材定剪辑顺序。用户有选题想定开头和拍法、想改开头、拍完不知怎么剪时使用。",
+      "category": "通用效率",
+      "platforms": [
+        "通用 SKILL.md",
+        "Codex"
+      ],
+      "explanation_cn": {
+        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「tslj-open」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "希望把重复任务标准化的个人或团队",
+        "how_it_works_cn": "按明确章节组织工作步骤；会按需读取参考资料。",
+        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/tslj-open`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+      },
+      "scores": {
+        "fit": 72,
+        "demand": 74,
+        "leverage": 68,
+        "quality": 90,
+        "github_heat": 51,
+        "x_heat": null,
+        "momentum": 92,
+        "maintenance": 88,
+        "uniqueness": 62,
+        "permissions": 10,
+        "execution": 8,
+        "network": 8,
+        "secrets": 62,
+        "obfuscation": 0,
+        "provenance": 26,
+        "mismatch": 5,
+        "evidence_confidence": 75
+      },
+      "radar": {
+        "opportunity": 72.4,
+        "confidence": 75.0,
+        "risk": 17.4,
+        "value_score": 55.4,
+        "action": "watch"
+      },
+      "action": "watch",
+      "hard_gate": false,
+      "evidence": [
+        "仓库 Stars：93",
+        "仓库最近更新：2026-10-27T03:19:33Z",
+        "来源级别：社区发现"
+      ],
+      "caveats": [
+        "可能读取或使用凭据"
+      ],
+      "repo_stars": 93,
+      "repo_updated_at": "2026-10-27T03:19:33Z",
+      "license": "NOASSERTION",
+      "skill_revision": "53efd73062676017ee5108bb1aa46f3912bfffd7",
+      "content_sha256": "6e413182c6bf2a167de59348ff83d6e1f8e2f022a3acc9561904b4dd207ba4ae",
+      "version_label": "rev-53efd730",
+      "observed_at": "2026-10-27T03:19:46+00:00",
+      "x_signal": {
+        "status": "unavailable",
+        "reason": "missing_bearer_token"
+      },
+      "is_new": true,
+      "updated_since_last": false,
+      "update_status": "new",
+      "previous_revision": null,
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
+      "change_summary": [],
+      "github_signal": {
+        "stars": 93,
+        "star_delta": null,
+        "heat": 51
+      },
+      "delta": 0,
+      "status": "new",
+      "history": [
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 55.4,
+          "risk": 17.4,
+          "stars": 93,
+          "github_heat": 51,
+          "x_heat": null,
+          "revision": "53efd73062676017ee5108bb1aa46f3912bfffd7"
         }
       ]
     },
@@ -15674,7 +15763,7 @@
         "demand": 80,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 90,
+        "github_heat": 92,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
@@ -15689,17 +15778,17 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 82.3,
+        "opportunity": 82.7,
         "confidence": 75.0,
         "risk": 43.5,
-        "value_score": 54.8,
+        "value_score": 55.0,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：107,330",
-        "仓库最近更新：2026-10-26T02:44:20Z",
+        "仓库 Stars：107,708",
+        "仓库最近更新：2026-10-27T03:19:19Z",
         "来源级别：社区发现"
       ],
       "caveats": [
@@ -15707,30 +15796,30 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 107330,
-      "repo_updated_at": "2026-10-26T02:44:20Z",
+      "repo_stars": 107708,
+      "repo_updated_at": "2026-10-27T03:19:19Z",
       "license": "MIT",
       "skill_revision": "c81966566a6425f431933f13bfda25bfa971ad88",
       "content_sha256": "9582cc1f46401a76d545ffb6c620254b42d382f770df3d6e53785171e55dd077",
       "version_label": "rev-c8196656",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "observed_at": "2026-10-27T03:19:47+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
       },
-      "is_new": true,
+      "is_new": false,
       "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
+      "update_status": "unchanged",
+      "previous_revision": "c81966566a6425f431933f13bfda25bfa971ad88",
       "last_skill_update_at": "2026-10-26T02:45:31+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 107330,
-        "star_delta": null,
-        "heat": 90
+        "stars": 107708,
+        "star_delta": 378,
+        "heat": 92
       },
-      "delta": 0,
-      "status": "new",
+      "delta": 0.2,
+      "status": "stable",
       "history": [
         {
           "observed_at": "2026-10-26T02:45:31+00:00",
@@ -15740,334 +15829,53 @@
           "github_heat": 90,
           "x_heat": null,
           "revision": "c81966566a6425f431933f13bfda25bfa971ad88"
+        },
+        {
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 55.0,
+          "risk": 43.5,
+          "stars": 107708,
+          "github_heat": 92,
+          "x_heat": null,
+          "revision": "c81966566a6425f431933f13bfda25bfa971ad88"
         }
       ]
     },
     {
-      "id": "JKHeadley/instar/skills/agent-memory",
-      "name": "agent-memory",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
+      "id": "shenysun/skills-manager/skills/skills-manager",
+      "name": "skills-manager",
+      "author": "shenysun",
+      "repo": "shenysun/skills-manager",
       "branch": "main",
-      "skill_path": "skills/agent-memory",
+      "skill_path": "skills/skills-manager",
       "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/agent-memory",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/agent-memory/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-memory」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Teach cross-session memory patterns using MEMORY.md — what to save, how to organize it, how to maintain it over time, and how to structure topic files as memory grows. Works in any Claude Code project with no external dependencies. Trigger words: remember this, save for later, across sessions, persistent memory, don't forget, note this, keep this, write this down.",
-      "category": "软件开发",
+      "url": "https://github.com/shenysun/skills-manager/tree/main/skills/skills-manager",
+      "skill_md_url": "https://github.com/shenysun/skills-manager/blob/main/skills/skills-manager/SKILL.md",
+      "purpose": "这是一个“研究与知识”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「skills-manager」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+      "description": "Operate the skills-manager CLI — manage a local skill hub (install, import, distribute to agents/projects, update) and backfill provenance for source-less skills (adopt lockfile evidence, search the ecosystem for candidates, verify, get the user's approval, write sources). Use this skill whenever the user mentions skills-manager, the skill home / hub (~/.skills-manager), importing skills from agent runtime directories, distributing or undistributing skills, updating skills from their sources, tagging skills with domain categories (类别 / 分类 / categories), applying / inspecting a category set (类别集), or saving / switching a named preset (预设 / 档位) so an agent loads only the selected domains, wants to fix / backfill / find where a skill came from (its source, provenance, origin, upstream repo), asks to find / discover a new skill in the ecosystem (帮我找个 skill / find a skill for X), or wants to sync the skill hub across machines (多机同步 / sync push / sync pull / 我想在另一台机器上用这些 skills).",
+      "category": "研究与知识",
       "platforms": [
         "通用 SKILL.md",
-        "Claude"
+        "Claude",
+        "Cursor"
       ],
       "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-memory」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "开发者、技术团队与代码审查人员",
+        "summary_cn": "这是一个“研究与知识”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「skills-manager」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
+        "best_for_cn": "需要检索、核验来源并形成结论的研究者和知识工作者",
         "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/agent-memory`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
+        "typical_use_cn": "当任务涉及 研究与知识，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
+        "path_note_cn": "Skill 位于仓库路径 `skills/skills-manager`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
       },
       "scores": {
         "fit": 72,
-        "demand": 86,
+        "demand": 84,
         "leverage": 82,
         "quality": 90,
-        "github_heat": 50,
+        "github_heat": 54,
         "x_heat": null,
         "momentum": 92,
         "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 62,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 75.9,
-        "confidence": 75.0,
-        "risk": 30.6,
-        "value_score": 53.8,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络",
-        "可能读取或使用凭据"
-      ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "a986a57f7aa1a41b590be418328374abcc2db1aa",
-      "content_sha256": "35d6b194efbc63d35bad7b3bec03bc399843bc46cd8542aca0f1227a7b44c21c",
-      "version_label": "rev-a986a57f",
-      "observed_at": "2026-10-26T02:45:29+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 84,
-        "star_delta": null,
-        "heat": 50
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 53.8,
-          "risk": 30.6,
-          "stars": 84,
-          "github_heat": 50,
-          "x_heat": null,
-          "revision": "a986a57f7aa1a41b590be418328374abcc2db1aa"
-        }
-      ]
-    },
-    {
-      "id": "JKHeadley/instar/skills/agent-readiness",
-      "name": "agent-readiness",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
-      "branch": "main",
-      "skill_path": "skills/agent-readiness",
-      "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/agent-readiness",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/agent-readiness/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-readiness」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Score a task or workflow on its coordination-vs-judgment ratio to tell whether it's a good agent candidate (EXO 3.0 task-decomposition matrix).",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-readiness」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/agent-readiness`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 74,
-        "leverage": 82,
-        "quality": 70,
-        "github_heat": 50,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 72.3,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 53.8,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "c63205d37b016a20df9ce4ff24eb9ac08e339cdb",
-      "content_sha256": "bdcf9fade891621ffc1151ad8f33590be480e926b13f993f74374e4e7d8494da",
-      "version_label": "rev-c63205d3",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 84,
-        "star_delta": null,
-        "heat": 50
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 53.8,
-          "risk": 21.9,
-          "stars": 84,
-          "github_heat": 50,
-          "x_heat": null,
-          "revision": "c63205d37b016a20df9ce4ff24eb9ac08e339cdb"
-        }
-      ]
-    },
-    {
-      "id": "JKHeadley/instar/skills/credential-leak-detector",
-      "name": "credential-leak-detector",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
-      "branch": "main",
-      "skill_path": "skills/credential-leak-detector",
-      "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/credential-leak-detector",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/credential-leak-detector/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「credential-leak-detector」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "PostToolUse hook that scans Bash tool output for leaked credentials — API keys, tokens, private keys, and secrets — before they reach the conversation. Blocks critical leaks, redacts high-severity matches, and warns on suspicious patterns. 14 detection patterns covering OpenAI, Anthropic, AWS, GitHub, Stripe, Google, Slack, SendGrid, Twilio, PEM keys, bearer tokens, and generic secrets. No external dependencies. Trigger words: security, credential leak, secret exposure, key detection, token scan, API key leaked, credential guard, secret scanner, prevent credential leak.",
-      "category": "软件开发",
-      "platforms": [
-        "通用 SKILL.md",
-        "Claude"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于处理代码仓库、评审或协作流程。它会把「credential-leak-detector」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "开发者、技术团队与代码审查人员",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/credential-leak-detector`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 86,
-        "leverage": 82,
-        "quality": 86,
-        "github_heat": 50,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 62,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 75.4,
-        "confidence": 75.0,
-        "risk": 30.6,
-        "value_score": 53.4,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络",
-        "可能读取或使用凭据"
-      ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "77bd817dc6eaa0fc7c6dd863a18a333af87b9bd8",
-      "content_sha256": "3b0b77200bd807065a19000d0331a5333ac63a6f949528e04220dfd53ae60b6f",
-      "version_label": "rev-77bd817d",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 84,
-        "star_delta": null,
-        "heat": 50
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 53.4,
-          "risk": 30.6,
-          "stars": 84,
-          "github_heat": 50,
-          "x_heat": null,
-          "revision": "77bd817dc6eaa0fc7c6dd863a18a333af87b9bd8"
-        }
-      ]
-    },
-    {
-      "id": "nexu-io/open-design/skills/agent-browser",
-      "name": "agent-browser",
-      "author": "nexu-io",
-      "repo": "nexu-io/open-design",
-      "branch": "main",
-      "skill_path": "skills/agent-browser",
-      "source": "github",
-      "url": "https://github.com/nexu-io/open-design/tree/main/skills/agent-browser",
-      "skill_md_url": "https://github.com/nexu-io/open-design/blob/main/skills/agent-browser/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-browser」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "|",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-browser」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；会按需读取参考资料；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/agent-browser`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 70,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 90,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
+        "uniqueness": 70,
         "permissions": 10,
         "execution": 88,
         "network": 75,
@@ -16078,17 +15886,17 @@
         "evidence_confidence": 75
       },
       "radar": {
-        "opportunity": 80.8,
+        "opportunity": 76.8,
         "confidence": 75.0,
         "risk": 43.5,
-        "value_score": 53.4,
+        "value_score": 50.0,
         "action": "watch"
       },
       "action": "watch",
       "hard_gate": false,
       "evidence": [
-        "仓库 Stars：103,968",
-        "仓库最近更新：2026-10-26T02:44:12Z",
+        "仓库 Stars：179",
+        "仓库最近更新：2026-10-27T03:19:32Z",
         "来源级别：社区发现"
       ],
       "caveats": [
@@ -16096,13 +15904,13 @@
         "存在下载后直接执行模式",
         "可能读取或使用凭据"
       ],
-      "repo_stars": 103968,
-      "repo_updated_at": "2026-10-26T02:44:12Z",
-      "license": "Apache-2.0",
-      "skill_revision": "faa01448e79428d3841d36c5a6716ba643ffc2ce",
-      "content_sha256": "f2bb65b7059b423a96ef89f4e6d8ac1395b66346cc6350701968b5bc616e064a",
-      "version_label": "rev-faa01448",
-      "observed_at": "2026-10-26T02:45:30+00:00",
+      "repo_stars": 179,
+      "repo_updated_at": "2026-10-27T03:19:32Z",
+      "license": "MIT",
+      "skill_revision": "424be7f4707821644343ca1a72af123a88fe9e94",
+      "content_sha256": "e2bd20e5ead5a011eb7f8c25f064513bcc1df357404704bd124f81d122641dd1",
+      "version_label": "rev-424be7f4",
+      "observed_at": "2026-10-27T03:19:45+00:00",
       "x_signal": {
         "status": "unavailable",
         "reason": "missing_bearer_token"
@@ -16111,314 +15919,24 @@
       "updated_since_last": false,
       "update_status": "new",
       "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
+      "last_skill_update_at": "2026-10-27T03:19:48+00:00",
       "change_summary": [],
       "github_signal": {
-        "stars": 103968,
+        "stars": 179,
         "star_delta": null,
-        "heat": 90
+        "heat": 54
       },
       "delta": 0,
       "status": "new",
       "history": [
         {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 53.4,
+          "observed_at": "2026-10-27T03:19:48+00:00",
+          "value": 50.0,
           "risk": 43.5,
-          "stars": 103968,
-          "github_heat": 90,
+          "stars": 179,
+          "github_heat": 54,
           "x_heat": null,
-          "revision": "faa01448e79428d3841d36c5a6716ba643ffc2ce"
-        }
-      ]
-    },
-    {
-      "id": "JKHeadley/instar/skills/agent-passport",
-      "name": "agent-passport",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
-      "branch": "main",
-      "skill_path": "skills/agent-passport",
-      "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/agent-passport",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/agent-passport/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-passport」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "View this agent's digital passport (identity + trust + allowed/forbidden actions) and verify a peer's passport against a proposed action (EXO 3.0).",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「agent-passport」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/agent-passport`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 74,
-        "leverage": 68,
-        "quality": 70,
-        "github_heat": 50,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 48,
-        "network": 42,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 70.0,
-        "confidence": 75.0,
-        "risk": 21.9,
-        "value_score": 51.9,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "需要访问外部网络"
-      ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "38e77c857b3f374833cd232defb38e303d19de70",
-      "content_sha256": "c5d810e0d3eeb345a294b2548480bbac84be9d7254291d174f2cd9f01835c2cb",
-      "version_label": "rev-38e77c85",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 84,
-        "star_delta": null,
-        "heat": 50
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 51.9,
-          "risk": 21.9,
-          "stars": 84,
-          "github_heat": 50,
-          "x_heat": null,
-          "revision": "38e77c857b3f374833cd232defb38e303d19de70"
-        }
-      ]
-    },
-    {
-      "id": "JKHeadley/instar/skills/instar-feedback",
-      "name": "instar-feedback",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
-      "branch": "main",
-      "skill_path": "skills/instar-feedback",
-      "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/instar-feedback",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/instar-feedback/SKILL.md",
-      "purpose": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「instar-feedback」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Submit structured feedback about instar bugs, feature requests, improvements, or innovations worth sharing. Use when something isn't working, when a feature is missing, when you've built something that could benefit all agents, or when the user mentions a problem with instar. Also use proactively after building significant features — ask yourself if other agents would benefit. Feedback is relayed agent-to-agent to instar maintainers. Trigger words: bug report, feedback, issue, something's wrong, feature request, this isn't working, improvement, suggest, built something useful, other agents could use this.",
-      "category": "通用效率",
-      "platforms": [
-        "通用 SKILL.md"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“通用效率”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「instar-feedback」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "希望把重复任务标准化的个人或团队",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 通用效率，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/instar-feedback`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 74,
-        "leverage": 82,
-        "quality": 90,
-        "github_heat": 50,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 88,
-        "network": 75,
-        "secrets": 4,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 74.6,
-        "confidence": 75.0,
-        "risk": 34.8,
-        "value_score": 51.2,
-        "action": "watch"
-      },
-      "action": "watch",
-      "hard_gate": false,
-      "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含命令或代码执行能力",
-        "存在下载后直接执行模式"
-      ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "c070ecec40ff486bb369199ae8b93627bfc7a195",
-      "content_sha256": "3a37034263a26b0fbfa7fee7672845f0452840fe5f93f35e78a3d7965bc31ebf",
-      "version_label": "rev-c070ecec",
-      "observed_at": "2026-10-26T02:45:31+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 84,
-        "star_delta": null,
-        "heat": 50
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 51.2,
-          "risk": 34.8,
-          "stars": 84,
-          "github_heat": 50,
-          "x_heat": null,
-          "revision": "c070ecec40ff486bb369199ae8b93627bfc7a195"
-        }
-      ]
-    },
-    {
-      "id": "JKHeadley/instar/skills/command-guard",
-      "name": "command-guard",
-      "author": "JKHeadley",
-      "repo": "JKHeadley/instar",
-      "branch": "main",
-      "skill_path": "skills/command-guard",
-      "source": "github",
-      "url": "https://github.com/JKHeadley/instar/tree/main/skills/command-guard",
-      "skill_md_url": "https://github.com/JKHeadley/instar/blob/main/skills/command-guard/SKILL.md",
-      "purpose": "这是一个“软件开发”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「command-guard」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-      "description": "Set up a PreToolUse hook in .claude/settings.json that blocks dangerous commands — rm -rf, force push, database drops, and others — before they execute. Teaches the pattern of safety hooks for any Claude Code project. Trigger words: safety, guard, block dangerous, protect, prevent destructive, safe mode, dangerous commands, risky operations.",
-      "category": "软件开发",
-      "platforms": [
-        "通用 SKILL.md",
-        "Claude"
-      ],
-      "explanation_cn": {
-        "summary_cn": "这是一个“软件开发”类 Skill，主要用于创建、维护或编排 Agent 的可复用能力。它会把「command-guard」相关任务整理成 Agent 可以稳定重复执行的步骤，减少临时发挥和遗漏。",
-        "best_for_cn": "开发者、技术团队与代码审查人员",
-        "how_it_works_cn": "按明确章节组织工作步骤；可能配合脚本完成可重复操作；包含验证或测试要求。",
-        "typical_use_cn": "当任务涉及 软件开发，并且需要一致输出、减少遗漏或沉淀团队方法时使用。",
-        "path_note_cn": "Skill 位于仓库路径 `skills/command-guard`；安装前应同时检查该目录中的脚本、依赖与资源文件。"
-      },
-      "scores": {
-        "fit": 72,
-        "demand": 86,
-        "leverage": 68,
-        "quality": 86,
-        "github_heat": 50,
-        "x_heat": null,
-        "momentum": 92,
-        "maintenance": 88,
-        "uniqueness": 62,
-        "permissions": 10,
-        "execution": 95,
-        "network": 75,
-        "secrets": 62,
-        "obfuscation": 0,
-        "provenance": 26,
-        "mismatch": 5,
-        "evidence_confidence": 75
-      },
-      "radar": {
-        "opportunity": 73.1,
-        "confidence": 75.0,
-        "risk": 44.9,
-        "value_score": 46.4,
-        "action": "quarantine"
-      },
-      "action": "quarantine",
-      "hard_gate": true,
-      "evidence": [
-        "仓库 Stars：84",
-        "仓库最近更新：2026-10-26T02:45:01Z",
-        "来源级别：社区发现"
-      ],
-      "caveats": [
-        "包含潜在破坏性命令",
-        "存在下载后直接执行模式",
-        "可能读取或使用凭据"
-      ],
-      "repo_stars": 84,
-      "repo_updated_at": "2026-10-26T02:45:01Z",
-      "license": "MIT",
-      "skill_revision": "fb10bb432e0a00aa3f411eb9d7183f5acc41ef92",
-      "content_sha256": "a2cc8ab468afaa2990bd8540cc05c49e8dafef525dd34987db355c618ee8de16",
-      "version_label": "rev-fb10bb43",
-      "observed_at": "2026-10-26T02:45:30+00:00",
-      "x_signal": {
-        "status": "unavailable",
-        "reason": "missing_bearer_token"
-      },
-      "is_new": true,
-      "updated_since_last": false,
-      "update_status": "new",
-      "previous_revision": null,
-      "last_skill_update_at": "2026-10-26T02:45:31+00:00",
-      "change_summary": [],
-      "github_signal": {
-        "stars": 84,
-        "star_delta": null,
-        "heat": 50
-      },
-      "delta": 0,
-      "status": "new",
-      "history": [
-        {
-          "observed_at": "2026-10-26T02:45:31+00:00",
-          "value": 46.4,
-          "risk": 44.9,
-          "stars": 84,
-          "github_heat": 50,
-          "x_heat": null,
-          "revision": "fb10bb432e0a00aa3f411eb9d7183f5acc41ef92"
+          "revision": "424be7f4707821644343ca1a72af123a88fe9e94"
         }
       ]
     }
@@ -16426,8 +15944,8 @@
   "gaps": [
     {
       "title": "更可靠的软件开发 Skill",
-      "reason": "该类需求信号较强，但当前候选平均质量 87、风险 25，仍有改进空间。",
-      "score": 73
+      "reason": "该类需求信号较强，但当前候选平均质量 86、风险 23，仍有改进空间。",
+      "score": 72
     },
     {
       "title": "更可靠的文档与办公 Skill",
@@ -16435,9 +15953,9 @@
       "score": 71
     },
     {
-      "title": "更可靠的数据与分析 Skill",
-      "reason": "该类需求信号较强，但当前候选平均质量 90、风险 23，仍有改进空间。",
-      "score": 69
+      "title": "更可靠的研究与知识 Skill",
+      "reason": "该类需求信号较强，但当前候选平均质量 81、风险 27，仍有改进空间。",
+      "score": 71
     }
   ]
 }
